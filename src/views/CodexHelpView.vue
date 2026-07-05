@@ -64,7 +64,7 @@
           <p class="lead">{{ t.codexHelp.video.lead }}</p>
           <figure class="video-figure">
             <video
-              src="/assets/codex_config_tutorial.mp4"
+              src="https://aigokey-website.oss-cn-shenzhen.aliyuncs.com/video_compressed.mp4"
               poster="/assets/codex_config_tutorial_cover.jpg"
               controls
               preload="metadata"
