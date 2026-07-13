@@ -20,6 +20,11 @@ export const routes = [
     component: () => import('@/views/ImageCreationView.vue'),
   },
   {
+    path: '/image-setting',
+    name: 'image-setting',
+    component: () => import('@/views/ImageSettingView.vue'),
+  },
+  {
     path: '/enterprise-service',
     name: 'enterprise-service',
     component: () => import('@/views/EnterpriseServiceView.vue'),
