@@ -33,7 +33,7 @@
             <div class="flex items-center gap-2 border-b border-[#dce8f5] px-5 py-4"><span class="h-2.5 w-2.5 rounded-full bg-blue"></span><span class="h-2.5 w-2.5 rounded-full bg-[#79d478]"></span><span class="h-2.5 w-2.5 rounded-full bg-[#f4c45d]"></span><span class="ml-3 text-[13px] font-black tracking-[0.08em] text-[#486078]">CHATGPT CODEX APP</span></div>
             <div class="p-6 max-[760px]:p-5">
               <h2 class="text-[24px] font-black">支持指令</h2>
-              <p class="mt-3 text-[16px] leading-[1.7] text-[#586068]">用自然语言跟 ChatGPT Codex 说：</p>
+              <p class="mt-3 text-[16px] leading-[1.7] text-[#586068]">可以使用技能名明确调用，也可以不提技能名，直接用自然语言描述任务：</p>
               <div class="mt-4 grid gap-5 bg-[#f4f8fd] p-5 font-mono text-[15px] leading-[1.75] text-[#172a3d] max-[760px]:p-4">
                 <section v-for="group in commandGroups" :key="group.title">
                   <h3 class="font-sans text-[15px] font-black text-blue">{{ group.title }}</h3>
@@ -64,7 +64,8 @@ const steps = [
 const commandGroups = [
   { title: '安装：', prompts: ['把 agk2img-skill 安装到 Codex skills 目录', '把 agk2img-skill 放到当前项目里使用'] },
   { title: '配置：', prompts: ['帮我配置 agk2img 的 base url', '帮我更新 agk2img 的 api key', '帮我清空 agk2img 的配置', '帮我检查 agk2img 是否配置好了'] },
-  { title: '使用：', prompts: ['用 agk2img 生成一张 xxx 图', '用 agk2img 修改这张图片里的 xxx', '用 agk2img 把我上传的图片改成 xxx 风格', '用 agk2img 批量生成一组 xxx 素材'] },
+  { title: '使用（指定技能名）：', prompts: ['用 agk2img 生成一张 xxx 图', '用 agk2img 修改这张图片里的 xxx', '用 agk2img 把我上传的图片改成 xxx 风格', '用 agk2img 批量生成一组 xxx 素材'] },
+  { title: '使用（直接自然语言）：', prompts: ['生成一张 xxx 图', '修改这张图片里的 xxx', '把我上传的图片改成 xxx 风格', '批量生成一组 xxx 素材'] },
 ]
 
 useHead({

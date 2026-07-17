@@ -171,7 +171,7 @@ const imageCopy = {
         { number: '04', title: '重启ChatGPT Codex App 后进行创作', text: '重启ChatGPT Codex App后，即可在ChatGPT Codex 中直接描述你要生成、修改或批量制作的画面。skill 会根据任务选择生成、编辑、参考图或批量工作流。' },
       ],
     },
-    commands: { title: '支持指令', copy: '用自然语言跟 ChatGPT Codex 说：', groups: [{ title: '安装：', prompts: ['把 agk2img-skill 安装到 Codex skills 目录', '把 agk2img-skill 放到当前项目里使用'] }, { title: '配置：', prompts: ['帮我配置 agk2img 的 base url', '帮我更新 agk2img 的 api key', '帮我清空 agk2img 的配置', '帮我检查 agk2img 是否配置好了'] }, { title: '使用：', prompts: ['用 agk2img 生成一张 xxx 图', '用 agk2img 修改这张图片里的 xxx', '用 agk2img 把我上传的图片改成 xxx 风格', '用 agk2img 批量生成一组 xxx 素材'] }] },
+    commands: { title: '支持指令', copy: '可以使用技能名明确调用，也可以不提技能名，直接用自然语言描述任务：', groups: [{ title: '安装：', prompts: ['把 agk2img-skill 安装到 Codex skills 目录', '把 agk2img-skill 放到当前项目里使用'] }, { title: '配置：', prompts: ['帮我配置 agk2img 的 base url', '帮我更新 agk2img 的 api key', '帮我清空 agk2img 的配置', '帮我检查 agk2img 是否配置好了'] }, { title: '使用（指定技能名）：', prompts: ['用 agk2img 生成一张 xxx 图', '用 agk2img 修改这张图片里的 xxx', '用 agk2img 把我上传的图片改成 xxx 风格', '用 agk2img 批量生成一组 xxx 素材'] }, { title: '使用（直接自然语言）：', prompts: ['生成一张 xxx 图', '修改这张图片里的 xxx', '把我上传的图片改成 xxx 风格', '批量生成一组 xxx 素材'] }] },
     cta: { eyebrow: 'READY TO CREATE', title: '用 AigoKey 套餐，把图像创作纳入你的日常工作流。', action: '登录并创建 API Key' },
   },
   'zh-TW': {
@@ -196,7 +196,7 @@ const imageCopy = {
         { number: '04', title: '在 ChatGPT Codex App 中創作', text: '直接描述你要生成、修改或批量製作的畫面。skill 會根據任務選擇生成、編輯、參考圖或批量工作流程。' },
       ],
     },
-    commands: { title: '支援指令', copy: '用自然語言跟 ChatGPT Codex 說：', groups: [{ title: '安裝：', prompts: ['把 agk2img-skill 安裝到 Codex skills 目錄', '把 agk2img-skill 放到目前專案裡使用'] }, { title: '設定：', prompts: ['幫我設定 agk2img 的 base url', '幫我更新 agk2img 的 api key', '幫我清空 agk2img 的設定', '幫我檢查 agk2img 是否設定好了'] }, { title: '使用：', prompts: ['用 agk2img 生成一張 xxx 圖', '用 agk2img 修改這張圖片裡的 xxx', '用 agk2img 把我上傳的圖片改成 xxx 風格', '用 agk2img 批量生成一組 xxx 素材'] }] },
+    commands: { title: '支援指令', copy: '可以使用技能名明確呼叫，也可以不提技能名，直接用自然語言描述任務：', groups: [{ title: '安裝：', prompts: ['把 agk2img-skill 安裝到 Codex skills 目錄', '把 agk2img-skill 放到目前專案裡使用'] }, { title: '設定：', prompts: ['幫我設定 agk2img 的 base url', '幫我更新 agk2img 的 api key', '幫我清空 agk2img 的設定', '幫我檢查 agk2img 是否設定好了'] }, { title: '使用（指定技能名）：', prompts: ['用 agk2img 生成一張 xxx 圖', '用 agk2img 修改這張圖片裡的 xxx', '用 agk2img 把我上傳的圖片改成 xxx 風格', '用 agk2img 批量生成一組 xxx 素材'] }, { title: '使用（直接自然語言）：', prompts: ['生成一張 xxx 圖', '修改這張圖片裡的 xxx', '把我上傳的圖片改成 xxx 風格', '批量生成一組 xxx 素材'] }] },
     cta: { eyebrow: 'READY TO CREATE', title: '用 AigoKey 方案，把圖像創作納入你的日常工作流程。', action: '登入並建立 API Key' },
   },
   en: {
@@ -221,7 +221,7 @@ const imageCopy = {
         { number: '04', title: 'Create in ChatGPT Codex App', text: 'Describe the image you want to generate, edit, or batch-produce. The skill selects the appropriate generation, editing, reference-image, or batch workflow.' },
       ],
     },
-    commands: { title: 'Supported requests', copy: 'Use natural language with ChatGPT Codex:', groups: [{ title: 'Install:', prompts: ['Install agk2img-skill in the Codex skills directory', 'Use agk2img-skill in this project'] }, { title: 'Configure:', prompts: ['Configure the agk2img base URL for me', 'Update the agk2img API key for me', 'Clear the agk2img configuration for me', 'Check whether agk2img is configured correctly'] }, { title: 'Create:', prompts: ['Generate a xxx image with agk2img', 'Edit xxx in this image with agk2img', 'Restyle my uploaded image as xxx with agk2img', 'Batch-generate a set of xxx assets with agk2img'] }] },
+    commands: { title: 'Supported requests', copy: 'You can name the skill explicitly or describe the task naturally without mentioning it:', groups: [{ title: 'Install:', prompts: ['Install agk2img-skill in the Codex skills directory', 'Use agk2img-skill in this project'] }, { title: 'Configure:', prompts: ['Configure the agk2img base URL for me', 'Update the agk2img API key for me', 'Clear the agk2img configuration for me', 'Check whether agk2img is configured correctly'] }, { title: 'Create (name the skill):', prompts: ['Generate a xxx image with agk2img', 'Edit xxx in this image with agk2img', 'Restyle my uploaded image as xxx with agk2img', 'Batch-generate a set of xxx assets with agk2img'] }, { title: 'Create (natural language):', prompts: ['Generate a xxx image', 'Edit xxx in this image', 'Restyle my uploaded image as xxx', 'Batch-generate a set of xxx assets'] }] },
     cta: { eyebrow: 'READY TO CREATE', title: 'Bring image creation into your everyday workflow with an AigoKey plan.', action: 'Sign in and create an API Key' },
   },
 } as const
