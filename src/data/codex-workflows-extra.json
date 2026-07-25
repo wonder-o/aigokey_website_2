@@ -1,0 +1,4578 @@
+{
+  "generatedAt": "2026-07-24",
+  "sourceTitle": "Codex 工作流库扩展：200 个可执行任务模板",
+  "range": "101-300",
+  "methodology": "基于 OpenAI 官方 Codex 文档、Cookbook、Academy 与跨岗位工作流资料，按 20 个主题族扩展；全部标记为 C 级可执行模板，不声明已验证成效。",
+  "workflows": [
+    {
+      "id": "101",
+      "title": "把 Figma 页面还原为响应式界面",
+      "section": "前端工程工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "Web 产品研发",
+      "roles": "前端工程师、UI 工程师、产品设计师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "前端团队需要在现有代码库、设计规范和浏览器行为之间保持一致。具体场景：设计稿只有桌面与手机两个关键帧，中间断点和组件状态未明确。",
+      "workflow": "向 Codex 提供仓库、设计稿、组件规范、目标浏览器与验收截图；先读取项目约定和现有组件，再限定受影响页面实施改动，运行类型检查与前端测试，最后用真实浏览器核对桌面和移动端。目标产物：可复用页面、响应式样式与视觉对照清单。",
+      "outcome": "使用示例：团队可把这条模板用于“把 Figma 页面还原为响应式界面”，并按以下条件验收：对照关键帧检查间距、字号、断点、空态和长文本。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "102",
+      "title": "把重复页面抽成设计系统组件",
+      "section": "前端工程工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "Web 产品研发",
+      "roles": "前端工程师、UI 工程师、产品设计师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "前端团队需要在现有代码库、设计规范和浏览器行为之间保持一致。具体场景：多个页面复制了按钮、表单和反馈状态，改一次要同步多处。",
+      "workflow": "向 Codex 提供仓库、设计稿、组件规范、目标浏览器与验收截图；先读取项目约定和现有组件，再限定受影响页面实施改动，运行类型检查与前端测试，最后用真实浏览器核对桌面和移动端。目标产物：组件 API、迁移后的页面与用法文档。",
+      "outcome": "使用示例：团队可把这条模板用于“把重复页面抽成设计系统组件”，并按以下条件验收：检查视觉回归、键盘操作和已有调用方兼容性。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "103",
+      "title": "修复移动端布局溢出",
+      "section": "前端工程工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "Web 产品研发",
+      "roles": "前端工程师、UI 工程师、产品设计师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "前端团队需要在现有代码库、设计规范和浏览器行为之间保持一致。具体场景：小屏设备出现横向滚动、按钮截断或内容重叠。",
+      "workflow": "向 Codex 提供仓库、设计稿、组件规范、目标浏览器与验收截图；先读取项目约定和现有组件，再限定受影响页面实施改动，运行类型检查与前端测试，最后用真实浏览器核对桌面和移动端。目标产物：最小范围 CSS 修复与多视口截图。",
+      "outcome": "使用示例：团队可把这条模板用于“修复移动端布局溢出”，并按以下条件验收：在 320、390、768 像素宽度验证无横向溢出。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "104",
+      "title": "为复杂表单补齐交互状态",
+      "section": "前端工程工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "Web 产品研发",
+      "roles": "前端工程师、UI 工程师、产品设计师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "前端团队需要在现有代码库、设计规范和浏览器行为之间保持一致。具体场景：表单只有默认样式，缺少校验、提交中、失败与成功状态。",
+      "workflow": "向 Codex 提供仓库、设计稿、组件规范、目标浏览器与验收截图；先读取项目约定和现有组件，再限定受影响页面实施改动，运行类型检查与前端测试，最后用真实浏览器核对桌面和移动端。目标产物：完整表单状态机、错误文案和测试。",
+      "outcome": "使用示例：团队可把这条模板用于“为复杂表单补齐交互状态”，并按以下条件验收：验证键盘提交、焦点回退、重复提交和接口失败。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "105",
+      "title": "实现可访问的导航菜单",
+      "section": "前端工程工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "Web 产品研发",
+      "roles": "前端工程师、UI 工程师、产品设计师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "前端团队需要在现有代码库、设计规范和浏览器行为之间保持一致。具体场景：桌面悬浮菜单在触屏和键盘环境无法可靠使用。",
+      "workflow": "向 Codex 提供仓库、设计稿、组件规范、目标浏览器与验收截图；先读取项目约定和现有组件，再限定受影响页面实施改动，运行类型检查与前端测试，最后用真实浏览器核对桌面和移动端。目标产物：响应式导航、焦点管理和无障碍属性。",
+      "outcome": "使用示例：团队可把这条模板用于“实现可访问的导航菜单”，并按以下条件验收：用键盘和读屏顺序检查打开、关闭与焦点返回。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "106",
+      "title": "优化首屏加载性能",
+      "section": "前端工程工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "Web 产品研发",
+      "roles": "前端工程师、UI 工程师、产品设计师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "前端团队需要在现有代码库、设计规范和浏览器行为之间保持一致。具体场景：首屏图片和脚本体积过大，核心内容出现较晚。",
+      "workflow": "向 Codex 提供仓库、设计稿、组件规范、目标浏览器与验收截图；先读取项目约定和现有组件，再限定受影响页面实施改动，运行类型检查与前端测试，最后用真实浏览器核对桌面和移动端。目标产物：资源加载调整、拆包方案与前后指标记录。",
+      "outcome": "使用示例：团队可把这条模板用于“优化首屏加载性能”，并按以下条件验收：比较构建体积和 Lighthouse 指标并检查视觉无退化。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "107",
+      "title": "接入新的 REST 页面数据",
+      "section": "前端工程工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "Web 产品研发",
+      "roles": "前端工程师、UI 工程师、产品设计师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "前端团队需要在现有代码库、设计规范和浏览器行为之间保持一致。具体场景：接口字段、加载顺序和错误边界尚未落到页面状态。",
+      "workflow": "向 Codex 提供仓库、设计稿、组件规范、目标浏览器与验收截图；先读取项目约定和现有组件，再限定受影响页面实施改动，运行类型检查与前端测试，最后用真实浏览器核对桌面和移动端。目标产物：类型定义、数据层、加载骨架和异常视图。",
+      "outcome": "使用示例：团队可把这条模板用于“接入新的 REST 页面数据”，并按以下条件验收：覆盖成功、空数据、超时、鉴权失败与字段缺失。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "108",
+      "title": "迁移旧 CSS 到现有令牌体系",
+      "section": "前端工程工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "Web 产品研发",
+      "roles": "前端工程师、UI 工程师、产品设计师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "前端团队需要在现有代码库、设计规范和浏览器行为之间保持一致。具体场景：旧页面使用大量硬编码颜色和尺寸，难以统一主题。",
+      "workflow": "向 Codex 提供仓库、设计稿、组件规范、目标浏览器与验收截图；先读取项目约定和现有组件，再限定受影响页面实施改动，运行类型检查与前端测试，最后用真实浏览器核对桌面和移动端。目标产物：令牌映射表与迁移后的样式。",
+      "outcome": "使用示例：团队可把这条模板用于“迁移旧 CSS 到现有令牌体系”，并按以下条件验收：扫描残留硬编码值并做关键页面视觉回归。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "109",
+      "title": "为数据表格增加筛选与导出",
+      "section": "前端工程工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "Web 产品研发",
+      "roles": "前端工程师、UI 工程师、产品设计师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "前端团队需要在现有代码库、设计规范和浏览器行为之间保持一致。具体场景：业务人员需要组合筛选、保存结果并导出当前视图。",
+      "workflow": "向 Codex 提供仓库、设计稿、组件规范、目标浏览器与验收截图；先读取项目约定和现有组件，再限定受影响页面实施改动，运行类型检查与前端测试，最后用真实浏览器核对桌面和移动端。目标产物：筛选栏、URL 状态、分页和 CSV 导出。",
+      "outcome": "使用示例：团队可把这条模板用于“为数据表格增加筛选与导出”，并按以下条件验收：核对筛选逻辑、中文编码、列顺序和大数据量行为。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "110",
+      "title": "修复前端水合与运行时警告",
+      "section": "前端工程工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "Web 产品研发",
+      "roles": "前端工程师、UI 工程师、产品设计师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "前端团队需要在现有代码库、设计规范和浏览器行为之间保持一致。具体场景：服务端渲染页面出现 hydration mismatch 或控制台警告。",
+      "workflow": "向 Codex 提供仓库、设计稿、组件规范、目标浏览器与验收截图；先读取项目约定和现有组件，再限定受影响页面实施改动，运行类型检查与前端测试，最后用真实浏览器核对桌面和移动端。目标产物：根因说明、最小修复和回归测试。",
+      "outcome": "使用示例：团队可把这条模板用于“修复前端水合与运行时警告”，并按以下条件验收：确认开发与生产构建均无目标警告且首屏一致。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "111",
+      "title": "新增带幂等保护的创建接口",
+      "section": "后端与 API 工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "platform"
+      ],
+      "industry": "后端服务与平台 API",
+      "roles": "后端工程师、API 工程师、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "后端团队需要在既有领域模型、接口契约和数据安全边界内交付变更。具体场景：客户端重试可能重复创建订单或任务。",
+      "workflow": "向 Codex 提供服务仓库、API 契约、数据库结构、日志样本和测试命令；先追踪调用链和数据模型，写出兼容性与失败模式，再实现最小变更，补齐单元、集成和契约测试并输出迁移说明。目标产物：幂等键策略、接口实现与并发测试。",
+      "outcome": "使用示例：团队可把这条模板用于“新增带幂等保护的创建接口”，并按以下条件验收：验证重复请求、并发请求、过期键和错误重试。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "112",
+      "title": "把同步任务改为后台队列",
+      "section": "后端与 API 工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "platform"
+      ],
+      "industry": "后端服务与平台 API",
+      "roles": "后端工程师、API 工程师、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "后端团队需要在既有领域模型、接口契约和数据安全边界内交付变更。具体场景：长耗时处理占住请求线程并造成网关超时。",
+      "workflow": "向 Codex 提供服务仓库、API 契约、数据库结构、日志样本和测试命令；先追踪调用链和数据模型，写出兼容性与失败模式，再实现最小变更，补齐单元、集成和契约测试并输出迁移说明。目标产物：队列生产者、消费者、状态查询和重试策略。",
+      "outcome": "使用示例：团队可把这条模板用于“把同步任务改为后台队列”，并按以下条件验收：模拟超时、重复消费、死信和服务重启。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "113",
+      "title": "设计兼容旧客户端的 API 版本升级",
+      "section": "后端与 API 工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "platform"
+      ],
+      "industry": "后端服务与平台 API",
+      "roles": "后端工程师、API 工程师、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "后端团队需要在既有领域模型、接口契约和数据安全边界内交付变更。具体场景：字段语义变化但仍有旧版本客户端在线。",
+      "workflow": "向 Codex 提供服务仓库、API 契约、数据库结构、日志样本和测试命令；先追踪调用链和数据模型，写出兼容性与失败模式，再实现最小变更，补齐单元、集成和契约测试并输出迁移说明。目标产物：版本策略、适配层和弃用说明。",
+      "outcome": "使用示例：团队可把这条模板用于“设计兼容旧客户端的 API 版本升级”，并按以下条件验收：用新旧契约测试确认响应兼容和错误码稳定。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "114",
+      "title": "定位偶发数据库慢查询",
+      "section": "后端与 API 工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "platform"
+      ],
+      "industry": "后端服务与平台 API",
+      "roles": "后端工程师、API 工程师、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "后端团队需要在既有领域模型、接口契约和数据安全边界内交付变更。具体场景：接口 P99 延迟上升但平均延迟变化不明显。",
+      "workflow": "向 Codex 提供服务仓库、API 契约、数据库结构、日志样本和测试命令；先追踪调用链和数据模型，写出兼容性与失败模式，再实现最小变更，补齐单元、集成和契约测试并输出迁移说明。目标产物：查询链路分析、索引建议与基准结果。",
+      "outcome": "使用示例：团队可把这条模板用于“定位偶发数据库慢查询”，并按以下条件验收：比较执行计划、锁等待和真实参数分布。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "115",
+      "title": "补齐 Webhook 签名与重放防护",
+      "section": "后端与 API 工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "platform"
+      ],
+      "industry": "后端服务与平台 API",
+      "roles": "后端工程师、API 工程师、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "后端团队需要在既有领域模型、接口契约和数据安全边界内交付变更。具体场景：外部回调缺少统一验签和时间窗口校验。",
+      "workflow": "向 Codex 提供服务仓库、API 契约、数据库结构、日志样本和测试命令；先追踪调用链和数据模型，写出兼容性与失败模式，再实现最小变更，补齐单元、集成和契约测试并输出迁移说明。目标产物：验签中间件、密钥轮换和回放测试。",
+      "outcome": "使用示例：团队可把这条模板用于“补齐 Webhook 签名与重放防护”，并按以下条件验收：验证篡改负载、旧时间戳、重复事件与双密钥过渡。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "116",
+      "title": "实现细粒度权限校验",
+      "section": "后端与 API 工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "platform"
+      ],
+      "industry": "后端服务与平台 API",
+      "roles": "后端工程师、API 工程师、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "后端团队需要在既有领域模型、接口契约和数据安全边界内交付变更。具体场景：接口只检查登录状态，未限制资源归属和操作范围。",
+      "workflow": "向 Codex 提供服务仓库、API 契约、数据库结构、日志样本和测试命令；先追踪调用链和数据模型，写出兼容性与失败模式，再实现最小变更，补齐单元、集成和契约测试并输出迁移说明。目标产物：授权策略、拒绝路径和审计日志。",
+      "outcome": "使用示例：团队可把这条模板用于“实现细粒度权限校验”，并按以下条件验收：覆盖跨租户访问、角色降级和批量操作。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "117",
+      "title": "把单体模块拆成独立服务",
+      "section": "后端与 API 工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "platform"
+      ],
+      "industry": "后端服务与平台 API",
+      "roles": "后端工程师、API 工程师、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "后端团队需要在既有领域模型、接口契约和数据安全边界内交付变更。具体场景：高变更模块拖慢整体发布且资源需求不同。",
+      "workflow": "向 Codex 提供服务仓库、API 契约、数据库结构、日志样本和测试命令；先追踪调用链和数据模型，写出兼容性与失败模式，再实现最小变更，补齐单元、集成和契约测试并输出迁移说明。目标产物：边界分析、抽取计划、兼容代理与回滚步骤。",
+      "outcome": "使用示例：团队可把这条模板用于“把单体模块拆成独立服务”，并按以下条件验收：验证数据一致性、双写期、流量切换和回滚。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "118",
+      "title": "为文件上传增加安全处理链",
+      "section": "后端与 API 工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "platform"
+      ],
+      "industry": "后端服务与平台 API",
+      "roles": "后端工程师、API 工程师、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "后端团队需要在既有领域模型、接口契约和数据安全边界内交付变更。具体场景：上传接口需要限制类型、大小、恶意内容和存储路径。",
+      "workflow": "向 Codex 提供服务仓库、API 契约、数据库结构、日志样本和测试命令；先追踪调用链和数据模型，写出兼容性与失败模式，再实现最小变更，补齐单元、集成和契约测试并输出迁移说明。目标产物：校验管线、隔离存储和失败清理机制。",
+      "outcome": "使用示例：团队可把这条模板用于“为文件上传增加安全处理链”，并按以下条件验收：测试伪造 MIME、超大文件、路径穿越和中断上传。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "119",
+      "title": "修复缓存与数据库不一致",
+      "section": "后端与 API 工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "platform"
+      ],
+      "industry": "后端服务与平台 API",
+      "roles": "后端工程师、API 工程师、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "后端团队需要在既有领域模型、接口契约和数据安全边界内交付变更。具体场景：更新后部分用户持续看到旧数据。",
+      "workflow": "向 Codex 提供服务仓库、API 契约、数据库结构、日志样本和测试命令；先追踪调用链和数据模型，写出兼容性与失败模式，再实现最小变更，补齐单元、集成和契约测试并输出迁移说明。目标产物：缓存键追踪、失效策略和一致性测试。",
+      "outcome": "使用示例：团队可把这条模板用于“修复缓存与数据库不一致”，并按以下条件验收：覆盖并发更新、缓存击穿、过期和跨节点传播。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "120",
+      "title": "生成并维护 OpenAPI 契约",
+      "section": "后端与 API 工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "platform"
+      ],
+      "industry": "后端服务与平台 API",
+      "roles": "后端工程师、API 工程师、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "后端团队需要在既有领域模型、接口契约和数据安全边界内交付变更。具体场景：接口实现与手写文档逐渐偏离。",
+      "workflow": "向 Codex 提供服务仓库、API 契约、数据库结构、日志样本和测试命令；先追踪调用链和数据模型，写出兼容性与失败模式，再实现最小变更，补齐单元、集成和契约测试并输出迁移说明。目标产物：从代码生成的契约、差异检查和 CI 门禁。",
+      "outcome": "使用示例：团队可把这条模板用于“生成并维护 OpenAPI 契约”，并按以下条件验收：验证示例、必填字段、错误响应和破坏性变更检测。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "121",
+      "title": "复现并修复 iOS 模拟器崩溃",
+      "section": "移动应用工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "iOS 与 Android 应用",
+      "roles": "移动端工程师、客户端架构师、产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "移动团队需要把设备状态、系统权限和多版本兼容纳入实现与验证。具体场景：特定导航路径在新系统版本中触发崩溃。",
+      "workflow": "向 Codex 提供移动端仓库、崩溃日志、系统版本矩阵、设计稿和模拟器；先复现设备或模拟器状态，定位最小代码路径，再实施修复并构建应用，最后保存截图、日志或录屏作为验收证据。目标产物：复现步骤、最小修复、构建日志与截图。",
+      "outcome": "使用示例：团队可把这条模板用于“复现并修复 iOS 模拟器崩溃”，并按以下条件验收：在问题版本和最低支持版本重复执行路径。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Debug in iOS simulator",
+        "url": "https://learn.chatgpt.com/use-cases/ios-simulator-bug-debugging",
+        "note": "OpenAI 官方 Codex + XcodeBuildMCP 实操；本组扩展为移动研发模板。"
+      }
+    },
+    {
+      "id": "122",
+      "title": "处理 Android 后台任务被系统终止",
+      "section": "移动应用工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "iOS 与 Android 应用",
+      "roles": "移动端工程师、客户端架构师、产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "移动团队需要把设备状态、系统权限和多版本兼容纳入实现与验证。具体场景：应用退到后台后上传任务不稳定完成。",
+      "workflow": "向 Codex 提供移动端仓库、崩溃日志、系统版本矩阵、设计稿和模拟器；先复现设备或模拟器状态，定位最小代码路径，再实施修复并构建应用，最后保存截图、日志或录屏作为验收证据。目标产物：生命周期分析、任务调度修改和设备测试记录。",
+      "outcome": "使用示例：团队可把这条模板用于“处理 Android 后台任务被系统终止”，并按以下条件验收：覆盖省电模式、断网恢复、进程重启和重复执行。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Debug in iOS simulator",
+        "url": "https://learn.chatgpt.com/use-cases/ios-simulator-bug-debugging",
+        "note": "OpenAI 官方 Codex + XcodeBuildMCP 实操；本组扩展为移动研发模板。"
+      }
+    },
+    {
+      "id": "123",
+      "title": "实现深色模式视觉适配",
+      "section": "移动应用工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "iOS 与 Android 应用",
+      "roles": "移动端工程师、客户端架构师、产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "移动团队需要把设备状态、系统权限和多版本兼容纳入实现与验证。具体场景：部分页面仍使用固定颜色导致对比度和图标不可见。",
+      "workflow": "向 Codex 提供移动端仓库、崩溃日志、系统版本矩阵、设计稿和模拟器；先复现设备或模拟器状态，定位最小代码路径，再实施修复并构建应用，最后保存截图、日志或录屏作为验收证据。目标产物：语义颜色映射、页面改动和主题截图。",
+      "outcome": "使用示例：团队可把这条模板用于“实现深色模式视觉适配”，并按以下条件验收：检查浅色、深色、高对比度与系统切换。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Debug in iOS simulator",
+        "url": "https://learn.chatgpt.com/use-cases/ios-simulator-bug-debugging",
+        "note": "OpenAI 官方 Codex + XcodeBuildMCP 实操；本组扩展为移动研发模板。"
+      }
+    },
+    {
+      "id": "124",
+      "title": "补齐推送通知跳转链路",
+      "section": "移动应用工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "iOS 与 Android 应用",
+      "roles": "移动端工程师、客户端架构师、产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "移动团队需要把设备状态、系统权限和多版本兼容纳入实现与验证。具体场景：点击不同通知无法稳定进入目标页面或恢复上下文。",
+      "workflow": "向 Codex 提供移动端仓库、崩溃日志、系统版本矩阵、设计稿和模拟器；先复现设备或模拟器状态，定位最小代码路径，再实施修复并构建应用，最后保存截图、日志或录屏作为验收证据。目标产物：通知路由、冷启动处理和回归用例。",
+      "outcome": "使用示例：团队可把这条模板用于“补齐推送通知跳转链路”，并按以下条件验收：覆盖前台、后台、被终止和无效参数。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Debug in iOS simulator",
+        "url": "https://learn.chatgpt.com/use-cases/ios-simulator-bug-debugging",
+        "note": "OpenAI 官方 Codex + XcodeBuildMCP 实操；本组扩展为移动研发模板。"
+      }
+    },
+    {
+      "id": "125",
+      "title": "迁移本地数据库结构",
+      "section": "移动应用工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "iOS 与 Android 应用",
+      "roles": "移动端工程师、客户端架构师、产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "移动团队需要把设备状态、系统权限和多版本兼容纳入实现与验证。具体场景：新版本需要增加字段且不能丢失离线数据。",
+      "workflow": "向 Codex 提供移动端仓库、崩溃日志、系统版本矩阵、设计稿和模拟器；先复现设备或模拟器状态，定位最小代码路径，再实施修复并构建应用，最后保存截图、日志或录屏作为验收证据。目标产物：迁移脚本、版本策略和回滚说明。",
+      "outcome": "使用示例：团队可把这条模板用于“迁移本地数据库结构”，并按以下条件验收：用旧版本样本验证升级、降级和中断恢复。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Debug in iOS simulator",
+        "url": "https://learn.chatgpt.com/use-cases/ios-simulator-bug-debugging",
+        "note": "OpenAI 官方 Codex + XcodeBuildMCP 实操；本组扩展为移动研发模板。"
+      }
+    },
+    {
+      "id": "126",
+      "title": "优化长列表滚动性能",
+      "section": "移动应用工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "iOS 与 Android 应用",
+      "roles": "移动端工程师、客户端架构师、产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "移动团队需要把设备状态、系统权限和多版本兼容纳入实现与验证。具体场景：低端设备滚动时掉帧并伴随内存上涨。",
+      "workflow": "向 Codex 提供移动端仓库、崩溃日志、系统版本矩阵、设计稿和模拟器；先复现设备或模拟器状态，定位最小代码路径，再实施修复并构建应用，最后保存截图、日志或录屏作为验收证据。目标产物：渲染分析、列表优化和性能对比。",
+      "outcome": "使用示例：团队可把这条模板用于“优化长列表滚动性能”，并按以下条件验收：记录帧率、内存、图片加载和快速滚动行为。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Debug in iOS simulator",
+        "url": "https://learn.chatgpt.com/use-cases/ios-simulator-bug-debugging",
+        "note": "OpenAI 官方 Codex + XcodeBuildMCP 实操；本组扩展为移动研发模板。"
+      }
+    },
+    {
+      "id": "127",
+      "title": "为相机权限设计完整降级",
+      "section": "移动应用工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "iOS 与 Android 应用",
+      "roles": "移动端工程师、客户端架构师、产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "移动团队需要把设备状态、系统权限和多版本兼容纳入实现与验证。具体场景：用户拒绝权限后流程卡死且缺少重新授权入口。",
+      "workflow": "向 Codex 提供移动端仓库、崩溃日志、系统版本矩阵、设计稿和模拟器；先复现设备或模拟器状态，定位最小代码路径，再实施修复并构建应用，最后保存截图、日志或录屏作为验收证据。目标产物：权限状态机、替代路径和设置页引导。",
+      "outcome": "使用示例：团队可把这条模板用于“为相机权限设计完整降级”，并按以下条件验收：覆盖首次询问、拒绝、永久拒绝和系统撤销。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Debug in iOS simulator",
+        "url": "https://learn.chatgpt.com/use-cases/ios-simulator-bug-debugging",
+        "note": "OpenAI 官方 Codex + XcodeBuildMCP 实操；本组扩展为移动研发模板。"
+      }
+    },
+    {
+      "id": "128",
+      "title": "修复多语言布局截断",
+      "section": "移动应用工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "iOS 与 Android 应用",
+      "roles": "移动端工程师、客户端架构师、产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "移动团队需要把设备状态、系统权限和多版本兼容纳入实现与验证。具体场景：德语、阿拉伯语等语言造成按钮或导航溢出。",
+      "workflow": "向 Codex 提供移动端仓库、崩溃日志、系统版本矩阵、设计稿和模拟器；先复现设备或模拟器状态，定位最小代码路径，再实施修复并构建应用，最后保存截图、日志或录屏作为验收证据。目标产物：弹性布局、RTL 适配和多语言截图。",
+      "outcome": "使用示例：团队可把这条模板用于“修复多语言布局截断”，并按以下条件验收：检查最长文案、动态字号、RTL 和小屏。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Debug in iOS simulator",
+        "url": "https://learn.chatgpt.com/use-cases/ios-simulator-bug-debugging",
+        "note": "OpenAI 官方 Codex + XcodeBuildMCP 实操；本组扩展为移动研发模板。"
+      }
+    },
+    {
+      "id": "129",
+      "title": "接入应用内购买沙盒流程",
+      "section": "移动应用工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "iOS 与 Android 应用",
+      "roles": "移动端工程师、客户端架构师、产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "移动团队需要把设备状态、系统权限和多版本兼容纳入实现与验证。具体场景：订阅购买、恢复和退款状态缺少端到端验证。",
+      "workflow": "向 Codex 提供移动端仓库、崩溃日志、系统版本矩阵、设计稿和模拟器；先复现设备或模拟器状态，定位最小代码路径，再实施修复并构建应用，最后保存截图、日志或录屏作为验收证据。目标产物：购买状态处理、服务端校验和测试记录。",
+      "outcome": "使用示例：团队可把这条模板用于“接入应用内购买沙盒流程”，并按以下条件验收：覆盖成功、取消、待处理、恢复购买和退款。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Debug in iOS simulator",
+        "url": "https://learn.chatgpt.com/use-cases/ios-simulator-bug-debugging",
+        "note": "OpenAI 官方 Codex + XcodeBuildMCP 实操；本组扩展为移动研发模板。"
+      }
+    },
+    {
+      "id": "130",
+      "title": "增加离线优先的数据同步",
+      "section": "移动应用工作流",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "product"
+      ],
+      "industry": "iOS 与 Android 应用",
+      "roles": "移动端工程师、客户端架构师、产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "移动团队需要把设备状态、系统权限和多版本兼容纳入实现与验证。具体场景：弱网环境下编辑可能丢失或产生冲突。",
+      "workflow": "向 Codex 提供移动端仓库、崩溃日志、系统版本矩阵、设计稿和模拟器；先复现设备或模拟器状态，定位最小代码路径，再实施修复并构建应用，最后保存截图、日志或录屏作为验收证据。目标产物：本地队列、冲突策略和同步状态 UI。",
+      "outcome": "使用示例：团队可把这条模板用于“增加离线优先的数据同步”，并按以下条件验收：模拟离线编辑、并发修改、重连和失败重试。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Debug in iOS simulator",
+        "url": "https://learn.chatgpt.com/use-cases/ios-simulator-bug-debugging",
+        "note": "OpenAI 官方 Codex + XcodeBuildMCP 实操；本组扩展为移动研发模板。"
+      }
+    },
+    {
+      "id": "131",
+      "title": "从需求生成风险导向测试矩阵",
+      "section": "测试与质量工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "developer",
+        "platform",
+        "product"
+      ],
+      "industry": "软件质量保障",
+      "roles": "QA 工程师、测试开发、研发负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "质量团队需要把需求风险转成可重复执行的自动化与可审计证据。具体场景：需求描述功能路径但遗漏边界、权限和失败模式。",
+      "workflow": "向 Codex 提供需求说明、代码差异、测试环境、历史缺陷和现有测试套件；先识别高风险路径与边界条件，再生成或修复测试，执行最小相关套件与完整回归，最后整理失败证据和剩余风险。目标产物：风险清单、测试矩阵与优先级。",
+      "outcome": "使用示例：团队可把这条模板用于“从需求生成风险导向测试矩阵”，并按以下条件验收：由产品和研发确认范围、数据条件和不可测试项。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex code review in GitHub",
+        "url": "https://learn.chatgpt.com/docs/third-party/github",
+        "note": "OpenAI 官方 Codex 代码审查文档；本组据其仓库指引与验证模式整理。"
+      }
+    },
+    {
+      "id": "132",
+      "title": "为遗留模块补特征测试",
+      "section": "测试与质量工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "developer",
+        "platform",
+        "product"
+      ],
+      "industry": "软件质量保障",
+      "roles": "QA 工程师、测试开发、研发负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "质量团队需要把需求风险转成可重复执行的自动化与可审计证据。具体场景：重构前缺少能锁定现有行为的测试。",
+      "workflow": "向 Codex 提供需求说明、代码差异、测试环境、历史缺陷和现有测试套件；先识别高风险路径与边界条件，再生成或修复测试，执行最小相关套件与完整回归，最后整理失败证据和剩余风险。目标产物：当前行为清单与特征测试套件。",
+      "outcome": "使用示例：团队可把这条模板用于“为遗留模块补特征测试”，并按以下条件验收：先在旧实现通过，再用故意变更确认测试能捕获差异。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex code review in GitHub",
+        "url": "https://learn.chatgpt.com/docs/third-party/github",
+        "note": "OpenAI 官方 Codex 代码审查文档；本组据其仓库指引与验证模式整理。"
+      }
+    },
+    {
+      "id": "133",
+      "title": "修复不稳定的端到端测试",
+      "section": "测试与质量工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "developer",
+        "platform",
+        "product"
+      ],
+      "industry": "软件质量保障",
+      "roles": "QA 工程师、测试开发、研发负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "质量团队需要把需求风险转成可重复执行的自动化与可审计证据。具体场景：同一用例在 CI 中随机失败且难以复现。",
+      "workflow": "向 Codex 提供需求说明、代码差异、测试环境、历史缺陷和现有测试套件；先识别高风险路径与边界条件，再生成或修复测试，执行最小相关套件与完整回归，最后整理失败证据和剩余风险。目标产物：失败聚类、根因修复和稳定性统计。",
+      "outcome": "使用示例：团队可把这条模板用于“修复不稳定的端到端测试”，并按以下条件验收：连续运行并区分产品缺陷、环境问题与等待策略。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex code review in GitHub",
+        "url": "https://learn.chatgpt.com/docs/third-party/github",
+        "note": "OpenAI 官方 Codex 代码审查文档；本组据其仓库指引与验证模式整理。"
+      }
+    },
+    {
+      "id": "134",
+      "title": "生成 API 契约回归测试",
+      "section": "测试与质量工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "developer",
+        "platform",
+        "product"
+      ],
+      "industry": "软件质量保障",
+      "roles": "QA 工程师、测试开发、研发负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "质量团队需要把需求风险转成可重复执行的自动化与可审计证据。具体场景：上下游团队独立发布导致字段兼容问题。",
+      "workflow": "向 Codex 提供需求说明、代码差异、测试环境、历史缺陷和现有测试套件；先识别高风险路径与边界条件，再生成或修复测试，执行最小相关套件与完整回归，最后整理失败证据和剩余风险。目标产物：消费者契约、提供者校验和 CI 集成。",
+      "outcome": "使用示例：团队可把这条模板用于“生成 API 契约回归测试”，并按以下条件验收：模拟缺字段、类型变化、错误码变化与版本并存。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex code review in GitHub",
+        "url": "https://learn.chatgpt.com/docs/third-party/github",
+        "note": "OpenAI 官方 Codex 代码审查文档；本组据其仓库指引与验证模式整理。"
+      }
+    },
+    {
+      "id": "135",
+      "title": "建立视觉回归基线",
+      "section": "测试与质量工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "developer",
+        "platform",
+        "product"
+      ],
+      "industry": "软件质量保障",
+      "roles": "QA 工程师、测试开发、研发负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "质量团队需要把需求风险转成可重复执行的自动化与可审计证据。具体场景：样式改动容易影响未直接修改的页面。",
+      "workflow": "向 Codex 提供需求说明、代码差异、测试环境、历史缺陷和现有测试套件；先识别高风险路径与边界条件，再生成或修复测试，执行最小相关套件与完整回归，最后整理失败证据和剩余风险。目标产物：关键视口截图集、差异阈值和审阅流程。",
+      "outcome": "使用示例：团队可把这条模板用于“建立视觉回归基线”，并按以下条件验收：检查字体、动画、动态数据和抗锯齿噪声。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex code review in GitHub",
+        "url": "https://learn.chatgpt.com/docs/third-party/github",
+        "note": "OpenAI 官方 Codex 代码审查文档；本组据其仓库指引与验证模式整理。"
+      }
+    },
+    {
+      "id": "136",
+      "title": "为数据迁移编写验证脚本",
+      "section": "测试与质量工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "developer",
+        "platform",
+        "product"
+      ],
+      "industry": "软件质量保障",
+      "roles": "QA 工程师、测试开发、研发负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "质量团队需要把需求风险转成可重复执行的自动化与可审计证据。具体场景：迁移完成不等于记录数量和业务关系正确。",
+      "workflow": "向 Codex 提供需求说明、代码差异、测试环境、历史缺陷和现有测试套件；先识别高风险路径与边界条件，再生成或修复测试，执行最小相关套件与完整回归，最后整理失败证据和剩余风险。目标产物：迁移前后对账脚本与异常报告。",
+      "outcome": "使用示例：团队可把这条模板用于“为数据迁移编写验证脚本”，并按以下条件验收：核对行数、唯一性、外键、金额汇总和抽样记录。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex code review in GitHub",
+        "url": "https://learn.chatgpt.com/docs/third-party/github",
+        "note": "OpenAI 官方 Codex 代码审查文档；本组据其仓库指引与验证模式整理。"
+      }
+    },
+    {
+      "id": "137",
+      "title": "压测突发流量下的关键接口",
+      "section": "测试与质量工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "developer",
+        "platform",
+        "product"
+      ],
+      "industry": "软件质量保障",
+      "roles": "QA 工程师、测试开发、研发负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "质量团队需要把需求风险转成可重复执行的自动化与可审计证据。具体场景：容量评估只有平均流量，缺少峰值和降级数据。",
+      "workflow": "向 Codex 提供需求说明、代码差异、测试环境、历史缺陷和现有测试套件；先识别高风险路径与边界条件，再生成或修复测试，执行最小相关套件与完整回归，最后整理失败证据和剩余风险。目标产物：负载模型、压测脚本和瓶颈报告。",
+      "outcome": "使用示例：团队可把这条模板用于“压测突发流量下的关键接口”，并按以下条件验收：监测延迟、错误率、资源、队列和恢复时间。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex code review in GitHub",
+        "url": "https://learn.chatgpt.com/docs/third-party/github",
+        "note": "OpenAI 官方 Codex 代码审查文档；本组据其仓库指引与验证模式整理。"
+      }
+    },
+    {
+      "id": "138",
+      "title": "复核缺陷修复的影响范围",
+      "section": "测试与质量工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "developer",
+        "platform",
+        "product"
+      ],
+      "industry": "软件质量保障",
+      "roles": "QA 工程师、测试开发、研发负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "质量团队需要把需求风险转成可重复执行的自动化与可审计证据。具体场景：补丁解决主路径但可能引入相邻功能回归。",
+      "workflow": "向 Codex 提供需求说明、代码差异、测试环境、历史缺陷和现有测试套件；先识别高风险路径与边界条件，再生成或修复测试，执行最小相关套件与完整回归，最后整理失败证据和剩余风险。目标产物：影响图、定向用例和回归结果。",
+      "outcome": "使用示例：团队可把这条模板用于“复核缺陷修复的影响范围”，并按以下条件验收：从调用方、共享状态和相同数据模型反向核对。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex code review in GitHub",
+        "url": "https://learn.chatgpt.com/docs/third-party/github",
+        "note": "OpenAI 官方 Codex 代码审查文档；本组据其仓库指引与验证模式整理。"
+      }
+    },
+    {
+      "id": "139",
+      "title": "为权限模型建立负向测试",
+      "section": "测试与质量工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "developer",
+        "platform",
+        "product"
+      ],
+      "industry": "软件质量保障",
+      "roles": "QA 工程师、测试开发、研发负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "质量团队需要把需求风险转成可重复执行的自动化与可审计证据。具体场景：正向操作已覆盖，但越权和租户隔离缺少系统测试。",
+      "workflow": "向 Codex 提供需求说明、代码差异、测试环境、历史缺陷和现有测试套件；先识别高风险路径与边界条件，再生成或修复测试，执行最小相关套件与完整回归，最后整理失败证据和剩余风险。目标产物：权限矩阵与拒绝用例集。",
+      "outcome": "使用示例：团队可把这条模板用于“为权限模型建立负向测试”，并按以下条件验收：确保拒绝响应不泄露资源存在性和敏感字段。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex code review in GitHub",
+        "url": "https://learn.chatgpt.com/docs/third-party/github",
+        "note": "OpenAI 官方 Codex 代码审查文档；本组据其仓库指引与验证模式整理。"
+      }
+    },
+    {
+      "id": "140",
+      "title": "自动整理发布验收证据",
+      "section": "测试与质量工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "developer",
+        "platform",
+        "product"
+      ],
+      "industry": "软件质量保障",
+      "roles": "QA 工程师、测试开发、研发负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "质量团队需要把需求风险转成可重复执行的自动化与可审计证据。具体场景：发布前截图、日志和测试结果分散在不同工具。",
+      "workflow": "向 Codex 提供需求说明、代码差异、测试环境、历史缺陷和现有测试套件；先识别高风险路径与边界条件，再生成或修复测试，执行最小相关套件与完整回归，最后整理失败证据和剩余风险。目标产物：按需求编号归档的验收包。",
+      "outcome": "使用示例：团队可把这条模板用于“自动整理发布验收证据”，并按以下条件验收：检查证据时间、环境、版本、责任人与失败项闭环。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex code review in GitHub",
+        "url": "https://learn.chatgpt.com/docs/third-party/github",
+        "note": "OpenAI 官方 Codex 代码审查文档；本组据其仓库指引与验证模式整理。"
+      }
+    },
+    {
+      "id": "141",
+      "title": "审查身份认证流程",
+      "section": "安全工程工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "professional"
+      ],
+      "industry": "应用与基础设施安全",
+      "roles": "安全工程师、应用安全、平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "安全团队需要在明确授权范围内识别风险并给出可验证、可回滚的修复。具体场景：登录、刷新令牌和退出路径涉及多处状态与密钥处理。",
+      "workflow": "向 Codex 提供授权范围、代码仓库、依赖清单、配置、日志和威胁模型；先确认测试授权和资产边界，进行静态分析与配置审查，再按严重度提出最小修复，执行安全测试并记录无法覆盖的风险。目标产物：认证数据流图、风险清单和修复补丁。",
+      "outcome": "使用示例：团队可把这条模板用于“审查身份认证流程”，并按以下条件验收：测试令牌过期、重放、注销、并发设备和错误信息。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Sandbox",
+        "url": "https://learn.chatgpt.com/docs/sandboxing",
+        "note": "OpenAI 官方 Codex 沙箱与权限边界文档；本组为授权范围内的安全审查模板。"
+      }
+    },
+    {
+      "id": "142",
+      "title": "排查仓库中的密钥泄露",
+      "section": "安全工程工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "professional"
+      ],
+      "industry": "应用与基础设施安全",
+      "roles": "安全工程师、应用安全、平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "安全团队需要在明确授权范围内识别风险并给出可验证、可回滚的修复。具体场景：历史提交、配置样例或测试夹具可能包含凭据。",
+      "workflow": "向 Codex 提供授权范围、代码仓库、依赖清单、配置、日志和威胁模型；先确认测试授权和资产边界，进行静态分析与配置审查，再按严重度提出最小修复，执行安全测试并记录无法覆盖的风险。目标产物：扫描结果、轮换清单和防复发规则。",
+      "outcome": "使用示例：团队可把这条模板用于“排查仓库中的密钥泄露”，并按以下条件验收：区分真实密钥与假数据，并确认泄露凭据已失效。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Sandbox",
+        "url": "https://learn.chatgpt.com/docs/sandboxing",
+        "note": "OpenAI 官方 Codex 沙箱与权限边界文档；本组为授权范围内的安全审查模板。"
+      }
+    },
+    {
+      "id": "143",
+      "title": "修复高危依赖漏洞",
+      "section": "安全工程工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "professional"
+      ],
+      "industry": "应用与基础设施安全",
+      "roles": "安全工程师、应用安全、平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "安全团队需要在明确授权范围内识别风险并给出可验证、可回滚的修复。具体场景：安全公告命中核心依赖但升级可能带来破坏性变化。",
+      "workflow": "向 Codex 提供授权范围、代码仓库、依赖清单、配置、日志和威胁模型；先确认测试授权和资产边界，进行静态分析与配置审查，再按严重度提出最小修复，执行安全测试并记录无法覆盖的风险。目标产物：可达性分析、升级补丁和回归结果。",
+      "outcome": "使用示例：团队可把这条模板用于“修复高危依赖漏洞”，并按以下条件验收：验证漏洞路径、锁文件、间接依赖和运行时兼容。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Sandbox",
+        "url": "https://learn.chatgpt.com/docs/sandboxing",
+        "note": "OpenAI 官方 Codex 沙箱与权限边界文档；本组为授权范围内的安全审查模板。"
+      }
+    },
+    {
+      "id": "144",
+      "title": "建立接口威胁模型",
+      "section": "安全工程工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "professional"
+      ],
+      "industry": "应用与基础设施安全",
+      "roles": "安全工程师、应用安全、平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "安全团队需要在明确授权范围内识别风险并给出可验证、可回滚的修复。具体场景：新接口处理敏感数据但设计评审缺少攻击视角。",
+      "workflow": "向 Codex 提供授权范围、代码仓库、依赖清单、配置、日志和威胁模型；先确认测试授权和资产边界，进行静态分析与配置审查，再按严重度提出最小修复，执行安全测试并记录无法覆盖的风险。目标产物：资产、信任边界、滥用场景和缓解措施。",
+      "outcome": "使用示例：团队可把这条模板用于“建立接口威胁模型”，并按以下条件验收：由系统所有者确认数据流、权限和剩余风险。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Sandbox",
+        "url": "https://learn.chatgpt.com/docs/sandboxing",
+        "note": "OpenAI 官方 Codex 沙箱与权限边界文档；本组为授权范围内的安全审查模板。"
+      }
+    },
+    {
+      "id": "145",
+      "title": "审查云资源最小权限",
+      "section": "安全工程工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "professional"
+      ],
+      "industry": "应用与基础设施安全",
+      "roles": "安全工程师、应用安全、平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "安全团队需要在明确授权范围内识别风险并给出可验证、可回滚的修复。具体场景：服务账号权限长期累积，实际使用范围不清。",
+      "workflow": "向 Codex 提供授权范围、代码仓库、依赖清单、配置、日志和威胁模型；先确认测试授权和资产边界，进行静态分析与配置审查，再按严重度提出最小修复，执行安全测试并记录无法覆盖的风险。目标产物：权限使用映射与收敛方案。",
+      "outcome": "使用示例：团队可把这条模板用于“审查云资源最小权限”，并按以下条件验收：先用审计日志验证调用，再分阶段降权并保留回滚。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Sandbox",
+        "url": "https://learn.chatgpt.com/docs/sandboxing",
+        "note": "OpenAI 官方 Codex 沙箱与权限边界文档；本组为授权范围内的安全审查模板。"
+      }
+    },
+    {
+      "id": "146",
+      "title": "检查日志中的敏感信息",
+      "section": "安全工程工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "professional"
+      ],
+      "industry": "应用与基础设施安全",
+      "roles": "安全工程师、应用安全、平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "安全团队需要在明确授权范围内识别风险并给出可验证、可回滚的修复。具体场景：错误日志可能记录令牌、个人信息或请求正文。",
+      "workflow": "向 Codex 提供授权范围、代码仓库、依赖清单、配置、日志和威胁模型；先确认测试授权和资产边界，进行静态分析与配置审查，再按严重度提出最小修复，执行安全测试并记录无法覆盖的风险。目标产物：敏感字段清单、脱敏中间件和测试。",
+      "outcome": "使用示例：团队可把这条模板用于“检查日志中的敏感信息”，并按以下条件验收：用构造样本检查应用日志、网关日志和追踪系统。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Sandbox",
+        "url": "https://learn.chatgpt.com/docs/sandboxing",
+        "note": "OpenAI 官方 Codex 沙箱与权限边界文档；本组为授权范围内的安全审查模板。"
+      }
+    },
+    {
+      "id": "147",
+      "title": "加固文件解析服务",
+      "section": "安全工程工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "professional"
+      ],
+      "industry": "应用与基础设施安全",
+      "roles": "安全工程师、应用安全、平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "安全团队需要在明确授权范围内识别风险并给出可验证、可回滚的修复。具体场景：外部上传的文档会进入高权限解析进程。",
+      "workflow": "向 Codex 提供授权范围、代码仓库、依赖清单、配置、日志和威胁模型；先确认测试授权和资产边界，进行静态分析与配置审查，再按严重度提出最小修复，执行安全测试并记录无法覆盖的风险。目标产物：隔离架构、资源限制和恶意样本测试。",
+      "outcome": "使用示例：团队可把这条模板用于“加固文件解析服务”，并按以下条件验收：覆盖压缩炸弹、超时、路径穿越和解析器崩溃。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Sandbox",
+        "url": "https://learn.chatgpt.com/docs/sandboxing",
+        "note": "OpenAI 官方 Codex 沙箱与权限边界文档；本组为授权范围内的安全审查模板。"
+      }
+    },
+    {
+      "id": "148",
+      "title": "复核安全响应头与浏览器策略",
+      "section": "安全工程工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "professional"
+      ],
+      "industry": "应用与基础设施安全",
+      "roles": "安全工程师、应用安全、平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "安全团队需要在明确授权范围内识别风险并给出可验证、可回滚的修复。具体场景：站点缺少一致的 CSP、HSTS 和嵌入限制。",
+      "workflow": "向 Codex 提供授权范围、代码仓库、依赖清单、配置、日志和威胁模型；先确认测试授权和资产边界，进行静态分析与配置审查，再按严重度提出最小修复，执行安全测试并记录无法覆盖的风险。目标产物：响应头基线、部署修改和兼容报告。",
+      "outcome": "使用示例：团队可把这条模板用于“复核安全响应头与浏览器策略”，并按以下条件验收：在报告模式观察违规，再逐步收紧并测试第三方资源。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Sandbox",
+        "url": "https://learn.chatgpt.com/docs/sandboxing",
+        "note": "OpenAI 官方 Codex 沙箱与权限边界文档；本组为授权范围内的安全审查模板。"
+      }
+    },
+    {
+      "id": "149",
+      "title": "为支付流程做滥用案例审查",
+      "section": "安全工程工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "professional"
+      ],
+      "industry": "应用与基础设施安全",
+      "roles": "安全工程师、应用安全、平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "安全团队需要在明确授权范围内识别风险并给出可验证、可回滚的修复。具体场景：优惠、退款和重试逻辑可能被组合利用。",
+      "workflow": "向 Codex 提供授权范围、代码仓库、依赖清单、配置、日志和威胁模型；先确认测试授权和资产边界，进行静态分析与配置审查，再按严重度提出最小修复，执行安全测试并记录无法覆盖的风险。目标产物：滥用路径、监控信号和限制措施。",
+      "outcome": "使用示例：团队可把这条模板用于“为支付流程做滥用案例审查”，并按以下条件验收：用测试账户验证频率限制、幂等、金额边界和审计。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Sandbox",
+        "url": "https://learn.chatgpt.com/docs/sandboxing",
+        "note": "OpenAI 官方 Codex 沙箱与权限边界文档；本组为授权范围内的安全审查模板。"
+      }
+    },
+    {
+      "id": "150",
+      "title": "生成事件响应运行手册",
+      "section": "安全工程工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "professional"
+      ],
+      "industry": "应用与基础设施安全",
+      "roles": "安全工程师、应用安全、平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "安全团队需要在明确授权范围内识别风险并给出可验证、可回滚的修复。具体场景：凭据泄露或数据异常发生时缺少一致处置步骤。",
+      "workflow": "向 Codex 提供授权范围、代码仓库、依赖清单、配置、日志和威胁模型；先确认测试授权和资产边界，进行静态分析与配置审查，再按严重度提出最小修复，执行安全测试并记录无法覆盖的风险。目标产物：分级、隔离、取证、通知和恢复清单。",
+      "outcome": "使用示例：团队可把这条模板用于“生成事件响应运行手册”，并按以下条件验收：通过桌面演练验证联系人、权限、日志保留和升级路径。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Sandbox",
+        "url": "https://learn.chatgpt.com/docs/sandboxing",
+        "note": "OpenAI 官方 Codex 沙箱与权限边界文档；本组为授权范围内的安全审查模板。"
+      }
+    },
+    {
+      "id": "151",
+      "title": "把手工部署改成可回滚流水线",
+      "section": "DevOps 与 SRE 工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "operations"
+      ],
+      "industry": "云平台与可靠性工程",
+      "roles": "SRE、DevOps、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "平台团队需要在不中断核心业务的前提下提高部署、观测和故障恢复能力。具体场景：发布依赖个人命令且缺少一致的检查与回滚。",
+      "workflow": "向 Codex 提供基础设施代码、部署清单、监控指标、日志、变更记录和运行手册；先读取服务拓扑和当前保护措施，提出分阶段变更与回滚条件，再在低风险环境验证，执行自动化检查并输出运行手册更新。目标产物：CI/CD 流水线、审批点和回滚步骤。",
+      "outcome": "使用示例：团队可把这条模板用于“把手工部署改成可回滚流水线”，并按以下条件验收：在预发演练成功、失败、取消和回滚路径。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Hooks",
+        "url": "https://learn.chatgpt.com/docs/hooks",
+        "note": "OpenAI 官方 Codex Hooks 文档；本组利用可验证、可拦截的工程流程模式。"
+      }
+    },
+    {
+      "id": "152",
+      "title": "为服务定义 SLO 与告警",
+      "section": "DevOps 与 SRE 工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "operations"
+      ],
+      "industry": "云平台与可靠性工程",
+      "roles": "SRE、DevOps、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "平台团队需要在不中断核心业务的前提下提高部署、观测和故障恢复能力。具体场景：告警数量很多但不能反映用户影响。",
+      "workflow": "向 Codex 提供基础设施代码、部署清单、监控指标、日志、变更记录和运行手册；先读取服务拓扑和当前保护措施，提出分阶段变更与回滚条件，再在低风险环境验证，执行自动化检查并输出运行手册更新。目标产物：SLI 查询、SLO 目标和多窗口告警。",
+      "outcome": "使用示例：团队可把这条模板用于“为服务定义 SLO 与告警”，并按以下条件验收：用历史故障回放检查灵敏度和噪声。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Hooks",
+        "url": "https://learn.chatgpt.com/docs/hooks",
+        "note": "OpenAI 官方 Codex Hooks 文档；本组利用可验证、可拦截的工程流程模式。"
+      }
+    },
+    {
+      "id": "153",
+      "title": "排查 Kubernetes Pod 反复重启",
+      "section": "DevOps 与 SRE 工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "operations"
+      ],
+      "industry": "云平台与可靠性工程",
+      "roles": "SRE、DevOps、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "平台团队需要在不中断核心业务的前提下提高部署、观测和故障恢复能力。具体场景：容器间歇退出但单次日志不足以解释根因。",
+      "workflow": "向 Codex 提供基础设施代码、部署清单、监控指标、日志、变更记录和运行手册；先读取服务拓扑和当前保护措施，提出分阶段变更与回滚条件，再在低风险环境验证，执行自动化检查并输出运行手册更新。目标产物：事件时间线、根因假设和配置修复。",
+      "outcome": "使用示例：团队可把这条模板用于“排查 Kubernetes Pod 反复重启”，并按以下条件验收：核对退出码、探针、资源限制、依赖和节点事件。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Hooks",
+        "url": "https://learn.chatgpt.com/docs/hooks",
+        "note": "OpenAI 官方 Codex Hooks 文档；本组利用可验证、可拦截的工程流程模式。"
+      }
+    },
+    {
+      "id": "154",
+      "title": "设计蓝绿发布方案",
+      "section": "DevOps 与 SRE 工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "operations"
+      ],
+      "industry": "云平台与可靠性工程",
+      "roles": "SRE、DevOps、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "平台团队需要在不中断核心业务的前提下提高部署、观测和故障恢复能力。具体场景：高风险版本需要快速切换且数据库变更必须兼容。",
+      "workflow": "向 Codex 提供基础设施代码、部署清单、监控指标、日志、变更记录和运行手册；先读取服务拓扑和当前保护措施，提出分阶段变更与回滚条件，再在低风险环境验证，执行自动化检查并输出运行手册更新。目标产物：流量切换、双版本兼容和回滚清单。",
+      "outcome": "使用示例：团队可把这条模板用于“设计蓝绿发布方案”，并按以下条件验收：演练健康检查失败、部分流量异常和数据库回退限制。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Hooks",
+        "url": "https://learn.chatgpt.com/docs/hooks",
+        "note": "OpenAI 官方 Codex Hooks 文档；本组利用可验证、可拦截的工程流程模式。"
+      }
+    },
+    {
+      "id": "155",
+      "title": "优化云成本异常",
+      "section": "DevOps 与 SRE 工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "operations"
+      ],
+      "industry": "云平台与可靠性工程",
+      "roles": "SRE、DevOps、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "平台团队需要在不中断核心业务的前提下提高部署、观测和故障恢复能力。具体场景：某类资源费用持续上涨但业务流量没有同步增长。",
+      "workflow": "向 Codex 提供基础设施代码、部署清单、监控指标、日志、变更记录和运行手册；先读取服务拓扑和当前保护措施，提出分阶段变更与回滚条件，再在低风险环境验证，执行自动化检查并输出运行手册更新。目标产物：成本拆分、闲置资源清单和分阶段优化。",
+      "outcome": "使用示例：团队可把这条模板用于“优化云成本异常”，并按以下条件验收：比较账单、利用率、性能和承诺折扣约束。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Hooks",
+        "url": "https://learn.chatgpt.com/docs/hooks",
+        "note": "OpenAI 官方 Codex Hooks 文档；本组利用可验证、可拦截的工程流程模式。"
+      }
+    },
+    {
+      "id": "156",
+      "title": "建立可观测性字段规范",
+      "section": "DevOps 与 SRE 工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "operations"
+      ],
+      "industry": "云平台与可靠性工程",
+      "roles": "SRE、DevOps、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "平台团队需要在不中断核心业务的前提下提高部署、观测和故障恢复能力。具体场景：日志和追踪字段不一致，跨服务排障困难。",
+      "workflow": "向 Codex 提供基础设施代码、部署清单、监控指标、日志、变更记录和运行手册；先读取服务拓扑和当前保护措施，提出分阶段变更与回滚条件，再在低风险环境验证，执行自动化检查并输出运行手册更新。目标产物：字段字典、埋点修改和查询示例。",
+      "outcome": "使用示例：团队可把这条模板用于“建立可观测性字段规范”，并按以下条件验收：验证请求 ID、租户、错误码和隐私字段贯通。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Hooks",
+        "url": "https://learn.chatgpt.com/docs/hooks",
+        "note": "OpenAI 官方 Codex Hooks 文档；本组利用可验证、可拦截的工程流程模式。"
+      }
+    },
+    {
+      "id": "157",
+      "title": "自动化证书到期治理",
+      "section": "DevOps 与 SRE 工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "operations"
+      ],
+      "industry": "云平台与可靠性工程",
+      "roles": "SRE、DevOps、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "平台团队需要在不中断核心业务的前提下提高部署、观测和故障恢复能力。具体场景：多环境证书分散管理，人工提醒容易漏掉。",
+      "workflow": "向 Codex 提供基础设施代码、部署清单、监控指标、日志、变更记录和运行手册；先读取服务拓扑和当前保护措施，提出分阶段变更与回滚条件，再在低风险环境验证，执行自动化检查并输出运行手册更新。目标产物：发现脚本、分级提醒和续签验证。",
+      "outcome": "使用示例：团队可把这条模板用于“自动化证书到期治理”，并按以下条件验收：覆盖通配符、链证书、失败续签和时钟偏差。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Hooks",
+        "url": "https://learn.chatgpt.com/docs/hooks",
+        "note": "OpenAI 官方 Codex Hooks 文档；本组利用可验证、可拦截的工程流程模式。"
+      }
+    },
+    {
+      "id": "158",
+      "title": "演练区域级故障切换",
+      "section": "DevOps 与 SRE 工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "operations"
+      ],
+      "industry": "云平台与可靠性工程",
+      "roles": "SRE、DevOps、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "平台团队需要在不中断核心业务的前提下提高部署、观测和故障恢复能力。具体场景：灾备配置存在但从未验证完整恢复时间。",
+      "workflow": "向 Codex 提供基础设施代码、部署清单、监控指标、日志、变更记录和运行手册；先读取服务拓扑和当前保护措施，提出分阶段变更与回滚条件，再在低风险环境验证，执行自动化检查并输出运行手册更新。目标产物：演练计划、切换脚本和问题清单。",
+      "outcome": "使用示例：团队可把这条模板用于“演练区域级故障切换”，并按以下条件验收：记录 RTO、RPO、DNS、数据复制和回切步骤。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Hooks",
+        "url": "https://learn.chatgpt.com/docs/hooks",
+        "note": "OpenAI 官方 Codex Hooks 文档；本组利用可验证、可拦截的工程流程模式。"
+      }
+    },
+    {
+      "id": "159",
+      "title": "缩短 CI 构建时间",
+      "section": "DevOps 与 SRE 工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "operations"
+      ],
+      "industry": "云平台与可靠性工程",
+      "roles": "SRE、DevOps、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "平台团队需要在不中断核心业务的前提下提高部署、观测和故障恢复能力。具体场景：流水线增长导致反馈周期过长且缓存命中低。",
+      "workflow": "向 Codex 提供基础设施代码、部署清单、监控指标、日志、变更记录和运行手册；先读取服务拓扑和当前保护措施，提出分阶段变更与回滚条件，再在低风险环境验证，执行自动化检查并输出运行手册更新。目标产物：耗时剖析、并行与缓存优化。",
+      "outcome": "使用示例：团队可把这条模板用于“缩短 CI 构建时间”，并按以下条件验收：比较冷缓存、热缓存、失败重跑和产物一致性。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Hooks",
+        "url": "https://learn.chatgpt.com/docs/hooks",
+        "note": "OpenAI 官方 Codex Hooks 文档；本组利用可验证、可拦截的工程流程模式。"
+      }
+    },
+    {
+      "id": "160",
+      "title": "从事故记录更新运行手册",
+      "section": "DevOps 与 SRE 工作流",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "developer",
+        "operations"
+      ],
+      "industry": "云平台与可靠性工程",
+      "roles": "SRE、DevOps、平台工程师",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "平台团队需要在不中断核心业务的前提下提高部署、观测和故障恢复能力。具体场景：复盘行动项未沉淀到值班可执行步骤。",
+      "workflow": "向 Codex 提供基础设施代码、部署清单、监控指标、日志、变更记录和运行手册；先读取服务拓扑和当前保护措施，提出分阶段变更与回滚条件，再在低风险环境验证，执行自动化检查并输出运行手册更新。目标产物：触发条件、诊断命令、决策树和升级联系人。",
+      "outcome": "使用示例：团队可把这条模板用于“从事故记录更新运行手册”，并按以下条件验收：让未参与事故的值班人员按手册完成演练。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Hooks",
+        "url": "https://learn.chatgpt.com/docs/hooks",
+        "note": "OpenAI 官方 Codex Hooks 文档；本组利用可验证、可拦截的工程流程模式。"
+      }
+    },
+    {
+      "id": "161",
+      "title": "搭建增量数据同步管道",
+      "section": "数据工程工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "platform",
+        "developer"
+      ],
+      "industry": "数据平台与治理",
+      "roles": "数据工程师、分析工程师、数据平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "数据团队需要让采集、转换、质量和血缘在同一条可追踪链路中运行。具体场景：全量同步耗时增长且源库压力过高。",
+      "workflow": "向 Codex 提供数据字典、源表样本、管道代码、调度日志和质量规则；先分析源到目标的字段与依赖，明确增量和失败语义，再实现管道与质量检查，回放样本并输出血缘、监控和恢复说明。目标产物：增量游标、去重逻辑和补数流程。",
+      "outcome": "使用示例：团队可把这条模板用于“搭建增量数据同步管道”，并按以下条件验收：验证迟到数据、删除、重复事件和游标回退。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "162",
+      "title": "修复指标口径漂移",
+      "section": "数据工程工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "platform",
+        "developer"
+      ],
+      "industry": "数据平台与治理",
+      "roles": "数据工程师、分析工程师、数据平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "数据团队需要让采集、转换、质量和血缘在同一条可追踪链路中运行。具体场景：不同看板对同一指标给出不同结果。",
+      "workflow": "向 Codex 提供数据字典、源表样本、管道代码、调度日志和质量规则；先分析源到目标的字段与依赖，明确增量和失败语义，再实现管道与质量检查，回放样本并输出血缘、监控和恢复说明。目标产物：口径对照、统一模型和回归查询。",
+      "outcome": "使用示例：团队可把这条模板用于“修复指标口径漂移”，并按以下条件验收：用固定样本核对时间范围、去重、时区和空值。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "163",
+      "title": "为关键表增加数据质量门禁",
+      "section": "数据工程工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "platform",
+        "developer"
+      ],
+      "industry": "数据平台与治理",
+      "roles": "数据工程师、分析工程师、数据平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "数据团队需要让采集、转换、质量和血缘在同一条可追踪链路中运行。具体场景：异常数据进入下游后才被业务发现。",
+      "workflow": "向 Codex 提供数据字典、源表样本、管道代码、调度日志和质量规则；先分析源到目标的字段与依赖，明确增量和失败语义，再实现管道与质量检查，回放样本并输出血缘、监控和恢复说明。目标产物：完整性、唯一性、及时性和范围检查。",
+      "outcome": "使用示例：团队可把这条模板用于“为关键表增加数据质量门禁”，并按以下条件验收：注入坏数据验证阻断、告警和恢复流程。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "164",
+      "title": "迁移批处理任务到新调度器",
+      "section": "数据工程工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "platform",
+        "developer"
+      ],
+      "industry": "数据平台与治理",
+      "roles": "数据工程师、分析工程师、数据平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "数据团队需要让采集、转换、质量和血缘在同一条可追踪链路中运行。具体场景：旧调度平台即将下线且依赖关系复杂。",
+      "workflow": "向 Codex 提供数据字典、源表样本、管道代码、调度日志和质量规则；先分析源到目标的字段与依赖，明确增量和失败语义，再实现管道与质量检查，回放样本并输出血缘、监控和恢复说明。目标产物：任务映射、并行迁移和回退计划。",
+      "outcome": "使用示例：团队可把这条模板用于“迁移批处理任务到新调度器”，并按以下条件验收：对比运行时、产出分区、重试和补数行为。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "165",
+      "title": "解析半结构化事件日志",
+      "section": "数据工程工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "platform",
+        "developer"
+      ],
+      "industry": "数据平台与治理",
+      "roles": "数据工程师、分析工程师、数据平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "数据团队需要让采集、转换、质量和血缘在同一条可追踪链路中运行。具体场景：同一事件版本字段不稳定且嵌套层级不同。",
+      "workflow": "向 Codex 提供数据字典、源表样本、管道代码、调度日志和质量规则；先分析源到目标的字段与依赖，明确增量和失败语义，再实现管道与质量检查，回放样本并输出血缘、监控和恢复说明。目标产物：版本化解析器、坏记录隔离和结构化表。",
+      "outcome": "使用示例：团队可把这条模板用于“解析半结构化事件日志”，并按以下条件验收：覆盖旧版本、未知字段、损坏记录和超大载荷。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "166",
+      "title": "建立端到端数据血缘",
+      "section": "数据工程工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "platform",
+        "developer"
+      ],
+      "industry": "数据平台与治理",
+      "roles": "数据工程师、分析工程师、数据平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "数据团队需要让采集、转换、质量和血缘在同一条可追踪链路中运行。具体场景：字段问题难以追踪到源系统和下游报表。",
+      "workflow": "向 Codex 提供数据字典、源表样本、管道代码、调度日志和质量规则；先分析源到目标的字段与依赖，明确增量和失败语义，再实现管道与质量检查，回放样本并输出血缘、监控和恢复说明。目标产物：表级与字段级血缘、责任人和影响查询。",
+      "outcome": "使用示例：团队可把这条模板用于“建立端到端数据血缘”，并按以下条件验收：抽查关键指标能否反向定位转换与源字段。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "167",
+      "title": "优化 Spark 作业资源使用",
+      "section": "数据工程工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "platform",
+        "developer"
+      ],
+      "industry": "数据平台与治理",
+      "roles": "数据工程师、分析工程师、数据平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "数据团队需要让采集、转换、质量和血缘在同一条可追踪链路中运行。具体场景：作业耗时和成本上涨并频繁发生数据倾斜。",
+      "workflow": "向 Codex 提供数据字典、源表样本、管道代码、调度日志和质量规则；先分析源到目标的字段与依赖，明确增量和失败语义，再实现管道与质量检查，回放样本并输出血缘、监控和恢复说明。目标产物：执行计划分析、分区调整和基准报告。",
+      "outcome": "使用示例：团队可把这条模板用于“优化 Spark 作业资源使用”，并按以下条件验收：比较不同数据规模、倾斜键、内存和 shuffle。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "168",
+      "title": "实现隐私字段分级与脱敏",
+      "section": "数据工程工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "platform",
+        "developer"
+      ],
+      "industry": "数据平台与治理",
+      "roles": "数据工程师、分析工程师、数据平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "数据团队需要让采集、转换、质量和血缘在同一条可追踪链路中运行。具体场景：分析环境包含不同敏感等级的数据。",
+      "workflow": "向 Codex 提供数据字典、源表样本、管道代码、调度日志和质量规则；先分析源到目标的字段与依赖，明确增量和失败语义，再实现管道与质量检查，回放样本并输出血缘、监控和恢复说明。目标产物：字段分类、访问策略和脱敏视图。",
+      "outcome": "使用示例：团队可把这条模板用于“实现隐私字段分级与脱敏”，并按以下条件验收：验证角色权限、导出、日志和下游缓存。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "169",
+      "title": "设计可重跑的数据回填流程",
+      "section": "数据工程工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "platform",
+        "developer"
+      ],
+      "industry": "数据平台与治理",
+      "roles": "数据工程师、分析工程师、数据平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "数据团队需要让采集、转换、质量和血缘在同一条可追踪链路中运行。具体场景：历史逻辑修正需要重算多月数据且不能覆盖正确结果。",
+      "workflow": "向 Codex 提供数据字典、源表样本、管道代码、调度日志和质量规则；先分析源到目标的字段与依赖，明确增量和失败语义，再实现管道与质量检查，回放样本并输出血缘、监控和恢复说明。目标产物：范围选择、幂等写入和核对报告。",
+      "outcome": "使用示例：团队可把这条模板用于“设计可重跑的数据回填流程”，并按以下条件验收：先小分区演练，再检查重复、并发和下游刷新。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "170",
+      "title": "为数据管道增加成本可观测性",
+      "section": "数据工程工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "platform",
+        "developer"
+      ],
+      "industry": "数据平台与治理",
+      "roles": "数据工程师、分析工程师、数据平台负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "数据团队需要让采集、转换、质量和血缘在同一条可追踪链路中运行。具体场景：团队无法把仓储费用归因到任务和业务域。",
+      "workflow": "向 Codex 提供数据字典、源表样本、管道代码、调度日志和质量规则；先分析源到目标的字段与依赖，明确增量和失败语义，再实现管道与质量检查，回放样本并输出血缘、监控和恢复说明。目标产物：成本标签、查询归因和异常阈值。",
+      "outcome": "使用示例：团队可把这条模板用于“为数据管道增加成本可观测性”，并按以下条件验收：核对账单总额、共享资源分摊和采样误差。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "171",
+      "title": "分析转化漏斗下滑",
+      "section": "数据分析与 BI 工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "business-ops",
+        "finance-investing"
+      ],
+      "industry": "商业分析与决策支持",
+      "roles": "数据分析师、BI 分析师、业务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "分析团队需要把模糊业务问题转成可复核的数据口径、查询和决策材料。具体场景：总体转化率下降但不同渠道和步骤变化不一致。",
+      "workflow": "向 Codex 提供业务问题、数据字典、查询权限、历史报表和目标受众；先澄清决策问题与指标定义，再检查数据可用性并编写查询，进行异常和敏感性分析，最后生成带口径、限制和复核点的结论。目标产物：分层漏斗、驱动因素和排查优先级。",
+      "outcome": "使用示例：团队可把这条模板用于“分析转化漏斗下滑”，并按以下条件验收：复核时间窗、渠道归因、样本量和埋点变更。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "172",
+      "title": "建立高管周度经营看板",
+      "section": "数据分析与 BI 工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "business-ops",
+        "finance-investing"
+      ],
+      "industry": "商业分析与决策支持",
+      "roles": "数据分析师、BI 分析师、业务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "分析团队需要把模糊业务问题转成可复核的数据口径、查询和决策材料。具体场景：管理层需要少量稳定指标而非大量明细图表。",
+      "workflow": "向 Codex 提供业务问题、数据字典、查询权限、历史报表和目标受众；先澄清决策问题与指标定义，再检查数据可用性并编写查询，进行异常和敏感性分析，最后生成带口径、限制和复核点的结论。目标产物：指标层、看板布局和异常注释。",
+      "outcome": "使用示例：团队可把这条模板用于“建立高管周度经营看板”，并按以下条件验收：逐项确认口径、刷新时间、责任人与数据延迟。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "173",
+      "title": "评估功能实验结果",
+      "section": "数据分析与 BI 工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "business-ops",
+        "finance-investing"
+      ],
+      "industry": "商业分析与决策支持",
+      "roles": "数据分析师、BI 分析师、业务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "分析团队需要把模糊业务问题转成可复核的数据口径、查询和决策材料。具体场景：A/B 实验存在多个指标、分群和提前查看风险。",
+      "workflow": "向 Codex 提供业务问题、数据字典、查询权限、历史报表和目标受众；先澄清决策问题与指标定义，再检查数据可用性并编写查询，进行异常和敏感性分析，最后生成带口径、限制和复核点的结论。目标产物：实验分析、置信区间和决策建议。",
+      "outcome": "使用示例：团队可把这条模板用于“评估功能实验结果”，并按以下条件验收：核对随机化、样本量、多重比较和护栏指标。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "174",
+      "title": "定位客户流失驱动因素",
+      "section": "数据分析与 BI 工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "business-ops",
+        "finance-investing"
+      ],
+      "industry": "商业分析与决策支持",
+      "roles": "数据分析师、BI 分析师、业务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "分析团队需要把模糊业务问题转成可复核的数据口径、查询和决策材料。具体场景：流失集中发生但原因可能来自价格、产品或服务。",
+      "workflow": "向 Codex 提供业务问题、数据字典、查询权限、历史报表和目标受众；先澄清决策问题与指标定义，再检查数据可用性并编写查询，进行异常和敏感性分析，最后生成带口径、限制和复核点的结论。目标产物：队列定义、分群比较和可行动假设。",
+      "outcome": "使用示例：团队可把这条模板用于“定位客户流失驱动因素”，并按以下条件验收：区分相关性与因果，检查幸存者偏差和缺失数据。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "175",
+      "title": "自动生成月度指标解读",
+      "section": "数据分析与 BI 工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "business-ops",
+        "finance-investing"
+      ],
+      "industry": "商业分析与决策支持",
+      "roles": "数据分析师、BI 分析师、业务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "分析团队需要把模糊业务问题转成可复核的数据口径、查询和决策材料。具体场景：每月重复整理变化、原因和待办，耗时且口径易变。",
+      "workflow": "向 Codex 提供业务问题、数据字典、查询权限、历史报表和目标受众；先澄清决策问题与指标定义，再检查数据可用性并编写查询，进行异常和敏感性分析，最后生成带口径、限制和复核点的结论。目标产物：带引用的指标摘要与异常清单。",
+      "outcome": "使用示例：团队可把这条模板用于“自动生成月度指标解读”，并按以下条件验收：每个数字回链查询并由指标负责人确认解释。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "176",
+      "title": "比较区域经营表现",
+      "section": "数据分析与 BI 工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "business-ops",
+        "finance-investing"
+      ],
+      "industry": "商业分析与决策支持",
+      "roles": "数据分析师、BI 分析师、业务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "分析团队需要把模糊业务问题转成可复核的数据口径、查询和决策材料。具体场景：不同区域规模、季节和产品组合不可直接横比。",
+      "workflow": "向 Codex 提供业务问题、数据字典、查询权限、历史报表和目标受众；先澄清决策问题与指标定义，再检查数据可用性并编写查询，进行异常和敏感性分析，最后生成带口径、限制和复核点的结论。目标产物：标准化指标、同群比较和差异说明。",
+      "outcome": "使用示例：团队可把这条模板用于“比较区域经营表现”，并按以下条件验收：检查汇率、时区、节假日、规模效应和异常值。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "177",
+      "title": "分析客服主题与趋势",
+      "section": "数据分析与 BI 工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "business-ops",
+        "finance-investing"
+      ],
+      "industry": "商业分析与决策支持",
+      "roles": "数据分析师、BI 分析师、业务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "分析团队需要把模糊业务问题转成可复核的数据口径、查询和决策材料。具体场景：工单文本量大，标签不一致且新问题难以及时出现。",
+      "workflow": "向 Codex 提供业务问题、数据字典、查询权限、历史报表和目标受众；先澄清决策问题与指标定义，再检查数据可用性并编写查询，进行异常和敏感性分析，最后生成带口径、限制和复核点的结论。目标产物：主题聚类、代表样本和趋势看板。",
+      "outcome": "使用示例：团队可把这条模板用于“分析客服主题与趋势”，并按以下条件验收：人工抽样复核主题含义、误分率和敏感信息。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "178",
+      "title": "构建需求预测基线",
+      "section": "数据分析与 BI 工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "business-ops",
+        "finance-investing"
+      ],
+      "industry": "商业分析与决策支持",
+      "roles": "数据分析师、BI 分析师、业务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "分析团队需要把模糊业务问题转成可复核的数据口径、查询和决策材料。具体场景：业务需要预测但尚不清楚复杂模型是否必要。",
+      "workflow": "向 Codex 提供业务问题、数据字典、查询权限、历史报表和目标受众；先澄清决策问题与指标定义，再检查数据可用性并编写查询，进行异常和敏感性分析，最后生成带口径、限制和复核点的结论。目标产物：朴素基线、季节模型和误差报告。",
+      "outcome": "使用示例：团队可把这条模板用于“构建需求预测基线”，并按以下条件验收：滚动回测并按业务成本选择误差指标。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "179",
+      "title": "核对跨系统收入差异",
+      "section": "数据分析与 BI 工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "business-ops",
+        "finance-investing"
+      ],
+      "industry": "商业分析与决策支持",
+      "roles": "数据分析师、BI 分析师、业务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "分析团队需要把模糊业务问题转成可复核的数据口径、查询和决策材料。具体场景：CRM、订单和财务系统对同一时期收入不一致。",
+      "workflow": "向 Codex 提供业务问题、数据字典、查询权限、历史报表和目标受众；先澄清决策问题与指标定义，再检查数据可用性并编写查询，进行异常和敏感性分析，最后生成带口径、限制和复核点的结论。目标产物：对账桥、差异类型和修复清单。",
+      "outcome": "使用示例：团队可把这条模板用于“核对跨系统收入差异”，并按以下条件验收：逐层核对币种、税费、退款、确认时点和重复记录。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "180",
+      "title": "把临时分析沉淀为可复用模型",
+      "section": "数据分析与 BI 工作流",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "business-ops",
+        "finance-investing"
+      ],
+      "industry": "商业分析与决策支持",
+      "roles": "数据分析师、BI 分析师、业务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "分析团队需要把模糊业务问题转成可复核的数据口径、查询和决策材料。具体场景：关键决策依赖个人 SQL 和手工表格。",
+      "workflow": "向 Codex 提供业务问题、数据字典、查询权限、历史报表和目标受众；先澄清决策问题与指标定义，再检查数据可用性并编写查询，进行异常和敏感性分析，最后生成带口径、限制和复核点的结论。目标产物：版本化模型、文档、测试和刷新任务。",
+      "outcome": "使用示例：团队可把这条模板用于“把临时分析沉淀为可复用模型”，并按以下条件验收：让另一位分析师按文档复现相同结果。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "181",
+      "title": "建立模型训练可复现基线",
+      "section": "AI 与机器学习工作流",
+      "category": "product-ai",
+      "professions": [
+        "data",
+        "developer",
+        "product"
+      ],
+      "industry": "AI 产品与机器学习",
+      "roles": "机器学习工程师、AI 研究员、AI 产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "AI 团队需要让数据、实验、评测和部署结果可重复且边界清晰。具体场景：实验结果受随机种子、环境和数据版本影响。",
+      "workflow": "向 Codex 提供模型代码、数据说明、实验记录、评测集和部署约束；先建立可复现基线和评测指标，再限定变量实施实验，保存配置与结果，执行离线和线上安全检查并记录模型限制。目标产物：锁定环境、数据指纹和基线报告。",
+      "outcome": "使用示例：团队可把这条模板用于“建立模型训练可复现基线”，并按以下条件验收：在干净环境重复训练并比较关键指标波动。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "182",
+      "title": "构建提示词回归评测集",
+      "section": "AI 与机器学习工作流",
+      "category": "product-ai",
+      "professions": [
+        "data",
+        "developer",
+        "product"
+      ],
+      "industry": "AI 产品与机器学习",
+      "roles": "机器学习工程师、AI 研究员、AI 产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "AI 团队需要让数据、实验、评测和部署结果可重复且边界清晰。具体场景：提示词修改后质量变化依赖主观抽查。",
+      "workflow": "向 Codex 提供模型代码、数据说明、实验记录、评测集和部署约束；先建立可复现基线和评测指标，再限定变量实施实验，保存配置与结果，执行离线和线上安全检查并记录模型限制。目标产物：分层样本、评分规则和自动评测脚本。",
+      "outcome": "使用示例：团队可把这条模板用于“构建提示词回归评测集”，并按以下条件验收：人工校准评分器并保留失败样本与版本。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "183",
+      "title": "排查模型线上漂移",
+      "section": "AI 与机器学习工作流",
+      "category": "product-ai",
+      "professions": [
+        "data",
+        "developer",
+        "product"
+      ],
+      "industry": "AI 产品与机器学习",
+      "roles": "机器学习工程师、AI 研究员、AI 产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "AI 团队需要让数据、实验、评测和部署结果可重复且边界清晰。具体场景：线上输入分布变化导致效果下降但监控未定位原因。",
+      "workflow": "向 Codex 提供模型代码、数据说明、实验记录、评测集和部署约束；先建立可复现基线和评测指标，再限定变量实施实验，保存配置与结果，执行离线和线上安全检查并记录模型限制。目标产物：漂移指标、切片分析和处置建议。",
+      "outcome": "使用示例：团队可把这条模板用于“排查模型线上漂移”，并按以下条件验收：对比训练、近期线上与故障时段数据并检查标签延迟。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "184",
+      "title": "优化推理服务延迟",
+      "section": "AI 与机器学习工作流",
+      "category": "product-ai",
+      "professions": [
+        "data",
+        "developer",
+        "product"
+      ],
+      "industry": "AI 产品与机器学习",
+      "roles": "机器学习工程师、AI 研究员、AI 产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "AI 团队需要让数据、实验、评测和部署结果可重复且边界清晰。具体场景：模型效果满足要求但 P95 延迟影响产品体验。",
+      "workflow": "向 Codex 提供模型代码、数据说明、实验记录、评测集和部署约束；先建立可复现基线和评测指标，再限定变量实施实验，保存配置与结果，执行离线和线上安全检查并记录模型限制。目标产物：剖析结果、批处理或缓存方案和基准。",
+      "outcome": "使用示例：团队可把这条模板用于“优化推理服务延迟”，并按以下条件验收：比较吞吐、尾延迟、显存、质量和冷启动。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "185",
+      "title": "设计 RAG 检索评测",
+      "section": "AI 与机器学习工作流",
+      "category": "product-ai",
+      "professions": [
+        "data",
+        "developer",
+        "product"
+      ],
+      "industry": "AI 产品与机器学习",
+      "roles": "机器学习工程师、AI 研究员、AI 产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "AI 团队需要让数据、实验、评测和部署结果可重复且边界清晰。具体场景：回答错误可能来自检索、排序或生成阶段。",
+      "workflow": "向 Codex 提供模型代码、数据说明、实验记录、评测集和部署约束；先建立可复现基线和评测指标，再限定变量实施实验，保存配置与结果，执行离线和线上安全检查并记录模型限制。目标产物：问题集、检索指标和端到端误差分类。",
+      "outcome": "使用示例：团队可把这条模板用于“设计 RAG 检索评测”，并按以下条件验收：逐条检查来源覆盖、切块、权限过滤和引用一致性。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "186",
+      "title": "为分类模型做偏差切片",
+      "section": "AI 与机器学习工作流",
+      "category": "product-ai",
+      "professions": [
+        "data",
+        "developer",
+        "product"
+      ],
+      "industry": "AI 产品与机器学习",
+      "roles": "机器学习工程师、AI 研究员、AI 产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "AI 团队需要让数据、实验、评测和部署结果可重复且边界清晰。具体场景：总体准确率掩盖特定群体或场景的低表现。",
+      "workflow": "向 Codex 提供模型代码、数据说明、实验记录、评测集和部署约束；先建立可复现基线和评测指标，再限定变量实施实验，保存配置与结果，执行离线和线上安全检查并记录模型限制。目标产物：切片定义、差异报告和改进优先级。",
+      "outcome": "使用示例：团队可把这条模板用于“为分类模型做偏差切片”，并按以下条件验收：确认样本量、标签质量、敏感属性使用和置信区间。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "187",
+      "title": "把研究 notebook 转为训练管线",
+      "section": "AI 与机器学习工作流",
+      "category": "product-ai",
+      "professions": [
+        "data",
+        "developer",
+        "product"
+      ],
+      "industry": "AI 产品与机器学习",
+      "roles": "机器学习工程师、AI 研究员、AI 产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "AI 团队需要让数据、实验、评测和部署结果可重复且边界清晰。具体场景：实验代码依赖单机状态，难以调度和复用。",
+      "workflow": "向 Codex 提供模型代码、数据说明、实验记录、评测集和部署约束；先建立可复现基线和评测指标，再限定变量实施实验，保存配置与结果，执行离线和线上安全检查并记录模型限制。目标产物：模块化数据、训练、评测和产物管理。",
+      "outcome": "使用示例：团队可把这条模板用于“把研究 notebook 转为训练管线”，并按以下条件验收：从空环境运行全流程并检查缓存与失败恢复。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "188",
+      "title": "生成模型卡与发布说明",
+      "section": "AI 与机器学习工作流",
+      "category": "product-ai",
+      "professions": [
+        "data",
+        "developer",
+        "product"
+      ],
+      "industry": "AI 产品与机器学习",
+      "roles": "机器学习工程师、AI 研究员、AI 产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "AI 团队需要让数据、实验、评测和部署结果可重复且边界清晰。具体场景：模型上线前缺少用途、限制、数据和评测记录。",
+      "workflow": "向 Codex 提供模型代码、数据说明、实验记录、评测集和部署约束；先建立可复现基线和评测指标，再限定变量实施实验，保存配置与结果，执行离线和线上安全检查并记录模型限制。目标产物：模型卡、风险说明和监控要求。",
+      "outcome": "使用示例：团队可把这条模板用于“生成模型卡与发布说明”，并按以下条件验收：由研究、产品、安全共同确认声明与证据一致。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "189",
+      "title": "对比候选模型的成本质量",
+      "section": "AI 与机器学习工作流",
+      "category": "product-ai",
+      "professions": [
+        "data",
+        "developer",
+        "product"
+      ],
+      "industry": "AI 产品与机器学习",
+      "roles": "机器学习工程师、AI 研究员、AI 产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "AI 团队需要让数据、实验、评测和部署结果可重复且边界清晰。具体场景：团队需要在质量、速度和费用之间选择方案。",
+      "workflow": "向 Codex 提供模型代码、数据说明、实验记录、评测集和部署约束；先建立可复现基线和评测指标，再限定变量实施实验，保存配置与结果，执行离线和线上安全检查并记录模型限制。目标产物：统一评测、成本估算和场景化建议。",
+      "outcome": "使用示例：团队可把这条模板用于“对比候选模型的成本质量”，并按以下条件验收：使用相同输入、参数、并发和失败重试口径。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "190",
+      "title": "设计人审反馈闭环",
+      "section": "AI 与机器学习工作流",
+      "category": "product-ai",
+      "professions": [
+        "data",
+        "developer",
+        "product"
+      ],
+      "industry": "AI 产品与机器学习",
+      "roles": "机器学习工程师、AI 研究员、AI 产品经理",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "AI 团队需要让数据、实验、评测和部署结果可重复且边界清晰。具体场景：线上人工修改结果未形成可用于改进的数据。",
+      "workflow": "向 Codex 提供模型代码、数据说明、实验记录、评测集和部署约束；先建立可复现基线和评测指标，再限定变量实施实验，保存配置与结果，执行离线和线上安全检查并记录模型限制。目标产物：反馈结构、采样策略和训练数据管线。",
+      "outcome": "使用示例：团队可把这条模板用于“设计人审反馈闭环”，并按以下条件验收：检查隐私、偏差、重复反馈和标签一致性。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex customization",
+        "url": "https://learn.chatgpt.com/docs/customization/overview",
+        "note": "OpenAI 官方 Codex 自定义文档，涵盖 AGENTS.md、Skills、MCP 等能力；本组为迁移模板。"
+      }
+    },
+    {
+      "id": "191",
+      "title": "把用户访谈转成机会地图",
+      "section": "产品管理工作流",
+      "category": "business-operations",
+      "professions": [
+        "product",
+        "founder",
+        "operations"
+      ],
+      "industry": "数字产品管理",
+      "roles": "产品经理、产品负责人、创业者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "产品团队需要把分散的用户证据、技术约束和商业目标变成可执行决策。具体场景：访谈笔记分散且不同研究者的标签不一致。",
+      "workflow": "向 Codex 提供访谈、工单、指标、路线图、技术约束和决策模板；先汇总并标注证据来源，区分事实、假设和待验证项，再生成方案与取舍，连接到现有项目系统并保留负责人和验收标准。目标产物：需求主题、证据引用和机会优先级。",
+      "outcome": "使用示例：团队可把这条模板用于“把用户访谈转成机会地图”，并按以下条件验收：抽查原话、反例、样本结构和未覆盖用户群。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "192",
+      "title": "生成需求文档初稿",
+      "section": "产品管理工作流",
+      "category": "business-operations",
+      "professions": [
+        "product",
+        "founder",
+        "operations"
+      ],
+      "industry": "数字产品管理",
+      "roles": "产品经理、产品负责人、创业者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "产品团队需要把分散的用户证据、技术约束和商业目标变成可执行决策。具体场景：想法已有共识但目标、边界和验收标准未结构化。",
+      "workflow": "向 Codex 提供访谈、工单、指标、路线图、技术约束和决策模板；先汇总并标注证据来源，区分事实、假设和待验证项，再生成方案与取舍，连接到现有项目系统并保留负责人和验收标准。目标产物：PRD、非目标、风险和验收条件。",
+      "outcome": "使用示例：团队可把这条模板用于“生成需求文档初稿”，并按以下条件验收：由设计与研发确认可行性、依赖和模糊项。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "193",
+      "title": "评估功能请求优先级",
+      "section": "产品管理工作流",
+      "category": "business-operations",
+      "professions": [
+        "product",
+        "founder",
+        "operations"
+      ],
+      "industry": "数字产品管理",
+      "roles": "产品经理、产品负责人、创业者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "产品团队需要把分散的用户证据、技术约束和商业目标变成可执行决策。具体场景：销售、客户和内部团队提出的请求难以统一比较。",
+      "workflow": "向 Codex 提供访谈、工单、指标、路线图、技术约束和决策模板；先汇总并标注证据来源，区分事实、假设和待验证项，再生成方案与取舍，连接到现有项目系统并保留负责人和验收标准。目标产物：评分框架、证据表和取舍说明。",
+      "outcome": "使用示例：团队可把这条模板用于“评估功能请求优先级”，并按以下条件验收：公开权重、数据缺口和战略约束，避免伪精确排序。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "194",
+      "title": "准备产品评审材料",
+      "section": "产品管理工作流",
+      "category": "business-operations",
+      "professions": [
+        "product",
+        "founder",
+        "operations"
+      ],
+      "industry": "数字产品管理",
+      "roles": "产品经理、产品负责人、创业者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "产品团队需要把分散的用户证据、技术约束和商业目标变成可执行决策。具体场景：评审前信息散落在文档、设计稿和实验结果中。",
+      "workflow": "向 Codex 提供访谈、工单、指标、路线图、技术约束和决策模板；先汇总并标注证据来源，区分事实、假设和待验证项，再生成方案与取舍，连接到现有项目系统并保留负责人和验收标准。目标产物：决策摘要、方案对比和待决问题。",
+      "outcome": "使用示例：团队可把这条模板用于“准备产品评审材料”，并按以下条件验收：所有关键结论链接原始证据并标注负责人。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "195",
+      "title": "从使用数据发现激活障碍",
+      "section": "产品管理工作流",
+      "category": "business-operations",
+      "professions": [
+        "product",
+        "founder",
+        "operations"
+      ],
+      "industry": "数字产品管理",
+      "roles": "产品经理、产品负责人、创业者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "产品团队需要把分散的用户证据、技术约束和商业目标变成可执行决策。具体场景：新用户完成注册但没有达到核心价值动作。",
+      "workflow": "向 Codex 提供访谈、工单、指标、路线图、技术约束和决策模板；先汇总并标注证据来源，区分事实、假设和待验证项，再生成方案与取舍，连接到现有项目系统并保留负责人和验收标准。目标产物：行为路径、流失节点和实验假设。",
+      "outcome": "使用示例：团队可把这条模板用于“从使用数据发现激活障碍”，并按以下条件验收：核对埋点完整性、用户分群和异常流量。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "196",
+      "title": "规划版本发布范围",
+      "section": "产品管理工作流",
+      "category": "business-operations",
+      "professions": [
+        "product",
+        "founder",
+        "operations"
+      ],
+      "industry": "数字产品管理",
+      "roles": "产品经理、产品负责人、创业者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "产品团队需要把分散的用户证据、技术约束和商业目标变成可执行决策。具体场景：时间固定但候选需求多且依赖关系复杂。",
+      "workflow": "向 Codex 提供访谈、工单、指标、路线图、技术约束和决策模板；先汇总并标注证据来源，区分事实、假设和待验证项，再生成方案与取舍，连接到现有项目系统并保留负责人和验收标准。目标产物：范围方案、依赖图和降级顺序。",
+      "outcome": "使用示例：团队可把这条模板用于“规划版本发布范围”，并按以下条件验收：研发、设计、运营逐项确认容量与上线条件。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "197",
+      "title": "把竞品变化转成产品行动",
+      "section": "产品管理工作流",
+      "category": "business-operations",
+      "professions": [
+        "product",
+        "founder",
+        "operations"
+      ],
+      "industry": "数字产品管理",
+      "roles": "产品经理、产品负责人、创业者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "产品团队需要把分散的用户证据、技术约束和商业目标变成可执行决策。具体场景：竞品更新信息很多但容易停留在功能罗列。",
+      "workflow": "向 Codex 提供访谈、工单、指标、路线图、技术约束和决策模板；先汇总并标注证据来源，区分事实、假设和待验证项，再生成方案与取舍，连接到现有项目系统并保留负责人和验收标准。目标产物：能力对比、用户影响和验证建议。",
+      "outcome": "使用示例：团队可把这条模板用于“把竞品变化转成产品行动”，并按以下条件验收：区分公开事实、推断与本产品独特约束。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "198",
+      "title": "复盘功能上线效果",
+      "section": "产品管理工作流",
+      "category": "business-operations",
+      "professions": [
+        "product",
+        "founder",
+        "operations"
+      ],
+      "industry": "数字产品管理",
+      "roles": "产品经理、产品负责人、创业者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "产品团队需要把分散的用户证据、技术约束和商业目标变成可执行决策。具体场景：上线后只看单一指标，缺少对目标和副作用的回看。",
+      "workflow": "向 Codex 提供访谈、工单、指标、路线图、技术约束和决策模板；先汇总并标注证据来源，区分事实、假设和待验证项，再生成方案与取舍，连接到现有项目系统并保留负责人和验收标准。目标产物：目标对照、指标变化、反馈和后续决策。",
+      "outcome": "使用示例：团队可把这条模板用于“复盘功能上线效果”，并按以下条件验收：核对基线、观察窗口、护栏指标和外部事件。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "199",
+      "title": "维护产品决策日志",
+      "section": "产品管理工作流",
+      "category": "business-operations",
+      "professions": [
+        "product",
+        "founder",
+        "operations"
+      ],
+      "industry": "数字产品管理",
+      "roles": "产品经理、产品负责人、创业者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "产品团队需要把分散的用户证据、技术约束和商业目标变成可执行决策。具体场景：关键取舍只存在会议和聊天中，后续难以解释。",
+      "workflow": "向 Codex 提供访谈、工单、指标、路线图、技术约束和决策模板；先汇总并标注证据来源，区分事实、假设和待验证项，再生成方案与取舍，连接到现有项目系统并保留负责人和验收标准。目标产物：按日期的决策、理由、证据和复审条件。",
+      "outcome": "使用示例：团队可把这条模板用于“维护产品决策日志”，并按以下条件验收：由决策者确认描述并链接原始讨论与数据。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "200",
+      "title": "把路线图拆成可交付里程碑",
+      "section": "产品管理工作流",
+      "category": "business-operations",
+      "professions": [
+        "product",
+        "founder",
+        "operations"
+      ],
+      "industry": "数字产品管理",
+      "roles": "产品经理、产品负责人、创业者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "产品团队需要把分散的用户证据、技术约束和商业目标变成可执行决策。具体场景：季度目标过大，团队无法判断进展和依赖。",
+      "workflow": "向 Codex 提供访谈、工单、指标、路线图、技术约束和决策模板；先汇总并标注证据来源，区分事实、假设和待验证项，再生成方案与取舍，连接到现有项目系统并保留负责人和验收标准。目标产物：结果导向里程碑、负责人和验收信号。",
+      "outcome": "使用示例：团队可把这条模板用于“把路线图拆成可交付里程碑”，并按以下条件验收：每个里程碑能独立验证并暴露关键依赖。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "201",
+      "title": "把研究洞察转成用户流程",
+      "section": "产品设计与 UX 工作流",
+      "category": "knowledge-design",
+      "professions": [
+        "product",
+        "creator",
+        "professional"
+      ],
+      "industry": "产品设计与用户体验",
+      "roles": "产品设计师、UX 研究员、设计负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "设计团队需要把研究证据、界面规范和可访问性要求连接到可验证原型。具体场景：研究报告有结论但缺少端到端任务路径和断点。",
+      "workflow": "向 Codex 提供研究资料、用户流程、设计系统、原型文件和可访问性标准；先还原用户目标和约束，检查现有模式与设计令牌，再生成或调整原型，最后用任务走查、可访问性检查和多状态截图验收。目标产物：主流程、异常分支和设计机会。",
+      "outcome": "使用示例：团队可把这条模板用于“把研究洞察转成用户流程”，并按以下条件验收：逐个节点回链研究证据并邀请研究员复核。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "202",
+      "title": "审计设计系统一致性",
+      "section": "产品设计与 UX 工作流",
+      "category": "knowledge-design",
+      "professions": [
+        "product",
+        "creator",
+        "professional"
+      ],
+      "industry": "产品设计与用户体验",
+      "roles": "产品设计师、UX 研究员、设计负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "设计团队需要把研究证据、界面规范和可访问性要求连接到可验证原型。具体场景：产品界面存在相似但不一致的组件和交互。",
+      "workflow": "向 Codex 提供研究资料、用户流程、设计系统、原型文件和可访问性标准；先还原用户目标和约束，检查现有模式与设计令牌，再生成或调整原型，最后用任务走查、可访问性检查和多状态截图验收。目标产物：组件盘点、差异分类和收敛计划。",
+      "outcome": "使用示例：团队可把这条模板用于“审计设计系统一致性”，并按以下条件验收：区分必要变体、历史债务和可直接替换项。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "203",
+      "title": "为复杂后台重构信息架构",
+      "section": "产品设计与 UX 工作流",
+      "category": "knowledge-design",
+      "professions": [
+        "product",
+        "creator",
+        "professional"
+      ],
+      "industry": "产品设计与用户体验",
+      "roles": "产品设计师、UX 研究员、设计负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "设计团队需要把研究证据、界面规范和可访问性要求连接到可验证原型。具体场景：功能随时间堆叠，用户难以找到高频操作。",
+      "workflow": "向 Codex 提供研究资料、用户流程、设计系统、原型文件和可访问性标准；先还原用户目标和约束，检查现有模式与设计令牌，再生成或调整原型，最后用任务走查、可访问性检查和多状态截图验收。目标产物：内容分组、导航模型和迁移方案。",
+      "outcome": "使用示例：团队可把这条模板用于“为复杂后台重构信息架构”，并按以下条件验收：用真实任务做树测试并保留旧链接兼容策略。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "204",
+      "title": "生成可访问性修复清单",
+      "section": "产品设计与 UX 工作流",
+      "category": "knowledge-design",
+      "professions": [
+        "product",
+        "creator",
+        "professional"
+      ],
+      "industry": "产品设计与用户体验",
+      "roles": "产品设计师、UX 研究员、设计负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "设计团队需要把研究证据、界面规范和可访问性要求连接到可验证原型。具体场景：界面需要满足键盘、对比度和语义结构要求。",
+      "workflow": "向 Codex 提供研究资料、用户流程、设计系统、原型文件和可访问性标准；先还原用户目标和约束，检查现有模式与设计令牌，再生成或调整原型，最后用任务走查、可访问性检查和多状态截图验收。目标产物：问题分级、组件级修复和复测步骤。",
+      "outcome": "使用示例：团队可把这条模板用于“生成可访问性修复清单”，并按以下条件验收：结合自动扫描与人工键盘、读屏检查。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "205",
+      "title": "设计新手引导流程",
+      "section": "产品设计与 UX 工作流",
+      "category": "knowledge-design",
+      "professions": [
+        "product",
+        "creator",
+        "professional"
+      ],
+      "industry": "产品设计与用户体验",
+      "roles": "产品设计师、UX 研究员、设计负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "设计团队需要把研究证据、界面规范和可访问性要求连接到可验证原型。具体场景：新用户面对复杂配置，首次成功时间过长。",
+      "workflow": "向 Codex 提供研究资料、用户流程、设计系统、原型文件和可访问性标准；先还原用户目标和约束，检查现有模式与设计令牌，再生成或调整原型，最后用任务走查、可访问性检查和多状态截图验收。目标产物：分步引导、跳过机制和成功信号。",
+      "outcome": "使用示例：团队可把这条模板用于“设计新手引导流程”，并按以下条件验收：测试中断恢复、已有数据、不同角色和无权限状态。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "206",
+      "title": "整理多状态页面规范",
+      "section": "产品设计与 UX 工作流",
+      "category": "knowledge-design",
+      "professions": [
+        "product",
+        "creator",
+        "professional"
+      ],
+      "industry": "产品设计与用户体验",
+      "roles": "产品设计师、UX 研究员、设计负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "设计团队需要把研究证据、界面规范和可访问性要求连接到可验证原型。具体场景：设计稿只覆盖理想数据状态，研发自行补空态和错误态。",
+      "workflow": "向 Codex 提供研究资料、用户流程、设计系统、原型文件和可访问性标准；先还原用户目标和约束，检查现有模式与设计令牌，再生成或调整原型，最后用任务走查、可访问性检查和多状态截图验收。目标产物：加载、空、错误、部分数据和权限状态。",
+      "outcome": "使用示例：团队可把这条模板用于“整理多状态页面规范”，并按以下条件验收：产品、设计、研发对每种状态的触发条件达成一致。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "207",
+      "title": "从客服反馈发现体验问题",
+      "section": "产品设计与 UX 工作流",
+      "category": "knowledge-design",
+      "professions": [
+        "product",
+        "creator",
+        "professional"
+      ],
+      "industry": "产品设计与用户体验",
+      "roles": "产品设计师、UX 研究员、设计负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "设计团队需要把研究证据、界面规范和可访问性要求连接到可验证原型。具体场景：大量反馈以自然语言存在，难以对应到具体流程。",
+      "workflow": "向 Codex 提供研究资料、用户流程、设计系统、原型文件和可访问性标准；先还原用户目标和约束，检查现有模式与设计令牌，再生成或调整原型，最后用任务走查、可访问性检查和多状态截图验收。目标产物：主题、影响路径、严重度和设计假设。",
+      "outcome": "使用示例：团队可把这条模板用于“从客服反馈发现体验问题”，并按以下条件验收：抽样核对原工单并区分产品、政策和培训问题。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "208",
+      "title": "制作可交互概念原型",
+      "section": "产品设计与 UX 工作流",
+      "category": "knowledge-design",
+      "professions": [
+        "product",
+        "creator",
+        "professional"
+      ],
+      "industry": "产品设计与用户体验",
+      "roles": "产品设计师、UX 研究员、设计负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "设计团队需要把研究证据、界面规范和可访问性要求连接到可验证原型。具体场景：团队需要在开发前验证跨页面的关键交互。",
+      "workflow": "向 Codex 提供研究资料、用户流程、设计系统、原型文件和可访问性标准；先还原用户目标和约束，检查现有模式与设计令牌，再生成或调整原型，最后用任务走查、可访问性检查和多状态截图验收。目标产物：可点击原型、测试任务和已知限制。",
+      "outcome": "使用示例：团队可把这条模板用于“制作可交互概念原型”，并按以下条件验收：让目标用户完成任务并记录失败点而非只收偏好。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "209",
+      "title": "审查本地化设计风险",
+      "section": "产品设计与 UX 工作流",
+      "category": "knowledge-design",
+      "professions": [
+        "product",
+        "creator",
+        "professional"
+      ],
+      "industry": "产品设计与用户体验",
+      "roles": "产品设计师、UX 研究员、设计负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "设计团队需要把研究证据、界面规范和可访问性要求连接到可验证原型。具体场景：界面即将进入多语言市场但布局按中文优化。",
+      "workflow": "向 Codex 提供研究资料、用户流程、设计系统、原型文件和可访问性标准；先还原用户目标和约束，检查现有模式与设计令牌，再生成或调整原型，最后用任务走查、可访问性检查和多状态截图验收。目标产物：文本扩展、RTL、日期数字与文化风险清单。",
+      "outcome": "使用示例：团队可把这条模板用于“审查本地化设计风险”，并按以下条件验收：用伪本地化和目标语言样本检查关键页面。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "210",
+      "title": "生成设计交付说明",
+      "section": "产品设计与 UX 工作流",
+      "category": "knowledge-design",
+      "professions": [
+        "product",
+        "creator",
+        "professional"
+      ],
+      "industry": "产品设计与用户体验",
+      "roles": "产品设计师、UX 研究员、设计负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "设计团队需要把研究证据、界面规范和可访问性要求连接到可验证原型。具体场景：设计意图和边界状态没有随画面一起交付。",
+      "workflow": "向 Codex 提供研究资料、用户流程、设计系统、原型文件和可访问性标准；先还原用户目标和约束，检查现有模式与设计令牌，再生成或调整原型，最后用任务走查、可访问性检查和多状态截图验收。目标产物：组件引用、交互规则、数据状态和验收说明。",
+      "outcome": "使用示例：团队可把这条模板用于“生成设计交付说明”，并按以下条件验收：研发按说明实现后由设计师在真实页面复核。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "211",
+      "title": "标准化供应商准入审核",
+      "section": "业务运营工作流",
+      "category": "business-operations",
+      "professions": [
+        "business-ops",
+        "operations",
+        "founder"
+      ],
+      "industry": "企业运营与流程治理",
+      "roles": "业务运营、运营负责人、管理者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "运营团队需要把跨系统信息、例外规则和责任人组织成可持续执行的流程。具体场景：资料来自邮件和表格，缺件与风险判断不一致。",
+      "workflow": "向 Codex 提供SOP、业务数据、会议记录、系统权限和责任矩阵；先绘制现有流程与例外，识别可自动化和必须人工判断的节点，再生成标准操作、核对表和升级规则，最后用历史样本演练。目标产物：资料清单、风险分级和审批记录。",
+      "outcome": "使用示例：团队可把这条模板用于“标准化供应商准入审核”，并按以下条件验收：抽查资质有效期、受益人、制裁筛查和例外批准。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Run verified operations",
+        "url": "https://learn.chatgpt.com/use-cases/verified-operations-workflows",
+        "note": "OpenAI 官方可验证运营工作流用例；本组保持批准脚本、有限重试与结果核验边界。"
+      }
+    },
+    {
+      "id": "212",
+      "title": "自动整理每日运营异常",
+      "section": "业务运营工作流",
+      "category": "business-operations",
+      "professions": [
+        "business-ops",
+        "operations",
+        "founder"
+      ],
+      "industry": "企业运营与流程治理",
+      "roles": "业务运营、运营负责人、管理者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "运营团队需要把跨系统信息、例外规则和责任人组织成可持续执行的流程。具体场景：异常分散在订单、客服和履约系统，团队靠手工汇总。",
+      "workflow": "向 Codex 提供SOP、业务数据、会议记录、系统权限和责任矩阵；先绘制现有流程与例外，识别可自动化和必须人工判断的节点，再生成标准操作、核对表和升级规则，最后用历史样本演练。目标产物：去重后的异常队列、负责人和截止时间。",
+      "outcome": "使用示例：团队可把这条模板用于“自动整理每日运营异常”，并按以下条件验收：核对来源时间、重复事件、严重度和已关闭状态。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Run verified operations",
+        "url": "https://learn.chatgpt.com/use-cases/verified-operations-workflows",
+        "note": "OpenAI 官方可验证运营工作流用例；本组保持批准脚本、有限重试与结果核验边界。"
+      }
+    },
+    {
+      "id": "213",
+      "title": "重构退款审批流程",
+      "section": "业务运营工作流",
+      "category": "business-operations",
+      "professions": [
+        "business-ops",
+        "operations",
+        "founder"
+      ],
+      "industry": "企业运营与流程治理",
+      "roles": "业务运营、运营负责人、管理者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "运营团队需要把跨系统信息、例外规则和责任人组织成可持续执行的流程。具体场景：不同金额和原因走相同审批，既慢又难审计。",
+      "workflow": "向 Codex 提供SOP、业务数据、会议记录、系统权限和责任矩阵；先绘制现有流程与例外，识别可自动化和必须人工判断的节点，再生成标准操作、核对表和升级规则，最后用历史样本演练。目标产物：分级规则、自动校验和人工审批边界。",
+      "outcome": "使用示例：团队可把这条模板用于“重构退款审批流程”，并按以下条件验收：用历史案例验证误拒、误放、重复退款和权限。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Run verified operations",
+        "url": "https://learn.chatgpt.com/use-cases/verified-operations-workflows",
+        "note": "OpenAI 官方可验证运营工作流用例；本组保持批准脚本、有限重试与结果核验边界。"
+      }
+    },
+    {
+      "id": "214",
+      "title": "建立门店开业检查清单",
+      "section": "业务运营工作流",
+      "category": "business-operations",
+      "professions": [
+        "business-ops",
+        "operations",
+        "founder"
+      ],
+      "industry": "企业运营与流程治理",
+      "roles": "业务运营、运营负责人、管理者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "运营团队需要把跨系统信息、例外规则和责任人组织成可持续执行的流程。具体场景：跨部门任务依赖多，遗漏会推迟开业。",
+      "workflow": "向 Codex 提供SOP、业务数据、会议记录、系统权限和责任矩阵；先绘制现有流程与例外，识别可自动化和必须人工判断的节点，再生成标准操作、核对表和升级规则，最后用历史样本演练。目标产物：里程碑、证据要求、责任人和升级规则。",
+      "outcome": "使用示例：团队可把这条模板用于“建立门店开业检查清单”，并按以下条件验收：在试点门店按清单演练并记录无法验证项。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Run verified operations",
+        "url": "https://learn.chatgpt.com/use-cases/verified-operations-workflows",
+        "note": "OpenAI 官方可验证运营工作流用例；本组保持批准脚本、有限重试与结果核验边界。"
+      }
+    },
+    {
+      "id": "215",
+      "title": "生成周度业务复盘",
+      "section": "业务运营工作流",
+      "category": "business-operations",
+      "professions": [
+        "business-ops",
+        "operations",
+        "founder"
+      ],
+      "industry": "企业运营与流程治理",
+      "roles": "业务运营、运营负责人、管理者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "运营团队需要把跨系统信息、例外规则和责任人组织成可持续执行的流程。具体场景：各团队数据和进展格式不一，管理者难以快速判断。",
+      "workflow": "向 Codex 提供SOP、业务数据、会议记录、系统权限和责任矩阵；先绘制现有流程与例外，识别可自动化和必须人工判断的节点，再生成标准操作、核对表和升级规则，最后用历史样本演练。目标产物：指标变化、风险、决策和待办摘要。",
+      "outcome": "使用示例：团队可把这条模板用于“生成周度业务复盘”，并按以下条件验收：每个数字回链来源，每个待办具备负责人和日期。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Run verified operations",
+        "url": "https://learn.chatgpt.com/use-cases/verified-operations-workflows",
+        "note": "OpenAI 官方可验证运营工作流用例；本组保持批准脚本、有限重试与结果核验边界。"
+      }
+    },
+    {
+      "id": "216",
+      "title": "对账订单到履约状态",
+      "section": "业务运营工作流",
+      "category": "business-operations",
+      "professions": [
+        "business-ops",
+        "operations",
+        "founder"
+      ],
+      "industry": "企业运营与流程治理",
+      "roles": "业务运营、运营负责人、管理者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "运营团队需要把跨系统信息、例外规则和责任人组织成可持续执行的流程。具体场景：订单、仓储和物流状态不同步导致客户投诉。",
+      "workflow": "向 Codex 提供SOP、业务数据、会议记录、系统权限和责任矩阵；先绘制现有流程与例外，识别可自动化和必须人工判断的节点，再生成标准操作、核对表和升级规则，最后用历史样本演练。目标产物：差异队列、原因分类和处置建议。",
+      "outcome": "使用示例：团队可把这条模板用于“对账订单到履约状态”，并按以下条件验收：先只读核对，修正动作必须经过系统所有者批准。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Run verified operations",
+        "url": "https://learn.chatgpt.com/use-cases/verified-operations-workflows",
+        "note": "OpenAI 官方可验证运营工作流用例；本组保持批准脚本、有限重试与结果核验边界。"
+      }
+    },
+    {
+      "id": "217",
+      "title": "维护业务规则知识库",
+      "section": "业务运营工作流",
+      "category": "business-operations",
+      "professions": [
+        "business-ops",
+        "operations",
+        "founder"
+      ],
+      "industry": "企业运营与流程治理",
+      "roles": "业务运营、运营负责人、管理者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "运营团队需要把跨系统信息、例外规则和责任人组织成可持续执行的流程。具体场景：折扣、资格和地区规则散落在多人经验中。",
+      "workflow": "向 Codex 提供SOP、业务数据、会议记录、系统权限和责任矩阵；先绘制现有流程与例外，识别可自动化和必须人工判断的节点，再生成标准操作、核对表和升级规则，最后用历史样本演练。目标产物：版本化规则、示例和冲突清单。",
+      "outcome": "使用示例：团队可把这条模板用于“维护业务规则知识库”，并按以下条件验收：由规则所有者确认生效日期、例外和优先级。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Run verified operations",
+        "url": "https://learn.chatgpt.com/use-cases/verified-operations-workflows",
+        "note": "OpenAI 官方可验证运营工作流用例；本组保持批准脚本、有限重试与结果核验边界。"
+      }
+    },
+    {
+      "id": "218",
+      "title": "设计高峰期排班方案",
+      "section": "业务运营工作流",
+      "category": "business-operations",
+      "professions": [
+        "business-ops",
+        "operations",
+        "founder"
+      ],
+      "industry": "企业运营与流程治理",
+      "roles": "业务运营、运营负责人、管理者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "运营团队需要把跨系统信息、例外规则和责任人组织成可持续执行的流程。具体场景：需求波动大且技能、工时和公平性约束复杂。",
+      "workflow": "向 Codex 提供SOP、业务数据、会议记录、系统权限和责任矩阵；先绘制现有流程与例外，识别可自动化和必须人工判断的节点，再生成标准操作、核对表和升级规则，最后用历史样本演练。目标产物：需求预测、候选排班和缺口。",
+      "outcome": "使用示例：团队可把这条模板用于“设计高峰期排班方案”，并按以下条件验收：人工确认劳动规则、个人限制和应急替补。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Run verified operations",
+        "url": "https://learn.chatgpt.com/use-cases/verified-operations-workflows",
+        "note": "OpenAI 官方可验证运营工作流用例；本组保持批准脚本、有限重试与结果核验边界。"
+      }
+    },
+    {
+      "id": "219",
+      "title": "清理长期未闭环行动项",
+      "section": "业务运营工作流",
+      "category": "business-operations",
+      "professions": [
+        "business-ops",
+        "operations",
+        "founder"
+      ],
+      "industry": "企业运营与流程治理",
+      "roles": "业务运营、运营负责人、管理者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "运营团队需要把跨系统信息、例外规则和责任人组织成可持续执行的流程。具体场景：会议待办分散且缺少状态更新。",
+      "workflow": "向 Codex 提供SOP、业务数据、会议记录、系统权限和责任矩阵；先绘制现有流程与例外，识别可自动化和必须人工判断的节点，再生成标准操作、核对表和升级规则，最后用历史样本演练。目标产物：去重清单、责任人、阻塞项和建议关闭项。",
+      "outcome": "使用示例：团队可把这条模板用于“清理长期未闭环行动项”，并按以下条件验收：不得自动关闭；逐项由负责人确认状态与证据。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Run verified operations",
+        "url": "https://learn.chatgpt.com/use-cases/verified-operations-workflows",
+        "note": "OpenAI 官方可验证运营工作流用例；本组保持批准脚本、有限重试与结果核验边界。"
+      }
+    },
+    {
+      "id": "220",
+      "title": "建立流程变更影响评估",
+      "section": "业务运营工作流",
+      "category": "business-operations",
+      "professions": [
+        "business-ops",
+        "operations",
+        "founder"
+      ],
+      "industry": "企业运营与流程治理",
+      "roles": "业务运营、运营负责人、管理者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "运营团队需要把跨系统信息、例外规则和责任人组织成可持续执行的流程。具体场景：SOP 修改可能影响系统、培训和下游报表。",
+      "workflow": "向 Codex 提供SOP、业务数据、会议记录、系统权限和责任矩阵；先绘制现有流程与例外，识别可自动化和必须人工判断的节点，再生成标准操作、核对表和升级规则，最后用历史样本演练。目标产物：影响地图、发布计划和回退条件。",
+      "outcome": "使用示例：团队可把这条模板用于“建立流程变更影响评估”，并按以下条件验收：邀请各系统与流程所有者确认依赖和通知范围。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Run verified operations",
+        "url": "https://learn.chatgpt.com/use-cases/verified-operations-workflows",
+        "note": "OpenAI 官方可验证运营工作流用例；本组保持批准脚本、有限重试与结果核验边界。"
+      }
+    },
+    {
+      "id": "221",
+      "title": "自动生成项目周报",
+      "section": "项目与项目群管理工作流",
+      "category": "everyday-productivity",
+      "professions": [
+        "operations",
+        "business-ops",
+        "product"
+      ],
+      "industry": "项目与项目群管理",
+      "roles": "项目经理、项目群经理、交付负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "项目团队需要从多方更新中识别依赖、风险和明确的下一步。具体场景：团队更新格式不同且项目经理重复整理相同信息。",
+      "workflow": "向 Codex 提供项目计划、会议记录、任务系统、风险台账和资源约束；先合并不同来源并标记冲突，更新里程碑、依赖和风险，再生成面向不同受众的状态报告，所有状态变化交由负责人确认。目标产物：进展、风险、决策、下周计划和待办。",
+      "outcome": "使用示例：团队可把这条模板用于“自动生成项目周报”，并按以下条件验收：负责人确认状态，数字与日期链接任务系统。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "222",
+      "title": "识别跨团队关键依赖",
+      "section": "项目与项目群管理工作流",
+      "category": "everyday-productivity",
+      "professions": [
+        "operations",
+        "business-ops",
+        "product"
+      ],
+      "industry": "项目与项目群管理",
+      "roles": "项目经理、项目群经理、交付负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "项目团队需要从多方更新中识别依赖、风险和明确的下一步。具体场景：每个团队计划独立维护，接口和交付顺序容易冲突。",
+      "workflow": "向 Codex 提供项目计划、会议记录、任务系统、风险台账和资源约束；先合并不同来源并标记冲突，更新里程碑、依赖和风险，再生成面向不同受众的状态报告，所有状态变化交由负责人确认。目标产物：依赖图、前置条件和升级节点。",
+      "outcome": "使用示例：团队可把这条模板用于“识别跨团队关键依赖”，并按以下条件验收：双方负责人确认依赖方向、日期和完成定义。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "223",
+      "title": "维护项目风险台账",
+      "section": "项目与项目群管理工作流",
+      "category": "everyday-productivity",
+      "professions": [
+        "operations",
+        "business-ops",
+        "product"
+      ],
+      "industry": "项目与项目群管理",
+      "roles": "项目经理、项目群经理、交付负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "项目团队需要从多方更新中识别依赖、风险和明确的下一步。具体场景：风险只在会议中提及，没有概率、影响和应对人。",
+      "workflow": "向 Codex 提供项目计划、会议记录、任务系统、风险台账和资源约束；先合并不同来源并标记冲突，更新里程碑、依赖和风险，再生成面向不同受众的状态报告，所有状态变化交由负责人确认。目标产物：风险分级、触发信号、缓解措施和负责人。",
+      "outcome": "使用示例：团队可把这条模板用于“维护项目风险台账”，并按以下条件验收：避免模型替代风险所有者作最终评级。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "224",
+      "title": "准备项目启动包",
+      "section": "项目与项目群管理工作流",
+      "category": "everyday-productivity",
+      "professions": [
+        "operations",
+        "business-ops",
+        "product"
+      ],
+      "industry": "项目与项目群管理",
+      "roles": "项目经理、项目群经理、交付负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "项目团队需要从多方更新中识别依赖、风险和明确的下一步。具体场景：新项目涉及多团队但目标、治理和沟通节奏未统一。",
+      "workflow": "向 Codex 提供项目计划、会议记录、任务系统、风险台账和资源约束；先合并不同来源并标记冲突，更新里程碑、依赖和风险，再生成面向不同受众的状态报告，所有状态变化交由负责人确认。目标产物：章程、RACI、里程碑和会议机制。",
+      "outcome": "使用示例：团队可把这条模板用于“准备项目启动包”，并按以下条件验收：发起人确认范围、成功标准、预算和决策权。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "225",
+      "title": "复盘里程碑延期",
+      "section": "项目与项目群管理工作流",
+      "category": "everyday-productivity",
+      "professions": [
+        "operations",
+        "business-ops",
+        "product"
+      ],
+      "industry": "项目与项目群管理",
+      "roles": "项目经理、项目群经理、交付负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "项目团队需要从多方更新中识别依赖、风险和明确的下一步。具体场景：延期原因被归为执行慢，缺少依赖和决策链分析。",
+      "workflow": "向 Codex 提供项目计划、会议记录、任务系统、风险台账和资源约束；先合并不同来源并标记冲突，更新里程碑、依赖和风险，再生成面向不同受众的状态报告，所有状态变化交由负责人确认。目标产物：事实时间线、系统性原因和改进行动。",
+      "outcome": "使用示例：团队可把这条模板用于“复盘里程碑延期”，并按以下条件验收：区分事实与推断，行动项包含负责人和验证日期。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "226",
+      "title": "做资源冲突情景规划",
+      "section": "项目与项目群管理工作流",
+      "category": "everyday-productivity",
+      "professions": [
+        "operations",
+        "business-ops",
+        "product"
+      ],
+      "industry": "项目与项目群管理",
+      "roles": "项目经理、项目群经理、交付负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "项目团队需要从多方更新中识别依赖、风险和明确的下一步。具体场景：多个项目争用同一专家和环境资源。",
+      "workflow": "向 Codex 提供项目计划、会议记录、任务系统、风险台账和资源约束；先合并不同来源并标记冲突，更新里程碑、依赖和风险，再生成面向不同受众的状态报告，所有状态变化交由负责人确认。目标产物：优先级方案、延迟影响和替代资源。",
+      "outcome": "使用示例：团队可把这条模板用于“做资源冲突情景规划”，并按以下条件验收：由管理者选择方案，不自动做人员承诺。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "227",
+      "title": "整理会议决策与待办",
+      "section": "项目与项目群管理工作流",
+      "category": "everyday-productivity",
+      "professions": [
+        "operations",
+        "business-ops",
+        "product"
+      ],
+      "industry": "项目与项目群管理",
+      "roles": "项目经理、项目群经理、交付负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "项目团队需要从多方更新中识别依赖、风险和明确的下一步。具体场景：讨论充分但决策、异议和负责人没有落到系统。",
+      "workflow": "向 Codex 提供项目计划、会议记录、任务系统、风险台账和资源约束；先合并不同来源并标记冲突，更新里程碑、依赖和风险，再生成面向不同受众的状态报告，所有状态变化交由负责人确认。目标产物：决策记录、未决问题和任务草稿。",
+      "outcome": "使用示例：团队可把这条模板用于“整理会议决策与待办”，并按以下条件验收：会后由参会者确认，不把讨论意见误写成决策。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "228",
+      "title": "建立项目变更控制流程",
+      "section": "项目与项目群管理工作流",
+      "category": "everyday-productivity",
+      "professions": [
+        "operations",
+        "business-ops",
+        "product"
+      ],
+      "industry": "项目与项目群管理",
+      "roles": "项目经理、项目群经理、交付负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "项目团队需要从多方更新中识别依赖、风险和明确的下一步。具体场景：范围持续增加但时间和资源没有同步调整。",
+      "workflow": "向 Codex 提供项目计划、会议记录、任务系统、风险台账和资源约束；先合并不同来源并标记冲突，更新里程碑、依赖和风险，再生成面向不同受众的状态报告，所有状态变化交由负责人确认。目标产物：变更单、影响评估和审批路径。",
+      "outcome": "使用示例：团队可把这条模板用于“建立项目变更控制流程”，并按以下条件验收：每项变更明确范围、成本、日期和批准人。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "229",
+      "title": "生成高管项目群概览",
+      "section": "项目与项目群管理工作流",
+      "category": "everyday-productivity",
+      "professions": [
+        "operations",
+        "business-ops",
+        "product"
+      ],
+      "industry": "项目与项目群管理",
+      "roles": "项目经理、项目群经理、交付负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "项目团队需要从多方更新中识别依赖、风险和明确的下一步。具体场景：高管需要跨项目比较但底层细节过多。",
+      "workflow": "向 Codex 提供项目计划、会议记录、任务系统、风险台账和资源约束；先合并不同来源并标记冲突，更新里程碑、依赖和风险，再生成面向不同受众的状态报告，所有状态变化交由负责人确认。目标产物：里程碑健康度、共性风险和需决策事项。",
+      "outcome": "使用示例：团队可把这条模板用于“生成高管项目群概览”，并按以下条件验收：保留红色项目证据，避免只给主观颜色判断。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "230",
+      "title": "归档项目结项资料",
+      "section": "项目与项目群管理工作流",
+      "category": "everyday-productivity",
+      "professions": [
+        "operations",
+        "business-ops",
+        "product"
+      ],
+      "industry": "项目与项目群管理",
+      "roles": "项目经理、项目群经理、交付负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "项目团队需要从多方更新中识别依赖、风险和明确的下一步。具体场景：交付完成后文档、合同和经验没有系统沉淀。",
+      "workflow": "向 Codex 提供项目计划、会议记录、任务系统、风险台账和资源约束；先合并不同来源并标记冲突，更新里程碑、依赖和风险，再生成面向不同受众的状态报告，所有状态变化交由负责人确认。目标产物：结项索引、成果、遗留项和经验库条目。",
+      "outcome": "使用示例：团队可把这条模板用于“归档项目结项资料”，并按以下条件验收：检查访问权限、保留期限和未完成义务。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "231",
+      "title": "生成目标账户研究简报",
+      "section": "销售工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "operations",
+        "founder"
+      ],
+      "industry": "B2B 与企业销售",
+      "roles": "销售代表、客户经理、销售运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "销售团队需要把账户研究、互动记录和产品证据变成相关且可审阅的推进动作。具体场景：销售需要快速理解账户战略、组织变化和潜在需求。",
+      "workflow": "向 Codex 提供CRM、公开资料、会议记录、产品能力和合规话术；先核对账户和联系人事实，识别业务信号与未知项，再生成个性化材料或 CRM 草稿，发送和阶段变更始终由销售人员确认。目标产物：带来源的账户摘要、假设和发现问题。",
+      "outcome": "使用示例：团队可把这条模板用于“生成目标账户研究简报”，并按以下条件验收：逐条核对公开来源日期，未知信息明确标注。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "232",
+      "title": "准备首次发现会议",
+      "section": "销售工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "operations",
+        "founder"
+      ],
+      "industry": "B2B 与企业销售",
+      "roles": "销售代表、客户经理、销售运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "销售团队需要把账户研究、互动记录和产品证据变成相关且可审阅的推进动作。具体场景：账户信息有限且容易提出通用问题。",
+      "workflow": "向 Codex 提供CRM、公开资料、会议记录、产品能力和合规话术；先核对账户和联系人事实，识别业务信号与未知项，再生成个性化材料或 CRM 草稿，发送和阶段变更始终由销售人员确认。目标产物：角色相关问题、假设和会议目标。",
+      "outcome": "使用示例：团队可把这条模板用于“准备首次发现会议”，并按以下条件验收：问题应开放、基于证据且不假装知道内部信息。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "233",
+      "title": "从会议记录更新 CRM 草稿",
+      "section": "销售工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "operations",
+        "founder"
+      ],
+      "industry": "B2B 与企业销售",
+      "roles": "销售代表、客户经理、销售运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "销售团队需要把账户研究、互动记录和产品证据变成相关且可审阅的推进动作。具体场景：会后记录耗时且关键字段常遗漏。",
+      "workflow": "向 Codex 提供CRM、公开资料、会议记录、产品能力和合规话术；先核对账户和联系人事实，识别业务信号与未知项，再生成个性化材料或 CRM 草稿，发送和阶段变更始终由销售人员确认。目标产物：联系人、需求、时间线、风险和下一步草稿。",
+      "outcome": "使用示例：团队可把这条模板用于“从会议记录更新 CRM 草稿”，并按以下条件验收：销售确认后再写入 CRM，不自动改变机会阶段。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "234",
+      "title": "撰写个性化跟进邮件",
+      "section": "销售工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "operations",
+        "founder"
+      ],
+      "industry": "B2B 与企业销售",
+      "roles": "销售代表、客户经理、销售运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "销售团队需要把账户研究、互动记录和产品证据变成相关且可审阅的推进动作。具体场景：通用跟进无法回应会议中的具体问题和承诺。",
+      "workflow": "向 Codex 提供CRM、公开资料、会议记录、产品能力和合规话术；先核对账户和联系人事实，识别业务信号与未知项，再生成个性化材料或 CRM 草稿，发送和阶段变更始终由销售人员确认。目标产物：简洁邮件、资源链接和明确下一步。",
+      "outcome": "使用示例：团队可把这条模板用于“撰写个性化跟进邮件”，并按以下条件验收：检查姓名、承诺、日期、价格和附件后再发送。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "235",
+      "title": "生成多线程关系图",
+      "section": "销售工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "operations",
+        "founder"
+      ],
+      "industry": "B2B 与企业销售",
+      "roles": "销售代表、客户经理、销售运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "销售团队需要把账户研究、互动记录和产品证据变成相关且可审阅的推进动作。具体场景：复杂交易依赖多位决策者，但互动集中在单一联系人。",
+      "workflow": "向 Codex 提供CRM、公开资料、会议记录、产品能力和合规话术；先核对账户和联系人事实，识别业务信号与未知项，再生成个性化材料或 CRM 草稿，发送和阶段变更始终由销售人员确认。目标产物：角色、影响力、已知关系和覆盖缺口。",
+      "outcome": "使用示例：团队可把这条模板用于“生成多线程关系图”，并按以下条件验收：只使用已知信息，关系推断需标为假设。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "236",
+      "title": "准备竞争性交易策略",
+      "section": "销售工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "operations",
+        "founder"
+      ],
+      "industry": "B2B 与企业销售",
+      "roles": "销售代表、客户经理、销售运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "销售团队需要把账户研究、互动记录和产品证据变成相关且可审阅的推进动作。具体场景：客户同时评估多种方案，团队需要统一差异化说法。",
+      "workflow": "向 Codex 提供CRM、公开资料、会议记录、产品能力和合规话术；先核对账户和联系人事实，识别业务信号与未知项，再生成个性化材料或 CRM 草稿，发送和阶段变更始终由销售人员确认。目标产物：需求对照、证据、风险和问题清单。",
+      "outcome": "使用示例：团队可把这条模板用于“准备竞争性交易策略”，并按以下条件验收：竞争信息引用公开或获准来源，避免无证据贬损。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "237",
+      "title": "整理 RFP 响应初稿",
+      "section": "销售工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "operations",
+        "founder"
+      ],
+      "industry": "B2B 与企业销售",
+      "roles": "销售代表、客户经理、销售运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "销售团队需要把账户研究、互动记录和产品证据变成相关且可审阅的推进动作。具体场景：问卷重复且需要跨产品、安全和法务取数。",
+      "workflow": "向 Codex 提供CRM、公开资料、会议记录、产品能力和合规话术；先核对账户和联系人事实，识别业务信号与未知项，再生成个性化材料或 CRM 草稿，发送和阶段变更始终由销售人员确认。目标产物：逐题草稿、证据链接和待确认项。",
+      "outcome": "使用示例：团队可把这条模板用于“整理 RFP 响应初稿”，并按以下条件验收：产品、安全、法务分别批准对应答案后提交。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "238",
+      "title": "识别停滞机会并制定动作",
+      "section": "销售工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "operations",
+        "founder"
+      ],
+      "industry": "B2B 与企业销售",
+      "roles": "销售代表、客户经理、销售运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "销售团队需要把账户研究、互动记录和产品证据变成相关且可审阅的推进动作。具体场景：机会长期无更新，原因可能是优先级、关系或方案风险。",
+      "workflow": "向 Codex 提供CRM、公开资料、会议记录、产品能力和合规话术；先核对账户和联系人事实，识别业务信号与未知项，再生成个性化材料或 CRM 草稿，发送和阶段变更始终由销售人员确认。目标产物：停滞信号、原因假设和下一步选项。",
+      "outcome": "使用示例：团队可把这条模板用于“识别停滞机会并制定动作”，并按以下条件验收：客户经理决定联系策略，不自动群发或关闭。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "239",
+      "title": "生成季度业务回顾材料",
+      "section": "销售工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "operations",
+        "founder"
+      ],
+      "industry": "B2B 与企业销售",
+      "roles": "销售代表、客户经理、销售运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "销售团队需要把账户研究、互动记录和产品证据变成相关且可审阅的推进动作。具体场景：QBR 需要把使用、成果、问题和计划组织成客户视角。",
+      "workflow": "向 Codex 提供CRM、公开资料、会议记录、产品能力和合规话术；先核对账户和联系人事实，识别业务信号与未知项，再生成个性化材料或 CRM 草稿，发送和阶段变更始终由销售人员确认。目标产物：客户结果、采用趋势、开放事项和建议。",
+      "outcome": "使用示例：团队可把这条模板用于“生成季度业务回顾材料”，并按以下条件验收：数字与客户认可的目标对齐，避免把活动量当成果。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "240",
+      "title": "分析赢单与丢单模式",
+      "section": "销售工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "operations",
+        "founder"
+      ],
+      "industry": "B2B 与企业销售",
+      "roles": "销售代表、客户经理、销售运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "销售团队需要把账户研究、互动记录和产品证据变成相关且可审阅的推进动作。具体场景：复盘备注非结构化，团队难以识别系统性原因。",
+      "workflow": "向 Codex 提供CRM、公开资料、会议记录、产品能力和合规话术；先核对账户和联系人事实，识别业务信号与未知项，再生成个性化材料或 CRM 草稿，发送和阶段变更始终由销售人员确认。目标产物：原因分类、代表案例和改进建议。",
+      "outcome": "使用示例：团队可把这条模板用于“分析赢单与丢单模式”，并按以下条件验收：抽查样本并区分销售判断、客户原话和推断。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "241",
+      "title": "生成工单首响草稿",
+      "section": "客户成功与支持工作流",
+      "category": "business-operations",
+      "professions": [
+        "operations",
+        "sales-marketing",
+        "professional"
+      ],
+      "industry": "客户成功与服务支持",
+      "roles": "客户成功经理、支持工程师、服务运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "客户团队需要快速理解上下文、解决问题并把高频反馈传回产品和知识库。具体场景：新工单信息不完整且响应速度要求高。",
+      "workflow": "向 Codex 提供工单、账户历史、产品文档、日志、服务政策和升级规则；先汇总客户上下文并保护敏感信息，复现或分类问题，再生成回复与内部行动草稿，涉及账户、补偿或系统变更时必须人工批准。目标产物：问题复述、澄清问题和安全排查步骤。",
+      "outcome": "使用示例：团队可把这条模板用于“生成工单首响草稿”，并按以下条件验收：支持人员核对账户、版本和政策后发送。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "242",
+      "title": "聚类高频客户问题",
+      "section": "客户成功与支持工作流",
+      "category": "business-operations",
+      "professions": [
+        "operations",
+        "sales-marketing",
+        "professional"
+      ],
+      "industry": "客户成功与服务支持",
+      "roles": "客户成功经理、支持工程师、服务运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "客户团队需要快速理解上下文、解决问题并把高频反馈传回产品和知识库。具体场景：大量工单标签不一致，产品团队看不到集中痛点。",
+      "workflow": "向 Codex 提供工单、账户历史、产品文档、日志、服务政策和升级规则；先汇总客户上下文并保护敏感信息，复现或分类问题，再生成回复与内部行动草稿，涉及账户、补偿或系统变更时必须人工批准。目标产物：主题、趋势、代表样本和影响范围。",
+      "outcome": "使用示例：团队可把这条模板用于“聚类高频客户问题”，并按以下条件验收：人工抽样复核聚类并移除个人和敏感信息。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "243",
+      "title": "把已解决工单转成知识库",
+      "section": "客户成功与支持工作流",
+      "category": "business-operations",
+      "professions": [
+        "operations",
+        "sales-marketing",
+        "professional"
+      ],
+      "industry": "客户成功与服务支持",
+      "roles": "客户成功经理、支持工程师、服务运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "客户团队需要快速理解上下文、解决问题并把高频反馈传回产品和知识库。具体场景：解决方案停留在个别工单，其他人员重复排查。",
+      "workflow": "向 Codex 提供工单、账户历史、产品文档、日志、服务政策和升级规则；先汇总客户上下文并保护敏感信息，复现或分类问题，再生成回复与内部行动草稿，涉及账户、补偿或系统变更时必须人工批准。目标产物：前提、步骤、验证、回滚和升级条件。",
+      "outcome": "使用示例：团队可把这条模板用于“把已解决工单转成知识库”，并按以下条件验收：由产品专家复现，去除客户专属数据后发布。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "244",
+      "title": "准备客户健康度复盘",
+      "section": "客户成功与支持工作流",
+      "category": "business-operations",
+      "professions": [
+        "operations",
+        "sales-marketing",
+        "professional"
+      ],
+      "industry": "客户成功与服务支持",
+      "roles": "客户成功经理、支持工程师、服务运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "客户团队需要快速理解上下文、解决问题并把高频反馈传回产品和知识库。具体场景：健康分数有变化但团队不知道具体驱动因素。",
+      "workflow": "向 Codex 提供工单、账户历史、产品文档、日志、服务政策和升级规则；先汇总客户上下文并保护敏感信息，复现或分类问题，再生成回复与内部行动草稿，涉及账户、补偿或系统变更时必须人工批准。目标产物：使用、支持、关系和风险证据摘要。",
+      "outcome": "使用示例：团队可把这条模板用于“准备客户健康度复盘”，并按以下条件验收：区分数据事实与经理判断，避免单一分数决定行动。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "245",
+      "title": "处理技术问题升级包",
+      "section": "客户成功与支持工作流",
+      "category": "business-operations",
+      "professions": [
+        "operations",
+        "sales-marketing",
+        "professional"
+      ],
+      "industry": "客户成功与服务支持",
+      "roles": "客户成功经理、支持工程师、服务运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "客户团队需要快速理解上下文、解决问题并把高频反馈传回产品和知识库。具体场景：一线升级给研发时缺少复现、日志和影响信息。",
+      "workflow": "向 Codex 提供工单、账户历史、产品文档、日志、服务政策和升级规则；先汇总客户上下文并保护敏感信息，复现或分类问题，再生成回复与内部行动草稿，涉及账户、补偿或系统变更时必须人工批准。目标产物：最小复现、环境、时间线、日志和业务影响。",
+      "outcome": "使用示例：团队可把这条模板用于“处理技术问题升级包”，并按以下条件验收：检查日志脱敏、版本准确和客户允许的共享范围。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "246",
+      "title": "生成续约风险行动计划",
+      "section": "客户成功与支持工作流",
+      "category": "business-operations",
+      "professions": [
+        "operations",
+        "sales-marketing",
+        "professional"
+      ],
+      "industry": "客户成功与服务支持",
+      "roles": "客户成功经理、支持工程师、服务运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "客户团队需要快速理解上下文、解决问题并把高频反馈传回产品和知识库。具体场景：客户采用不足或关键问题未解，续约存在风险。",
+      "workflow": "向 Codex 提供工单、账户历史、产品文档、日志、服务政策和升级规则；先汇总客户上下文并保护敏感信息，复现或分类问题，再生成回复与内部行动草稿，涉及账户、补偿或系统变更时必须人工批准。目标产物：风险证据、负责人、客户沟通和里程碑。",
+      "outcome": "使用示例：团队可把这条模板用于“生成续约风险行动计划”，并按以下条件验收：客户成功负责人确认优先级和承诺，不自动触达。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "247",
+      "title": "从反馈提炼产品请求",
+      "section": "客户成功与支持工作流",
+      "category": "business-operations",
+      "professions": [
+        "operations",
+        "sales-marketing",
+        "professional"
+      ],
+      "industry": "客户成功与服务支持",
+      "roles": "客户成功经理、支持工程师、服务运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "客户团队需要快速理解上下文、解决问题并把高频反馈传回产品和知识库。具体场景：客户描述的是问题，直接转成功能请求容易误判。",
+      "workflow": "向 Codex 提供工单、账户历史、产品文档、日志、服务政策和升级规则；先汇总客户上下文并保护敏感信息，复现或分类问题，再生成回复与内部行动草稿，涉及账户、补偿或系统变更时必须人工批准。目标产物：用户目标、当前替代方案、影响和证据链接。",
+      "outcome": "使用示例：团队可把这条模板用于“从反馈提炼产品请求”，并按以下条件验收：产品经理确认问题定义，不承诺实现日期。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "248",
+      "title": "审核服务补偿请求",
+      "section": "客户成功与支持工作流",
+      "category": "business-operations",
+      "professions": [
+        "operations",
+        "sales-marketing",
+        "professional"
+      ],
+      "industry": "客户成功与服务支持",
+      "roles": "客户成功经理、支持工程师、服务运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "客户团队需要快速理解上下文、解决问题并把高频反馈传回产品和知识库。具体场景：补偿需要结合服务等级、影响和历史记录。",
+      "workflow": "向 Codex 提供工单、账户历史、产品文档、日志、服务政策和升级规则；先汇总客户上下文并保护敏感信息，复现或分类问题，再生成回复与内部行动草稿，涉及账户、补偿或系统变更时必须人工批准。目标产物：资格核对、金额建议和审批材料。",
+      "outcome": "使用示例：团队可把这条模板用于“审核服务补偿请求”，并按以下条件验收：严格依据政策，由授权人员批准后执行。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "249",
+      "title": "生成客户培训计划",
+      "section": "客户成功与支持工作流",
+      "category": "business-operations",
+      "professions": [
+        "operations",
+        "sales-marketing",
+        "professional"
+      ],
+      "industry": "客户成功与服务支持",
+      "roles": "客户成功经理、支持工程师、服务运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "客户团队需要快速理解上下文、解决问题并把高频反馈传回产品和知识库。具体场景：不同角色对产品熟悉度和任务目标不同。",
+      "workflow": "向 Codex 提供工单、账户历史、产品文档、日志、服务政策和升级规则；先汇总客户上下文并保护敏感信息，复现或分类问题，再生成回复与内部行动草稿，涉及账户、补偿或系统变更时必须人工批准。目标产物：按角色的课程、练习和成功检查。",
+      "outcome": "使用示例：团队可把这条模板用于“生成客户培训计划”，并按以下条件验收：用客户真实任务试讲并确认访问权限与数据安全。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "250",
+      "title": "整理重大客户事件沟通",
+      "section": "客户成功与支持工作流",
+      "category": "business-operations",
+      "professions": [
+        "operations",
+        "sales-marketing",
+        "professional"
+      ],
+      "industry": "客户成功与服务支持",
+      "roles": "客户成功经理、支持工程师、服务运营",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "客户团队需要快速理解上下文、解决问题并把高频反馈传回产品和知识库。具体场景：故障期间需要频繁更新但事实仍在变化。",
+      "workflow": "向 Codex 提供工单、账户历史、产品文档、日志、服务政策和升级规则；先汇总客户上下文并保护敏感信息，复现或分类问题，再生成回复与内部行动草稿，涉及账户、补偿或系统变更时必须人工批准。目标产物：已知事实、影响、当前措施和下次更新时间。",
+      "outcome": "使用示例：团队可把这条模板用于“整理重大客户事件沟通”，并按以下条件验收：事件负责人批准，未知根因不得写成确定结论。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "251",
+      "title": "生成整合营销活动 Brief",
+      "section": "市场营销工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "creator",
+        "data"
+      ],
+      "industry": "品牌与增长营销",
+      "roles": "市场经理、增长营销、品牌团队",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "营销团队需要在品牌、受众、渠道和效果证据之间保持一致。具体场景：多个渠道分别规划，信息和目标容易分裂。",
+      "workflow": "向 Codex 提供品牌规范、受众研究、活动数据、渠道限制和合规要求；先核对受众与目标，提取可证明的产品信息，再生成渠道化策略和内容变体，经过品牌、事实和合规检查后安排发布与复盘。目标产物：目标、受众、主张、渠道、指标和时间线。",
+      "outcome": "使用示例：团队可把这条模板用于“生成整合营销活动 Brief”，并按以下条件验收：品牌、产品和增长负责人共同确认主张与指标。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "252",
+      "title": "把一份研究改写为多渠道内容",
+      "section": "市场营销工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "creator",
+        "data"
+      ],
+      "industry": "品牌与增长营销",
+      "roles": "市场经理、增长营销、品牌团队",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "营销团队需要在品牌、受众、渠道和效果证据之间保持一致。具体场景：白皮书信息丰富但不适合直接投放社媒和邮件。",
+      "workflow": "向 Codex 提供品牌规范、受众研究、活动数据、渠道限制和合规要求；先核对受众与目标，提取可证明的产品信息，再生成渠道化策略和内容变体，经过品牌、事实和合规检查后安排发布与复盘。目标产物：博客、邮件、短帖和销售摘要草稿。",
+      "outcome": "使用示例：团队可把这条模板用于“把一份研究改写为多渠道内容”，并按以下条件验收：每个事实回链原文，不添加研究未支持的结论。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "253",
+      "title": "分析广告创意表现",
+      "section": "市场营销工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "creator",
+        "data"
+      ],
+      "industry": "品牌与增长营销",
+      "roles": "市场经理、增长营销、品牌团队",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "营销团队需要在品牌、受众、渠道和效果证据之间保持一致。具体场景：不同素材、受众和版位组合太多，难以定位驱动因素。",
+      "workflow": "向 Codex 提供品牌规范、受众研究、活动数据、渠道限制和合规要求；先核对受众与目标，提取可证明的产品信息，再生成渠道化策略和内容变体，经过品牌、事实和合规检查后安排发布与复盘。目标产物：分层表现、疲劳信号和下一轮假设。",
+      "outcome": "使用示例：团队可把这条模板用于“分析广告创意表现”，并按以下条件验收：核对归因窗口、样本量、预算差异和异常流量。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "254",
+      "title": "生成 SEO 内容机会地图",
+      "section": "市场营销工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "creator",
+        "data"
+      ],
+      "industry": "品牌与增长营销",
+      "roles": "市场经理、增长营销、品牌团队",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "营销团队需要在品牌、受众、渠道和效果证据之间保持一致。具体场景：关键词清单很多但与产品能力和搜索意图未连接。",
+      "workflow": "向 Codex 提供品牌规范、受众研究、活动数据、渠道限制和合规要求；先核对受众与目标，提取可证明的产品信息，再生成渠道化策略和内容变体，经过品牌、事实和合规检查后安排发布与复盘。目标产物：主题集群、意图、竞争难度和内容缺口。",
+      "outcome": "使用示例：团队可把这条模板用于“生成 SEO 内容机会地图”，并按以下条件验收：用实时搜索数据复核，不把估算流量写成保证。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "255",
+      "title": "制定产品发布传播计划",
+      "section": "市场营销工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "creator",
+        "data"
+      ],
+      "industry": "品牌与增长营销",
+      "roles": "市场经理、增长营销、品牌团队",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "营销团队需要在品牌、受众、渠道和效果证据之间保持一致。具体场景：发布涉及客户、媒体、社区和内部团队多个节奏。",
+      "workflow": "向 Codex 提供品牌规范、受众研究、活动数据、渠道限制和合规要求；先核对受众与目标，提取可证明的产品信息，再生成渠道化策略和内容变体，经过品牌、事实和合规检查后安排发布与复盘。目标产物：受众消息、资产、负责人和发布日序列。",
+      "outcome": "使用示例：团队可把这条模板用于“制定产品发布传播计划”，并按以下条件验收：逐项确认产品可用性、声明、地区和支持准备度。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "256",
+      "title": "审查品牌语气一致性",
+      "section": "市场营销工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "creator",
+        "data"
+      ],
+      "industry": "品牌与增长营销",
+      "roles": "市场经理、增长营销、品牌团队",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "营销团队需要在品牌、受众、渠道和效果证据之间保持一致。具体场景：多人协作导致标题、术语和承诺风格漂移。",
+      "workflow": "向 Codex 提供品牌规范、受众研究、活动数据、渠道限制和合规要求；先核对受众与目标，提取可证明的产品信息，再生成渠道化策略和内容变体，经过品牌、事实和合规检查后安排发布与复盘。目标产物：偏差标注、修改建议和规则补充。",
+      "outcome": "使用示例：团队可把这条模板用于“审查品牌语气一致性”，并按以下条件验收：保留作者意图，事实与法律声明不得只为语气改写。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "257",
+      "title": "生成营销实验组合",
+      "section": "市场营销工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "creator",
+        "data"
+      ],
+      "industry": "品牌与增长营销",
+      "roles": "市场经理、增长营销、品牌团队",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "营销团队需要在品牌、受众、渠道和效果证据之间保持一致。具体场景：团队有增长目标但缺少可测量的渠道假设。",
+      "workflow": "向 Codex 提供品牌规范、受众研究、活动数据、渠道限制和合规要求；先核对受众与目标，提取可证明的产品信息，再生成渠道化策略和内容变体，经过品牌、事实和合规检查后安排发布与复盘。目标产物：假设、变量、受众、指标和停止条件。",
+      "outcome": "使用示例：团队可把这条模板用于“生成营销实验组合”，并按以下条件验收：避免同时改太多变量，预先定义护栏与样本要求。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "258",
+      "title": "整理活动复盘报告",
+      "section": "市场营销工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "creator",
+        "data"
+      ],
+      "industry": "品牌与增长营销",
+      "roles": "市场经理、增长营销、品牌团队",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "营销团队需要在品牌、受众、渠道和效果证据之间保持一致。具体场景：活动结束后数据、反馈和执行问题分散。",
+      "workflow": "向 Codex 提供品牌规范、受众研究、活动数据、渠道限制和合规要求；先核对受众与目标，提取可证明的产品信息，再生成渠道化策略和内容变体，经过品牌、事实和合规检查后安排发布与复盘。目标产物：目标对照、渠道结果、洞察和后续行动。",
+      "outcome": "使用示例：团队可把这条模板用于“整理活动复盘报告”，并按以下条件验收：财务、销售和渠道数据使用同一时间与归因口径。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "259",
+      "title": "建立内容日历",
+      "section": "市场营销工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "creator",
+        "data"
+      ],
+      "industry": "品牌与增长营销",
+      "roles": "市场经理、增长营销、品牌团队",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "营销团队需要在品牌、受众、渠道和效果证据之间保持一致。具体场景：主题、发布节奏和资源依赖靠临时协调。",
+      "workflow": "向 Codex 提供品牌规范、受众研究、活动数据、渠道限制和合规要求；先核对受众与目标，提取可证明的产品信息，再生成渠道化策略和内容变体，经过品牌、事实和合规检查后安排发布与复盘。目标产物：主题序列、渠道、资产、负责人和截止时间。",
+      "outcome": "使用示例：团队可把这条模板用于“建立内容日历”，并按以下条件验收：检查受众覆盖、重复主题、法定日期和制作容量。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "260",
+      "title": "生成客户案例采访提纲",
+      "section": "市场营销工作流",
+      "category": "sales-marketing",
+      "professions": [
+        "sales-marketing",
+        "creator",
+        "data"
+      ],
+      "industry": "品牌与增长营销",
+      "roles": "市场经理、增长营销、品牌团队",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "营销团队需要在品牌、受众、渠道和效果证据之间保持一致。具体场景：采访需要得到具体证据又不能诱导客户作夸大陈述。",
+      "workflow": "向 Codex 提供品牌规范、受众研究、活动数据、渠道限制和合规要求；先核对受众与目标，提取可证明的产品信息，再生成渠道化策略和内容变体，经过品牌、事实和合规检查后安排发布与复盘。目标产物：背景、过程、结果、证据和批准问题。",
+      "outcome": "使用示例：团队可把这条模板用于“生成客户案例采访提纲”，并按以下条件验收：所有数字由客户确认并经过品牌与法务授权。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "261",
+      "title": "把专家访谈整理成长文",
+      "section": "内容与创意生产工作流",
+      "category": "content-collaboration",
+      "professions": [
+        "creator",
+        "sales-marketing",
+        "product"
+      ],
+      "industry": "内容制作与创意协作",
+      "roles": "内容策划、编辑、创意制作人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "内容团队需要在事实、品牌和多格式交付之间高效协作。具体场景：录音包含大量口语、重复和未核实观点。",
+      "workflow": "向 Codex 提供内容 Brief、参考资料、品牌指南、版权信息和渠道规格；先建立事实与素材清单，生成结构和多个方向，再按渠道制作草稿，执行事实、版权、品牌和格式审查后交付。目标产物：文章结构、引文候选和事实核查表。",
+      "outcome": "使用示例：团队可把这条模板用于“把专家访谈整理成长文”，并按以下条件验收：引文回听原音，专家确认技术表述与可公开范围。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "262",
+      "title": "生成视频脚本与分镜",
+      "section": "内容与创意生产工作流",
+      "category": "content-collaboration",
+      "professions": [
+        "creator",
+        "sales-marketing",
+        "product"
+      ],
+      "industry": "内容制作与创意协作",
+      "roles": "内容策划、编辑、创意制作人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "内容团队需要在事实、品牌和多格式交付之间高效协作。具体场景：主题明确但叙事节奏、画面和旁白尚未落地。",
+      "workflow": "向 Codex 提供内容 Brief、参考资料、品牌指南、版权信息和渠道规格；先建立事实与素材清单，生成结构和多个方向，再按渠道制作草稿，执行事实、版权、品牌和格式审查后交付。目标产物：场次、旁白、镜头、素材和时长估算。",
+      "outcome": "使用示例：团队可把这条模板用于“生成视频脚本与分镜”，并按以下条件验收：核对总时长、产品画面真实性、版权和字幕可读性。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "263",
+      "title": "把产品文档转成教程",
+      "section": "内容与创意生产工作流",
+      "category": "content-collaboration",
+      "professions": [
+        "creator",
+        "sales-marketing",
+        "product"
+      ],
+      "industry": "内容制作与创意协作",
+      "roles": "内容策划、编辑、创意制作人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "内容团队需要在事实、品牌和多格式交付之间高效协作。具体场景：技术文档准确但新手难以按任务完成操作。",
+      "workflow": "向 Codex 提供内容 Brief、参考资料、品牌指南、版权信息和渠道规格；先建立事实与素材清单，生成结构和多个方向，再按渠道制作草稿，执行事实、版权、品牌和格式审查后交付。目标产物：前提、步骤、示例、检查点和故障排查。",
+      "outcome": "使用示例：团队可把这条模板用于“把产品文档转成教程”，并按以下条件验收：让未参与编写的人从空环境完整跟做。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "264",
+      "title": "建立编辑审稿流水线",
+      "section": "内容与创意生产工作流",
+      "category": "content-collaboration",
+      "professions": [
+        "creator",
+        "sales-marketing",
+        "product"
+      ],
+      "industry": "内容制作与创意协作",
+      "roles": "内容策划、编辑、创意制作人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "内容团队需要在事实、品牌和多格式交付之间高效协作。具体场景：稿件在多人之间来回，修改意见重复或冲突。",
+      "workflow": "向 Codex 提供内容 Brief、参考资料、品牌指南、版权信息和渠道规格；先建立事实与素材清单，生成结构和多个方向，再按渠道制作草稿，执行事实、版权、品牌和格式审查后交付。目标产物：审稿阶段、责任边界和版本命名规则。",
+      "outcome": "使用示例：团队可把这条模板用于“建立编辑审稿流水线”，并按以下条件验收：事实、结构、语言、法务意见分别留痕并由主编定稿。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "265",
+      "title": "生成播客节目研究包",
+      "section": "内容与创意生产工作流",
+      "category": "content-collaboration",
+      "professions": [
+        "creator",
+        "sales-marketing",
+        "product"
+      ],
+      "industry": "内容制作与创意协作",
+      "roles": "内容策划、编辑、创意制作人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "内容团队需要在事实、品牌和多格式交付之间高效协作。具体场景：主持人需要快速掌握嘉宾背景和主题脉络。",
+      "workflow": "向 Codex 提供内容 Brief、参考资料、品牌指南、版权信息和渠道规格；先建立事实与素材清单，生成结构和多个方向，再按渠道制作草稿，执行事实、版权、品牌和格式审查后交付。目标产物：来源摘要、时间线、问题和敏感点。",
+      "outcome": "使用示例：团队可把这条模板用于“生成播客节目研究包”，并按以下条件验收：只引用可靠公开来源并标注日期与未确认信息。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "266",
+      "title": "制作演示文稿故事线",
+      "section": "内容与创意生产工作流",
+      "category": "content-collaboration",
+      "professions": [
+        "creator",
+        "sales-marketing",
+        "product"
+      ],
+      "industry": "内容制作与创意协作",
+      "roles": "内容策划、编辑、创意制作人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "内容团队需要在事实、品牌和多格式交付之间高效协作。具体场景：材料数据很多但缺少面向受众的清晰主线。",
+      "workflow": "向 Codex 提供内容 Brief、参考资料、品牌指南、版权信息和渠道规格；先建立事实与素材清单，生成结构和多个方向，再按渠道制作草稿，执行事实、版权、品牌和格式审查后交付。目标产物：章节、关键论点、图表建议和讲者备注。",
+      "outcome": "使用示例：团队可把这条模板用于“制作演示文稿故事线”，并按以下条件验收：每页只承载明确观点，数字回链原始数据。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "267",
+      "title": "批量生成电商素材变体",
+      "section": "内容与创意生产工作流",
+      "category": "content-collaboration",
+      "professions": [
+        "creator",
+        "sales-marketing",
+        "product"
+      ],
+      "industry": "内容制作与创意协作",
+      "roles": "内容策划、编辑、创意制作人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "内容团队需要在事实、品牌和多格式交付之间高效协作。具体场景：多个渠道需要不同尺寸和文案但产品必须一致。",
+      "workflow": "向 Codex 提供内容 Brief、参考资料、品牌指南、版权信息和渠道规格；先建立事实与素材清单，生成结构和多个方向，再按渠道制作草稿，执行事实、版权、品牌和格式审查后交付。目标产物：渠道规格表、创意变体和审核清单。",
+      "outcome": "使用示例：团队可把这条模板用于“批量生成电商素材变体”，并按以下条件验收：逐张检查产品结构、文字、声明、尺寸和品牌元素。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "268",
+      "title": "整理版权与素材台账",
+      "section": "内容与创意生产工作流",
+      "category": "content-collaboration",
+      "professions": [
+        "creator",
+        "sales-marketing",
+        "product"
+      ],
+      "industry": "内容制作与创意协作",
+      "roles": "内容策划、编辑、创意制作人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "内容团队需要在事实、品牌和多格式交付之间高效协作。具体场景：图片、音乐和引用来自多处，授权状态不清。",
+      "workflow": "向 Codex 提供内容 Brief、参考资料、品牌指南、版权信息和渠道规格；先建立事实与素材清单，生成结构和多个方向，再按渠道制作草稿，执行事实、版权、品牌和格式审查后交付。目标产物：素材来源、许可、署名和使用范围清单。",
+      "outcome": "使用示例：团队可把这条模板用于“整理版权与素材台账”，并按以下条件验收：无法确认授权的素材不进入最终成品。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "269",
+      "title": "把直播内容切成短内容",
+      "section": "内容与创意生产工作流",
+      "category": "content-collaboration",
+      "professions": [
+        "creator",
+        "sales-marketing",
+        "product"
+      ],
+      "industry": "内容制作与创意协作",
+      "roles": "内容策划、编辑、创意制作人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "内容团队需要在事实、品牌和多格式交付之间高效协作。具体场景：长直播包含多个可复用片段但人工定位耗时。",
+      "workflow": "向 Codex 提供内容 Brief、参考资料、品牌指南、版权信息和渠道规格；先建立事实与素材清单，生成结构和多个方向，再按渠道制作草稿，执行事实、版权、品牌和格式审查后交付。目标产物：时间码、片段主题、标题和字幕草稿。",
+      "outcome": "使用示例：团队可把这条模板用于“把直播内容切成短内容”，并按以下条件验收：回看上下文，避免截取导致观点失真或泄露信息。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "270",
+      "title": "生成内容本地化 Brief",
+      "section": "内容与创意生产工作流",
+      "category": "content-collaboration",
+      "professions": [
+        "creator",
+        "sales-marketing",
+        "product"
+      ],
+      "industry": "内容制作与创意协作",
+      "roles": "内容策划、编辑、创意制作人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "内容团队需要在事实、品牌和多格式交付之间高效协作。具体场景：直译不能适配当地文化、渠道和合规要求。",
+      "workflow": "向 Codex 提供内容 Brief、参考资料、品牌指南、版权信息和渠道规格；先建立事实与素材清单，生成结构和多个方向，再按渠道制作草稿，执行事实、版权、品牌和格式审查后交付。目标产物：不可变事实、可调整表达和市场注意事项。",
+      "outcome": "使用示例：团队可把这条模板用于“生成内容本地化 Brief”，并按以下条件验收：由母语编辑与当地合规人员复核最终版本。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "271",
+      "title": "执行月末账户对账",
+      "section": "财务与会计工作流",
+      "category": "finance-investing",
+      "professions": [
+        "finance-investing",
+        "business-ops",
+        "founder"
+      ],
+      "industry": "企业财务与会计",
+      "roles": "财务分析师、会计、财务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "财务团队需要让数字可追溯、判断有依据、审批有责任人。具体场景：银行、支付平台和总账之间存在未匹配项目。",
+      "workflow": "向 Codex 提供总账、子系统导出、预算、政策、合同和对账模板；先锁定期间与口径，执行结构化对账和异常分类，再生成解释与凭证草稿，任何分录、付款或预测调整都由授权人员复核批准。目标产物：匹配表、差异类型和待处理清单。",
+      "outcome": "使用示例：团队可把这条模板用于“执行月末账户对账”，并按以下条件验收：核对期初期末、币种、手续费、在途和重复记录。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "272",
+      "title": "生成预算与实际差异桥",
+      "section": "财务与会计工作流",
+      "category": "finance-investing",
+      "professions": [
+        "finance-investing",
+        "business-ops",
+        "founder"
+      ],
+      "industry": "企业财务与会计",
+      "roles": "财务分析师、会计、财务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "财务团队需要让数字可追溯、判断有依据、审批有责任人。具体场景：管理层看到差异总额但不清楚数量、价格和时间驱动。",
+      "workflow": "向 Codex 提供总账、子系统导出、预算、政策、合同和对账模板；先锁定期间与口径，执行结构化对账和异常分类，再生成解释与凭证草稿，任何分录、付款或预测调整都由授权人员复核批准。目标产物：差异拆分、主要驱动和责任部门问题。",
+      "outcome": "使用示例：团队可把这条模板用于“生成预算与实际差异桥”，并按以下条件验收：所有数字回链账表，解释由业务负责人确认。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "273",
+      "title": "审核员工费用报销",
+      "section": "财务与会计工作流",
+      "category": "finance-investing",
+      "professions": [
+        "finance-investing",
+        "business-ops",
+        "founder"
+      ],
+      "industry": "企业财务与会计",
+      "roles": "财务分析师、会计、财务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "财务团队需要让数字可追溯、判断有依据、审批有责任人。具体场景：票据、政策和项目归属需要逐项核对。",
+      "workflow": "向 Codex 提供总账、子系统导出、预算、政策、合同和对账模板；先锁定期间与口径，执行结构化对账和异常分类，再生成解释与凭证草稿，任何分录、付款或预测调整都由授权人员复核批准。目标产物：合规检查、缺件、异常和审批建议。",
+      "outcome": "使用示例：团队可把这条模板用于“审核员工费用报销”，并按以下条件验收：不得自动批准或拒绝；财务人员确认票据与例外。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "274",
+      "title": "准备现金流滚动预测",
+      "section": "财务与会计工作流",
+      "category": "finance-investing",
+      "professions": [
+        "finance-investing",
+        "business-ops",
+        "founder"
+      ],
+      "industry": "企业财务与会计",
+      "roles": "财务分析师、会计、财务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "财务团队需要让数字可追溯、判断有依据、审批有责任人。具体场景：收付款节奏变化快，静态月度预测失真。",
+      "workflow": "向 Codex 提供总账、子系统导出、预算、政策、合同和对账模板；先锁定期间与口径，执行结构化对账和异常分类，再生成解释与凭证草稿，任何分录、付款或预测调整都由授权人员复核批准。目标产物：周度现金流、情景和关键假设。",
+      "outcome": "使用示例：团队可把这条模板用于“准备现金流滚动预测”，并按以下条件验收：与银行余额、应收应付和已承诺支出核对。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "275",
+      "title": "识别重复付款风险",
+      "section": "财务与会计工作流",
+      "category": "finance-investing",
+      "professions": [
+        "finance-investing",
+        "business-ops",
+        "founder"
+      ],
+      "industry": "企业财务与会计",
+      "roles": "财务分析师、会计、财务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "财务团队需要让数字可追溯、判断有依据、审批有责任人。具体场景：供应商名称和发票格式不一致，简单精确匹配不足。",
+      "workflow": "向 Codex 提供总账、子系统导出、预算、政策、合同和对账模板；先锁定期间与口径，执行结构化对账和异常分类，再生成解释与凭证草稿，任何分录、付款或预测调整都由授权人员复核批准。目标产物：疑似重复组、匹配理由和复核队列。",
+      "outcome": "使用示例：团队可把这条模板用于“识别重复付款风险”，并按以下条件验收：人工检查合同、金额、日期、税号和贷项通知。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "276",
+      "title": "整理审计取证包",
+      "section": "财务与会计工作流",
+      "category": "finance-investing",
+      "professions": [
+        "finance-investing",
+        "business-ops",
+        "founder"
+      ],
+      "industry": "企业财务与会计",
+      "roles": "财务分析师、会计、财务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "财务团队需要让数字可追溯、判断有依据、审批有责任人。具体场景：审计样本需要从多个系统收集并证明完整性。",
+      "workflow": "向 Codex 提供总账、子系统导出、预算、政策、合同和对账模板；先锁定期间与口径，执行结构化对账和异常分类，再生成解释与凭证草稿，任何分录、付款或预测调整都由授权人员复核批准。目标产物：样本索引、凭证、审批和系统截图。",
+      "outcome": "使用示例：团队可把这条模板用于“整理审计取证包”，并按以下条件验收：检查期间、版本、权限、脱敏和审计请求逐项覆盖。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "277",
+      "title": "生成管理层财务摘要",
+      "section": "财务与会计工作流",
+      "category": "finance-investing",
+      "professions": [
+        "finance-investing",
+        "business-ops",
+        "founder"
+      ],
+      "industry": "企业财务与会计",
+      "roles": "财务分析师、会计、财务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "财务团队需要让数字可追溯、判断有依据、审批有责任人。具体场景：财务报表细节多，非财务管理者难以把握变化。",
+      "workflow": "向 Codex 提供总账、子系统导出、预算、政策、合同和对账模板；先锁定期间与口径，执行结构化对账和异常分类，再生成解释与凭证草稿，任何分录、付款或预测调整都由授权人员复核批准。目标产物：利润、现金、风险和待决策事项。",
+      "outcome": "使用示例：团队可把这条模板用于“生成管理层财务摘要”，并按以下条件验收：保持会计口径，明确估计、一次性项目和不确定性。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "278",
+      "title": "复核收入确认条件",
+      "section": "财务与会计工作流",
+      "category": "finance-investing",
+      "professions": [
+        "finance-investing",
+        "business-ops",
+        "founder"
+      ],
+      "industry": "企业财务与会计",
+      "roles": "财务分析师、会计、财务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "财务团队需要让数字可追溯、判断有依据、审批有责任人。具体场景：复杂合同包含实施、订阅和可变对价条款。",
+      "workflow": "向 Codex 提供总账、子系统导出、预算、政策、合同和对账模板；先锁定期间与口径，执行结构化对账和异常分类，再生成解释与凭证草稿，任何分录、付款或预测调整都由授权人员复核批准。目标产物：条款摘要、判断点和所需证据。",
+      "outcome": "使用示例：团队可把这条模板用于“复核收入确认条件”，并按以下条件验收：由具备授权的会计人员依据准则作最终判断。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "279",
+      "title": "建立关账任务追踪",
+      "section": "财务与会计工作流",
+      "category": "finance-investing",
+      "professions": [
+        "finance-investing",
+        "business-ops",
+        "founder"
+      ],
+      "industry": "企业财务与会计",
+      "roles": "财务分析师、会计、财务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "财务团队需要让数字可追溯、判断有依据、审批有责任人。具体场景：关账依赖多人和前置任务，延迟原因不透明。",
+      "workflow": "向 Codex 提供总账、子系统导出、预算、政策、合同和对账模板；先锁定期间与口径，执行结构化对账和异常分类，再生成解释与凭证草稿，任何分录、付款或预测调整都由授权人员复核批准。目标产物：任务依赖、负责人、证据和升级规则。",
+      "outcome": "使用示例：团队可把这条模板用于“建立关账任务追踪”，并按以下条件验收：任务完成需附凭证，状态变更由责任人确认。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "280",
+      "title": "比较融资情景影响",
+      "section": "财务与会计工作流",
+      "category": "finance-investing",
+      "professions": [
+        "finance-investing",
+        "business-ops",
+        "founder"
+      ],
+      "industry": "企业财务与会计",
+      "roles": "财务分析师、会计、财务负责人",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "财务团队需要让数字可追溯、判断有依据、审批有责任人。具体场景：管理层需要理解不同融资规模、估值和条款的稀释。",
+      "workflow": "向 Codex 提供总账、子系统导出、预算、政策、合同和对账模板；先锁定期间与口径，执行结构化对账和异常分类，再生成解释与凭证草稿，任何分录、付款或预测调整都由授权人员复核批准。目标产物：情景模型、假设和敏感性分析。",
+      "outcome": "使用示例：团队可把这条模板用于“比较融资情景影响”，并按以下条件验收：法务与财务确认条款，模型不构成投资或法律建议。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "281",
+      "title": "构建行业研究证据表",
+      "section": "专业服务与研究工作流",
+      "category": "finance-services",
+      "professions": [
+        "professional",
+        "data",
+        "finance-investing"
+      ],
+      "industry": "咨询、法律、研究与专业服务",
+      "roles": "咨询顾问、研究员、专业服务人员",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "专业服务团队需要快速处理大量材料，同时保留引用、方法和专家责任边界。具体场景：报告来源多且观点相互引用，容易丢失原始证据。",
+      "workflow": "向 Codex 提供客户授权资料、公开来源、方法模板、法规或专业标准；先确认授权、问题范围和来源层级，建立证据表与分析框架，再生成草稿和反例检查，最终结论由具备资质的专业人员签发。目标产物：来源、日期、方法、结论和可信度表。",
+      "outcome": "使用示例：团队可把这条模板用于“构建行业研究证据表”，并按以下条件验收：优先追溯一手来源并标记付费墙、样本和利益冲突。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "282",
+      "title": "整理尽职调查问题清单",
+      "section": "专业服务与研究工作流",
+      "category": "finance-services",
+      "professions": [
+        "professional",
+        "data",
+        "finance-investing"
+      ],
+      "industry": "咨询、法律、研究与专业服务",
+      "roles": "咨询顾问、研究员、专业服务人员",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "专业服务团队需要快速处理大量材料，同时保留引用、方法和专家责任边界。具体场景：交易资料庞杂，需要识别缺件、矛盾和高风险主题。",
+      "workflow": "向 Codex 提供客户授权资料、公开来源、方法模板、法规或专业标准；先确认授权、问题范围和来源层级，建立证据表与分析框架，再生成草稿和反例检查，最终结论由具备资质的专业人员签发。目标产物：主题化问题、证据引用和优先级。",
+      "outcome": "使用示例：团队可把这条模板用于“整理尽职调查问题清单”，并按以下条件验收：客户与专业顾问确认范围，不把缺件直接判断为违规。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "283",
+      "title": "比较多份合同条款",
+      "section": "专业服务与研究工作流",
+      "category": "finance-services",
+      "professions": [
+        "professional",
+        "data",
+        "finance-investing"
+      ],
+      "industry": "咨询、法律、研究与专业服务",
+      "roles": "咨询顾问、研究员、专业服务人员",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "专业服务团队需要快速处理大量材料，同时保留引用、方法和专家责任边界。具体场景：不同版本合同的责任、期限和例外难以逐条人工对比。",
+      "workflow": "向 Codex 提供客户授权资料、公开来源、方法模板、法规或专业标准；先确认授权、问题范围和来源层级，建立证据表与分析框架，再生成草稿和反例检查，最终结论由具备资质的专业人员签发。目标产物：条款矩阵、差异和需专业判断项。",
+      "outcome": "使用示例：团队可把这条模板用于“比较多份合同条款”，并按以下条件验收：逐条回链原文，由律师作法律解释与建议。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "284",
+      "title": "生成咨询访谈提纲",
+      "section": "专业服务与研究工作流",
+      "category": "finance-services",
+      "professions": [
+        "professional",
+        "data",
+        "finance-investing"
+      ],
+      "industry": "咨询、法律、研究与专业服务",
+      "roles": "咨询顾问、研究员、专业服务人员",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "专业服务团队需要快速处理大量材料，同时保留引用、方法和专家责任边界。具体场景：项目假设需要通过不同角色访谈验证。",
+      "workflow": "向 Codex 提供客户授权资料、公开来源、方法模板、法规或专业标准；先确认授权、问题范围和来源层级，建立证据表与分析框架，再生成草稿和反例检查，最终结论由具备资质的专业人员签发。目标产物：按角色的问题、证据需求和反证问题。",
+      "outcome": "使用示例：团队可把这条模板用于“生成咨询访谈提纲”，并按以下条件验收：避免诱导性问题，访谈资料按授权范围使用。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "285",
+      "title": "把研究论文转成方法摘要",
+      "section": "专业服务与研究工作流",
+      "category": "finance-services",
+      "professions": [
+        "professional",
+        "data",
+        "finance-investing"
+      ],
+      "industry": "咨询、法律、研究与专业服务",
+      "roles": "咨询顾问、研究员、专业服务人员",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "专业服务团队需要快速处理大量材料，同时保留引用、方法和专家责任边界。具体场景：决策者需要理解研究设计和可迁移性而非只看结论。",
+      "workflow": "向 Codex 提供客户授权资料、公开来源、方法模板、法规或专业标准；先确认授权、问题范围和来源层级，建立证据表与分析框架，再生成草稿和反例检查，最终结论由具备资质的专业人员签发。目标产物：样本、方法、结果、限制和适用条件。",
+      "outcome": "使用示例：团队可把这条模板用于“把研究论文转成方法摘要”，并按以下条件验收：核对原文表格、补充材料和统计口径。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "286",
+      "title": "整理监管更新影响",
+      "section": "专业服务与研究工作流",
+      "category": "finance-services",
+      "professions": [
+        "professional",
+        "data",
+        "finance-investing"
+      ],
+      "industry": "咨询、法律、研究与专业服务",
+      "roles": "咨询顾问、研究员、专业服务人员",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "专业服务团队需要快速处理大量材料，同时保留引用、方法和专家责任边界。具体场景：新规文本长且影响不同产品、地区和流程。",
+      "workflow": "向 Codex 提供客户授权资料、公开来源、方法模板、法规或专业标准；先确认授权、问题范围和来源层级，建立证据表与分析框架，再生成草稿和反例检查，最终结论由具备资质的专业人员签发。目标产物：条款引用、影响假设、责任人与行动清单。",
+      "outcome": "使用示例：团队可把这条模板用于“整理监管更新影响”，并按以下条件验收：由法务或合规确认解释、生效日和适用范围。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "287",
+      "title": "生成客户会议备忘录",
+      "section": "专业服务与研究工作流",
+      "category": "finance-services",
+      "professions": [
+        "professional",
+        "data",
+        "finance-investing"
+      ],
+      "industry": "咨询、法律、研究与专业服务",
+      "roles": "咨询顾问、研究员、专业服务人员",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "专业服务团队需要快速处理大量材料，同时保留引用、方法和专家责任边界。具体场景：会议讨论包含事实、建议和客户决定，容易混写。",
+      "workflow": "向 Codex 提供客户授权资料、公开来源、方法模板、法规或专业标准；先确认授权、问题范围和来源层级，建立证据表与分析框架，再生成草稿和反例检查，最终结论由具备资质的专业人员签发。目标产物：背景、讨论、决定、待办和保留意见。",
+      "outcome": "使用示例：团队可把这条模板用于“生成客户会议备忘录”，并按以下条件验收：参会者确认内容；专业建议与客户决定明确区分。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "288",
+      "title": "制作专家证据索引",
+      "section": "专业服务与研究工作流",
+      "category": "finance-services",
+      "professions": [
+        "professional",
+        "data",
+        "finance-investing"
+      ],
+      "industry": "咨询、法律、研究与专业服务",
+      "roles": "咨询顾问、研究员、专业服务人员",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "专业服务团队需要快速处理大量材料，同时保留引用、方法和专家责任边界。具体场景：案件或研究项目需要追踪大量文档、版本和引用位置。",
+      "workflow": "向 Codex 提供客户授权资料、公开来源、方法模板、法规或专业标准；先确认授权、问题范围和来源层级，建立证据表与分析框架，再生成草稿和反例检查，最终结论由具备资质的专业人员签发。目标产物：文件哈希、日期、页码、主题和引用关系。",
+      "outcome": "使用示例：团队可把这条模板用于“制作专家证据索引”，并按以下条件验收：保持原件只读，记录处理链和无法读取的文件。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "289",
+      "title": "对分析模型做敏感性检查",
+      "section": "专业服务与研究工作流",
+      "category": "finance-services",
+      "professions": [
+        "professional",
+        "data",
+        "finance-investing"
+      ],
+      "industry": "咨询、法律、研究与专业服务",
+      "roles": "咨询顾问、研究员、专业服务人员",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "专业服务团队需要快速处理大量材料，同时保留引用、方法和专家责任边界。具体场景：结论依赖多个不确定假设，单一情景可能误导。",
+      "workflow": "向 Codex 提供客户授权资料、公开来源、方法模板、法规或专业标准；先确认授权、问题范围和来源层级，建立证据表与分析框架，再生成草稿和反例检查，最终结论由具备资质的专业人员签发。目标产物：关键变量、范围、情景和结论变化。",
+      "outcome": "使用示例：团队可把这条模板用于“对分析模型做敏感性检查”，并按以下条件验收：假设范围由领域专家确认并披露模型限制。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "290",
+      "title": "把项目成果沉淀为方法资产",
+      "section": "专业服务与研究工作流",
+      "category": "finance-services",
+      "professions": [
+        "professional",
+        "data",
+        "finance-investing"
+      ],
+      "industry": "咨询、法律、研究与专业服务",
+      "roles": "咨询顾问、研究员、专业服务人员",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "专业服务团队需要快速处理大量材料，同时保留引用、方法和专家责任边界。具体场景：项目结束后模板和经验留在个人文件中。",
+      "workflow": "向 Codex 提供客户授权资料、公开来源、方法模板、法规或专业标准；先确认授权、问题范围和来源层级，建立证据表与分析框架，再生成草稿和反例检查，最终结论由具备资质的专业人员签发。目标产物：去客户化模板、步骤、检查清单和适用边界。",
+      "outcome": "使用示例：团队可把这条模板用于“把项目成果沉淀为方法资产”，并按以下条件验收：移除机密信息并由项目负责人批准复用范围。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "Codex for every role, tool, and workflow",
+        "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "note": "OpenAI 官方跨岗位工作流文章；本组据此整理为可执行模板，不代表已证明业务成效。"
+      }
+    },
+    {
+      "id": "291",
+      "title": "把课程目标拆成教学单元",
+      "section": "教育培训与个人效率工作流",
+      "category": "public-education",
+      "professions": [
+        "creator",
+        "professional",
+        "operations"
+      ],
+      "industry": "教育培训与知识工作",
+      "roles": "教师、培训师、研究人员、知识工作者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "教育与知识工作者需要把资料、计划和重复任务转成可复核的学习或办公成果。具体场景：课程目标较抽象，活动、材料和评估尚未对齐。",
+      "workflow": "向 Codex 提供课程资料、学习目标、文件、日历、会议记录和个人偏好；先确认受众与目标，整理输入并标记缺失，再生成可调整的计划或材料，最后由使用者核对事实、隐私、可达性和实际可执行性。目标产物：单元目标、活动、材料和形成性评估。",
+      "outcome": "使用示例：团队可把这条模板用于“把课程目标拆成教学单元”，并按以下条件验收：教师检查难度、时长、先修知识和课程标准。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "How to use Codex for everyday work",
+        "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+        "note": "OpenAI Academy 日常工作实操；本组扩展为教育与个人效率模板。"
+      }
+    },
+    {
+      "id": "292",
+      "title": "生成分层练习题",
+      "section": "教育培训与个人效率工作流",
+      "category": "public-education",
+      "professions": [
+        "creator",
+        "professional",
+        "operations"
+      ],
+      "industry": "教育培训与知识工作",
+      "roles": "教师、培训师、研究人员、知识工作者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "教育与知识工作者需要把资料、计划和重复任务转成可复核的学习或办公成果。具体场景：同一班级学习水平差异大，需要不同支持强度。",
+      "workflow": "向 Codex 提供课程资料、学习目标、文件、日历、会议记录和个人偏好；先确认受众与目标，整理输入并标记缺失，再生成可调整的计划或材料，最后由使用者核对事实、隐私、可达性和实际可执行性。目标产物：基础、进阶、挑战题与答案说明。",
+      "outcome": "使用示例：团队可把这条模板用于“生成分层练习题”，并按以下条件验收：教师复核准确性、歧义、文化偏差和难度梯度。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "How to use Codex for everyday work",
+        "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+        "note": "OpenAI Academy 日常工作实操；本组扩展为教育与个人效率模板。"
+      }
+    },
+    {
+      "id": "293",
+      "title": "把讲义转成无障碍版本",
+      "section": "教育培训与个人效率工作流",
+      "category": "public-education",
+      "professions": [
+        "creator",
+        "professional",
+        "operations"
+      ],
+      "industry": "教育培训与知识工作",
+      "roles": "教师、培训师、研究人员、知识工作者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "教育与知识工作者需要把资料、计划和重复任务转成可复核的学习或办公成果。具体场景：原材料结构不清，图片缺少说明且表格复杂。",
+      "workflow": "向 Codex 提供课程资料、学习目标、文件、日历、会议记录和个人偏好；先确认受众与目标，整理输入并标记缺失，再生成可调整的计划或材料，最后由使用者核对事实、隐私、可达性和实际可执行性。目标产物：语义结构、替代文本和简化表格建议。",
+      "outcome": "使用示例：团队可把这条模板用于“把讲义转成无障碍版本”，并按以下条件验收：用无障碍检查工具与读屏人工复核。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "How to use Codex for everyday work",
+        "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+        "note": "OpenAI Academy 日常工作实操；本组扩展为教育与个人效率模板。"
+      }
+    },
+    {
+      "id": "294",
+      "title": "整理学生反馈主题",
+      "section": "教育培训与个人效率工作流",
+      "category": "public-education",
+      "professions": [
+        "creator",
+        "professional",
+        "operations"
+      ],
+      "industry": "教育培训与知识工作",
+      "roles": "教师、培训师、研究人员、知识工作者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "教育与知识工作者需要把资料、计划和重复任务转成可复核的学习或办公成果。具体场景：开放反馈数量多且容易被少数强烈意见主导。",
+      "workflow": "向 Codex 提供课程资料、学习目标、文件、日历、会议记录和个人偏好；先确认受众与目标，整理输入并标记缺失，再生成可调整的计划或材料，最后由使用者核对事实、隐私、可达性和实际可执行性。目标产物：主题、代表样本、频率和行动建议。",
+      "outcome": "使用示例：团队可把这条模板用于“整理学生反馈主题”，并按以下条件验收：匿名化处理并保留少数意见，不自动评价个人。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "How to use Codex for everyday work",
+        "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+        "note": "OpenAI Academy 日常工作实操；本组扩展为教育与个人效率模板。"
+      }
+    },
+    {
+      "id": "295",
+      "title": "生成培训演练脚本",
+      "section": "教育培训与个人效率工作流",
+      "category": "public-education",
+      "professions": [
+        "creator",
+        "professional",
+        "operations"
+      ],
+      "industry": "教育培训与知识工作",
+      "roles": "教师、培训师、研究人员、知识工作者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "教育与知识工作者需要把资料、计划和重复任务转成可复核的学习或办公成果。具体场景：企业培训停留在讲解，学员缺少真实任务练习。",
+      "workflow": "向 Codex 提供课程资料、学习目标、文件、日历、会议记录和个人偏好；先确认受众与目标，整理输入并标记缺失，再生成可调整的计划或材料，最后由使用者核对事实、隐私、可达性和实际可执行性。目标产物：情景、角色、步骤、观察点和复盘问题。",
+      "outcome": "使用示例：团队可把这条模板用于“生成培训演练脚本”，并按以下条件验收：培训师用目标岗位试跑并调整时间与难度。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "How to use Codex for everyday work",
+        "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+        "note": "OpenAI Academy 日常工作实操；本组扩展为教育与个人效率模板。"
+      }
+    },
+    {
+      "id": "296",
+      "title": "维护个人周度工作简报",
+      "section": "教育培训与个人效率工作流",
+      "category": "public-education",
+      "professions": [
+        "creator",
+        "professional",
+        "operations"
+      ],
+      "industry": "教育培训与知识工作",
+      "roles": "教师、培训师、研究人员、知识工作者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "教育与知识工作者需要把资料、计划和重复任务转成可复核的学习或办公成果。具体场景：任务、会议和文档分散，回顾时容易遗漏成果与阻塞。",
+      "workflow": "向 Codex 提供课程资料、学习目标、文件、日历、会议记录和个人偏好；先确认受众与目标，整理输入并标记缺失，再生成可调整的计划或材料，最后由使用者核对事实、隐私、可达性和实际可执行性。目标产物：本周成果、未完成、阻塞和下周重点。",
+      "outcome": "使用示例：团队可把这条模板用于“维护个人周度工作简报”，并按以下条件验收：使用者确认状态与敏感内容后再分享。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "How to use Codex for everyday work",
+        "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+        "note": "OpenAI Academy 日常工作实操；本组扩展为教育与个人效率模板。"
+      }
+    },
+    {
+      "id": "297",
+      "title": "批量整理文件命名与归档",
+      "section": "教育培训与个人效率工作流",
+      "category": "public-education",
+      "professions": [
+        "creator",
+        "professional",
+        "operations"
+      ],
+      "industry": "教育培训与知识工作",
+      "roles": "教师、培训师、研究人员、知识工作者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "教育与知识工作者需要把资料、计划和重复任务转成可复核的学习或办公成果。具体场景：项目文件命名不一、重复且难以搜索。",
+      "workflow": "向 Codex 提供课程资料、学习目标、文件、日历、会议记录和个人偏好；先确认受众与目标，整理输入并标记缺失，再生成可调整的计划或材料，最后由使用者核对事实、隐私、可达性和实际可执行性。目标产物：归档建议、重命名预览和重复文件清单。",
+      "outcome": "使用示例：团队可把这条模板用于“批量整理文件命名与归档”，并按以下条件验收：先生成预览，不覆盖文件；人工确认后分批执行。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "How to use Codex for everyday work",
+        "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+        "note": "OpenAI Academy 日常工作实操；本组扩展为教育与个人效率模板。"
+      }
+    },
+    {
+      "id": "298",
+      "title": "从会议记录生成行动清单",
+      "section": "教育培训与个人效率工作流",
+      "category": "public-education",
+      "professions": [
+        "creator",
+        "professional",
+        "operations"
+      ],
+      "industry": "教育培训与知识工作",
+      "roles": "教师、培训师、研究人员、知识工作者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "教育与知识工作者需要把资料、计划和重复任务转成可复核的学习或办公成果。具体场景：会议记录长，决定和待办没有结构化。",
+      "workflow": "向 Codex 提供课程资料、学习目标、文件、日历、会议记录和个人偏好；先确认受众与目标，整理输入并标记缺失，再生成可调整的计划或材料，最后由使用者核对事实、隐私、可达性和实际可执行性。目标产物：决定、负责人、日期、依赖和未决问题。",
+      "outcome": "使用示例：团队可把这条模板用于“从会议记录生成行动清单”，并按以下条件验收：参会者确认，未明确负责人或日期的内容标为待确认。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "How to use Codex for everyday work",
+        "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+        "note": "OpenAI Academy 日常工作实操；本组扩展为教育与个人效率模板。"
+      }
+    },
+    {
+      "id": "299",
+      "title": "构建个人研究资料索引",
+      "section": "教育培训与个人效率工作流",
+      "category": "public-education",
+      "professions": [
+        "creator",
+        "professional",
+        "operations"
+      ],
+      "industry": "教育培训与知识工作",
+      "roles": "教师、培训师、研究人员、知识工作者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "教育与知识工作者需要把资料、计划和重复任务转成可复核的学习或办公成果。具体场景：网页、论文和笔记分散，无法快速追溯观点来源。",
+      "workflow": "向 Codex 提供课程资料、学习目标、文件、日历、会议记录和个人偏好；先确认受众与目标，整理输入并标记缺失，再生成可调整的计划或材料，最后由使用者核对事实、隐私、可达性和实际可执行性。目标产物：主题标签、摘要、引用和待阅读队列。",
+      "outcome": "使用示例：团队可把这条模板用于“构建个人研究资料索引”，并按以下条件验收：保留原始链接与访问日期，摘要不替代阅读原文。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "How to use Codex for everyday work",
+        "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+        "note": "OpenAI Academy 日常工作实操；本组扩展为教育与个人效率模板。"
+      }
+    },
+    {
+      "id": "300",
+      "title": "设计学习计划与复习节奏",
+      "section": "教育培训与个人效率工作流",
+      "category": "public-education",
+      "professions": [
+        "creator",
+        "professional",
+        "operations"
+      ],
+      "industry": "教育培训与知识工作",
+      "roles": "教师、培训师、研究人员、知识工作者",
+      "sourceLanguage": "中文整理",
+      "evidence": "C",
+      "problem": "教育与知识工作者需要把资料、计划和重复任务转成可复核的学习或办公成果。具体场景：学习目标明确但时间有限，缺少可持续安排。",
+      "workflow": "向 Codex 提供课程资料、学习目标、文件、日历、会议记录和个人偏好；先确认受众与目标，整理输入并标记缺失，再生成可调整的计划或材料，最后由使用者核对事实、隐私、可达性和实际可执行性。目标产物：周计划、练习、复习间隔和进度检查。",
+      "outcome": "使用示例：团队可把这条模板用于“设计学习计划与复习节奏”，并按以下条件验收：根据实际完成情况每周调整，不把计划视为硬性承诺。本条为基于官方能力资料整理的可执行模板，不代表已经证明业务成效；涉及发布、权限、资金、客户沟通或专业判断时必须由相应负责人批准。",
+      "source": {
+        "title": "How to use Codex for everyday work",
+        "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+        "note": "OpenAI Academy 日常工作实操；本组扩展为教育与个人效率模板。"
+      }
+    }
+  ]
+}

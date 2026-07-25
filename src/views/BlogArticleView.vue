@@ -20,6 +20,7 @@
       <section class="py-[68px] px-6 bg-white max-[720px]:px-4">
         <div class="grid grid-cols-[minmax(0,760px)_280px] gap-16 max-w-[1120px] mx-auto items-start max-[980px]:grid-cols-1">
           <div>
+            <div v-if="article.notice" class="article-notice"><strong>{{ article.notice }}</strong></div>
             <div class="article-lead"><strong>{{ copy.article.leadLabel }}</strong><span>{{ copy.article.leadText }}</span></div>
             <div class="article-visual" :class="`article-visual--${article.visual.type}`"><div class="text-blue text-[12px] font-black uppercase tracking-[.12em]">{{ copy.article.visualLabel }}</div><h2>{{ article.visual.title }}</h2><div class="visual-grid"><div v-for="(item, index) in article.visual.items" :key="item" class="visual-item"><span>{{ String(index + 1).padStart(2, '0') }}</span><p>{{ item }}</p></div></div></div>
             <div ref="articleContent" class="article-content" v-html="article.html"></div>
@@ -78,6 +79,7 @@ useHead(() => ({ title: article.value ? `${article.value.title} | AigoKey` : 'Ag
 <style scoped>
 .article-progress { position: fixed; top: 0; left: 0; right: 0; z-index: 35; height: 3px; background: transparent; }
 .article-progress span { display: block; height: 100%; background: var(--blue); transition: width .12s linear; }
+.article-notice { margin-bottom: 24px; padding: 16px 20px; border-left: 4px solid var(--green); color: #36533a; background: #f1faee; font-size: 14px; line-height: 1.75; }
 .article-lead { display: grid; grid-template-columns: 118px 1fr; gap: 18px; padding: 17px 0; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--line); color: var(--muted); font-size: 14px; line-height: 1.7; }
 .article-lead strong { color: var(--blue-dark); font-size: 13px; }
 .article-visual { margin: 30px 0 42px; padding: 24px; border: 1px solid rgba(36,104,242,.28); border-radius: 8px; background: linear-gradient(135deg, #f3f8ff, #ffffff); }
@@ -93,6 +95,7 @@ useHead(() => ({ title: article.value ? `${article.value.title} | AigoKey` : 'Ag
 .article-content :deep(ul), .article-content :deep(ol) { margin: 0 0 22px; padding-left: 24px; }
 .article-content :deep(li) { margin: 6px 0; }
 .article-content :deep(blockquote) { margin: 24px 0; padding: 16px 20px; border-left: 4px solid var(--green); color: #405866; background: #f1faee; }
+.article-content :deep(img) { display: block; width: auto; max-width: 100%; max-height: 720px; margin: 28px auto 10px; border: 1px solid var(--line); border-radius: 6px; object-fit: contain; box-shadow: 0 12px 28px rgba(19,34,49,.1); }
 .article-content :deep(a) { color: var(--blue-dark); text-decoration: underline; text-decoration-color: rgba(36,104,242,.35); text-underline-offset: 3px; }
 .article-content :deep(pre) { position: relative; overflow-x: auto; margin: 24px 0; padding: 20px; border-radius: 8px; color: #edf5ff; background: var(--deep); box-shadow: 0 14px 30px rgba(19,34,49,.12); }
 .article-content :deep(code) { font-family: "SFMono-Regular", Consolas, monospace; font-size: .88em; }

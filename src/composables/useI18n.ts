@@ -15,7 +15,7 @@ const copy = {
     lang: 'zh-CN',
     title: 'AigoKey - Codex Agent + GPT + Image 稳定 AI 套餐',
     description: 'AigoKey 是稳定可靠的 AI Token 套餐，5 元/天起，覆盖 Codex Agent、GPT 系列模型和 Image 系列模型，日卡、周卡和三档月卡可选，每天 30-200 美元额度，不做 API 按次调用，不做按量付费。',
-    navButtons: { toggle: 'EN', register: '注册', login: '登录', imageCreation: '图像创作', skills: 'Skills', cases: '案例库', blog: '博客', download: '下载', downloadPanel: '下载资源', downloadCodex: 'ChatGPT Codex', downloadCodexMeta: 'OpenAI 官方下载', downloadCcSwitch: 'CC-Switch', downloadCcSwitchMeta: 'GitHub Releases', help: '文档', enterprise: '企业服务', trial: '免费体验' },
+    navButtons: { toggle: 'EN', register: '注册', login: '登录', imageCreation: '图像创作', imageSkill: 'AGK生图skill', promptLibrary: '提示词库', skills: 'Skills', workflows: '工作流', cases: '案例库', blog: '博客', download: '下载', downloadPanel: '下载资源', downloadCodex: 'ChatGPT Codex', downloadCodexMeta: 'OpenAI 官方下载', downloadCcSwitch: 'CC-Switch', downloadCcSwitchMeta: 'GitHub Releases', help: '文档', enterprise: '企业服务', trial: '免费体验' },
     eyebrow: 'Codex Agent · GPT + Image 系列模型',
     heroTitleBefore: '稳定可靠的 ',
     heroTitleHighlight: 'AI Token',
@@ -109,7 +109,7 @@ const copy = {
       { badge: '冲刺', label: '周卡', price: '¥48', unit: '/ 周', sub: '适合一周项目冲刺、连续改代码、批量出内容和集中做图，每天都有固定额度可用。', quotas: [{ label: '每日额度', value: '$50/天' }, { label: '周总额度', value: '$350/周' }], checks: ['比日卡更适合连续几天高频使用', '覆盖一周内多轮项目和内容任务', '短期预算清晰，用完再续更灵活'] },
       { badge: '', label: '轻量版', price: '¥168', unit: '/ 月', sub: '适合日常办公、内容处理、轻量代码辅助和低频图片生成，按月使用更省心。', quotas: [{ label: '每日额度', value: '$50/天' }, { label: '月总额度', value: '$1500/月' }], checks: ['适合个人轻量高频使用', '覆盖 Codex、GPT 和 Image 常用任务', '固定月费，额度边界清晰'] },
       { badge: '推荐', label: '标准版', price: '¥300', unit: '/ 月', sub: '适合长期、高频、固定预算使用，覆盖开发、内容、分析和图片创作。', quotas: [{ label: '每日额度', value: '$100/天' }, { label: '月总额度', value: '$3000/月' }], checks: ['适合个人和小团队日常生产力', '减少余额波动和 token 焦虑', '代码、文本、图片和资料分析都能覆盖'], featured: true },
-      { badge: '', label: '专业版', price: '¥588', unit: '/ 月', sub: '适合更高频的连续任务、集中创作和更大额度需求。', quotas: [{ label: '每日额度', value: '$200/天' }, { label: '月总额度', value: '$6000/月' }], checks: ['适合更密集的连续 AI 工作流', '月总额度更充足，减少中断', '适合重度创作、开发和运营场景'] },
+      { badge: '', label: '专业版', price: '¥600', unit: '/ 月', sub: '适合更高频的连续任务、集中创作和更大额度需求。', quotas: [{ label: '每日额度', value: '$200/天' }, { label: '月总额度', value: '$6000/月' }], checks: ['适合更密集的连续 AI 工作流', '月总额度更充足，减少中断', '适合重度创作、开发和运营场景'] },
     ],
     compare: [
       { title: 'AigoKey 五档套餐', text: '日卡、周卡、月卡都能选，额度清晰、打开就能用，按周期和强度选择 Codex、GPT 和 Image 模型额度。', tag: '省心', good: true },
@@ -147,7 +147,7 @@ const copy = {
       desc: '开通前关心的价格、额度、使用方式和服务边界，都可以在这里先看清楚。',
       items: [
         { q: 'AigoKey 是 API 服务吗？', a: 'AigoKey 不是 API 按次调用服务，也不是按量付费工具。你可以按天、按周或按月订阅后，更稳定地使用 Codex Agent、GPT 系列模型和 Image 系列模型完成日常工作。' },
-        { q: '日卡、周卡和月卡分别包含什么？', a: '日卡 ¥5/天，包含每天 $30 额度；周卡 ¥48/周，包含每天 $50 额度、周总 $350 额度；月卡分为轻量版 ¥168/月、标准版 ¥300/月、专业版 ¥588/月，分别包含每天 $50/$100/$200 额度和月总 $1500/$3000/$6000 额度。具体可用范围以实际开通说明为准。' },
+        { q: '日卡、周卡和月卡分别包含什么？', a: '日卡 ¥5/天，包含每天 $30 额度；周卡 ¥48/周，包含每天 $50 额度、周总 $350 额度；月卡分为轻量版 ¥168/月、标准版 ¥300/月、专业版 ¥600/月，分别包含每天 $50/$100/$200 额度和月总 $1500/$3000/$6000 额度。具体可用范围以实际开通说明为准。' },
         { q: '每日额度和周期总额度怎么理解？', a: '每日额度是单日可使用上限，周期总额度是整个套餐周期内可使用的总上限。日卡适合当天集中使用，周卡适合连续几天冲刺，月卡适合长期稳定工作流。' },
         { q: '可以开发票吗？', a: '可以。AigoKey 支持按实际订阅金额开具发票，开通或续费时请联系客服提供发票抬头、税号和接收方式，具体开票信息以客服确认为准。' },
         { q: 'Codex Agent 主要能帮我做什么？', a: 'Codex Agent 更适合处理需要执行的任务，例如阅读项目、修改代码、生成 Demo、整理技术方案、排查错误和配合 GPT 输出说明文档。' },
@@ -172,8 +172,10 @@ const copy = {
       plans: '模型与套餐',
       codex: 'Codex Agent',
       image: '图像创作',
+      imageSkill: 'AGK生图skill',
       skills: 'Skills 索引',
-      cases: 'Codex 案例库',
+      workflows: 'Codex 工作流库',
+      cases: '生图提示词库',
       blog: '博客',
       help: '帮助文档',
       enterprise: '企业服务',
@@ -369,7 +371,7 @@ const copy = {
     lang: 'en',
     title: 'AigoKey - Stable AI Plans for Codex Agent + GPT + Image',
     description: 'AigoKey offers stable AI Token plans from ¥5/day, covering Codex Agent, GPT models, and Image models with day, week, and monthly options.',
-    navButtons: { toggle: '中文', register: 'Register', login: 'Log in', imageCreation: 'Image Studio', skills: 'Skills', cases: 'Cases', blog: 'Blog', download: 'Downloads', downloadPanel: 'Downloads', downloadCodex: 'ChatGPT Codex', downloadCodexMeta: 'Official OpenAI download', downloadCcSwitch: 'CC-Switch', downloadCcSwitchMeta: 'GitHub Releases', help: 'Docs', enterprise: 'Enterprise', trial: 'Free Trial' },
+    navButtons: { toggle: '中文', register: 'Register', login: 'Log in', imageCreation: 'Image Studio', imageSkill: 'AGK Image Skill', promptLibrary: 'Prompts', skills: 'Skills', workflows: 'Workflows', cases: 'Cases', blog: 'Blog', download: 'Downloads', downloadPanel: 'Downloads', downloadCodex: 'ChatGPT Codex', downloadCodexMeta: 'Official OpenAI download', downloadCcSwitch: 'CC-Switch', downloadCcSwitchMeta: 'GitHub Releases', help: 'Docs', enterprise: 'Enterprise', trial: 'Free Trial' },
     eyebrow: 'Codex Agent · GPT + Image models',
     heroTitleBefore: 'Stable ',
     heroTitleHighlight: 'AI Token',
@@ -463,7 +465,7 @@ const copy = {
       { badge: 'Sprint', label: 'Week Pass', price: '¥48', unit: '/ week', sub: 'Best for one-week project sprints, continuous code edits, batch content, and focused image work with daily quota available.', quotas: [{ label: 'Daily quota', value: '$50/day' }, { label: 'Weekly quota', value: '$350/week' }], checks: ['Better than a day pass for several active days', 'Covers multiple rounds of project and content tasks', 'Clear short-term budget with flexible renewal'] },
       { badge: '', label: 'Lite', price: '¥168', unit: '/ month', sub: 'Best for daily office work, content tasks, light code assistance, and occasional image generation.', quotas: [{ label: 'Daily quota', value: '$50/day' }, { label: 'Monthly quota', value: '$1500/month' }], checks: ['Good for light high-frequency personal use', 'Covers common Codex, GPT, and Image tasks', 'Fixed monthly fee with clear quota boundaries'] },
       { badge: 'Recommended', label: 'Standard', price: '¥300', unit: '/ month', sub: 'Best for long-term, high-frequency, fixed-budget work across development, content, analysis, and image creation.', quotas: [{ label: 'Daily quota', value: '$100/day' }, { label: 'Monthly quota', value: '$3000/month' }], checks: ['Good for individuals and small teams', 'Reduces balance swings and token anxiety', 'Covers code, text, images, and document analysis'], featured: true },
-      { badge: '', label: 'Pro', price: '¥588', unit: '/ month', sub: 'Best for heavier continuous tasks, focused creation sessions, and larger quota needs.', quotas: [{ label: 'Daily quota', value: '$200/day' }, { label: 'Monthly quota', value: '$6000/month' }], checks: ['Built for denser continuous AI workflows', 'More monthly quota to reduce interruptions', 'Good for heavy creation, development, and operations'] },
+      { badge: '', label: 'Pro', price: '¥600', unit: '/ month', sub: 'Best for heavier continuous tasks, focused creation sessions, and larger quota needs.', quotas: [{ label: 'Daily quota', value: '$200/day' }, { label: 'Monthly quota', value: '$6000/month' }], checks: ['Built for denser continuous AI workflows', 'More monthly quota to reduce interruptions', 'Good for heavy creation, development, and operations'] },
     ],
     compare: [
       { title: 'AigoKey five-plan lineup', text: 'Day, week, and monthly plans with clear quotas and ready-to-use access to Codex, GPT, and Image model capacity.', tag: 'Easy', good: true },
@@ -501,7 +503,7 @@ const copy = {
       desc: 'Common questions about pricing, quotas, usage, and service boundaries are answered here before you start.',
       items: [
         { q: 'Is AigoKey an API service?', a: 'AigoKey is not a per-call API service or pay-as-you-go tool. After subscribing by day, week, or month, you can use Codex Agent, GPT models, and Image models more reliably for daily work.' },
-        { q: 'What is included in the day, week, and monthly plans?', a: 'Day Pass is ¥5/day with a $30 daily quota. Week Pass is ¥48/week with a $50 daily quota and $350 weekly quota. Monthly tiers include Lite ¥168/month, Standard ¥300/month, and Pro ¥588/month with $50/$100/$200 daily quotas and $1500/$3000/$6000 monthly quotas.' },
+        { q: 'What is included in the day, week, and monthly plans?', a: 'Day Pass is ¥5/day with a $30 daily quota. Week Pass is ¥48/week with a $50 daily quota and $350 weekly quota. Monthly tiers include Lite ¥168/month, Standard ¥300/month, and Pro ¥600/month with $50/$100/$200 daily quotas and $1500/$3000/$6000 monthly quotas.' },
         { q: 'How should I understand daily and period quotas?', a: 'The daily quota is the single-day usage limit, and the period quota is the total limit for the whole plan period. Day Pass fits focused same-day work, Week Pass fits sprint weeks, and monthly tiers fit stable long-term workflows.' },
         { q: 'Can I get an invoice?', a: 'Yes. AigoKey supports invoices based on the actual subscription amount. During activation or renewal, contact support with the invoice title, tax ID, and receiving method. Final invoice details are confirmed by support.' },
         { q: 'What can Codex Agent help me do?', a: 'Codex Agent is useful for execution-heavy tasks such as reading projects, editing code, generating demos, organizing technical plans, troubleshooting errors, and preparing documents with GPT.' },
@@ -526,8 +528,10 @@ const copy = {
       plans: 'Models & Plans',
       codex: 'Codex Agent',
       image: 'Image Studio',
+      imageSkill: 'AGK Image Skill',
       skills: 'Skills Index',
-      cases: 'Codex Case Library',
+      workflows: 'Codex Workflow Library',
+      cases: 'Image Prompt Library',
       blog: 'Blog',
       help: 'Help Center',
       enterprise: 'Enterprise',
@@ -730,6 +734,26 @@ const languageHtmlLang: Record<Language, string> = {
 const phraseMap: Record<string, string> = {
   简体中文: '簡體中文',
   繁体中文: '繁體中文',
+  复制: '複製',
+  头发: '頭髮',
+  发型: '髮型',
+  发丝: '髮絲',
+  发色: '髮色',
+  发际线: '髮際線',
+  发梢: '髮梢',
+  毛发: '毛髮',
+  理发: '理髮',
+  卷发: '捲髮',
+  烫发: '燙髮',
+  假发: '假髮',
+  长发: '長髮',
+  短发: '短髮',
+  金发: '金髮',
+  黑发: '黑髮',
+  白发: '白髮',
+  红发: '紅髮',
+  银发: '銀髮',
+  棕发: '棕髮',
   帮助文档: '幫助文件',
   企业服务: '企業服務',
   免费体验: '免費體驗',
@@ -963,7 +987,7 @@ const charMap: Record<string, string> = {
   龊: '齪', 龋: '齲', 龌: '齷', 龙: '龍', 龚: '龔', 龛: '龕',
 }
 
-function toTraditionalText(text: string) {
+export function toTraditionalText(text: string) {
   let output = text
   for (const [from, to] of Object.entries(phraseMap)) {
     output = output.split(from).join(to)

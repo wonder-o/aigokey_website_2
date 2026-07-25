@@ -1,6 +1,6 @@
 <template>
   <div class="page overflow-hidden">
-    <SiteHeader @trial="goTrial" />
+    <SiteHeader v-if="!embedded" @trial="goTrial" />
     <main>
       <section class="py-[72px] px-6 bg-white max-[720px]:px-4">
         <div class="max-w-[1180px] mx-auto">
@@ -27,7 +27,7 @@
       </section>
 
     </main>
-    <SiteFooter />
+    <SiteFooter v-if="!embedded" />
   </div>
 </template>
 
@@ -40,6 +40,12 @@ import SiteFooter from '@/components/SiteFooter.vue'
 import SiteHeader from '@/components/SiteHeader.vue'
 import { blogIndex, getBlogArticle } from '@/data/blog'
 import { useI18n } from '@/composables/useI18n'
+
+withDefaults(defineProps<{
+  embedded?: boolean
+}>(), {
+  embedded: false,
+})
 
 const router = useRouter()
 const { lang } = useI18n()

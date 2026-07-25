@@ -25,6 +25,7 @@ export type BlogFrontmatter = {
   summary: string
   readTime: number
   featured?: boolean
+  notice?: string
   tags: string[]
   sources: BlogSource[]
   visual: BlogVisual

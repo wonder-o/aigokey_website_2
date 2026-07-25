@@ -76,13 +76,14 @@ function moveHtmlToDirs() {
     console.log(`  ${file} → ${name}/index.html`)
   }
 
-  const codexHelpDir = join(distDir, 'codex-help')
-  const embedHtml = join(codexHelpDir, 'embed.html')
-  if (statSync(embedHtml, { throwIfNoEntry: false })) {
-    const embedDir = join(codexHelpDir, 'embed')
-    mkdirSync(embedDir, { recursive: true })
-    renameSync(embedHtml, join(embedDir, 'index.html'))
-    console.log('  codex-help/embed.html → codex-help/embed/index.html')
+  for (const route of ['codex-help/embed', 'workflows/embed', 'image-prompts/embed', 'blog/embed']) {
+    const routeHtml = join(distDir, `${route}.html`)
+    if (statSync(routeHtml, { throwIfNoEntry: false })) {
+      const routeDir = join(distDir, route)
+      mkdirSync(routeDir, { recursive: true })
+      renameSync(routeHtml, join(routeDir, 'index.html'))
+      console.log(`  ${route}.html → ${route}/index.html`)
+    }
   }
 
   const blogDir = join(distDir, 'blog')

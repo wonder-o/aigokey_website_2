@@ -8,7 +8,10 @@
     "build": "node scripts/optimize-images.mjs && vue-tsc -b && vite-ssg build && node scripts/postbuild.mjs",
     "preview": "vite preview",
     "update:cases": "node scripts/build-cases.mjs",
+    "update:workflows": "node scripts/build-extra-workflows.mjs",
     "update:skills": "node scripts/update-skills.mjs",
+    "update:image-prompts": "node scripts/build-image-prompts.mjs && node scripts/localize-image-prompts.mjs",
+    "localize:image-prompts": "node scripts/localize-image-prompts.mjs",
     "validate:blog": "node scripts/validate-blog.mjs"
   },
   "dependencies": {

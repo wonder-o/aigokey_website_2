@@ -31,6 +31,17 @@ export const routes = [
     component: () => import('@/views/CasesView.vue'),
   },
   {
+    path: '/workflows',
+    name: 'workflows',
+    component: () => import('@/views/WorkflowsView.vue'),
+  },
+  {
+    path: '/workflows/embed',
+    name: 'workflows-embed',
+    component: () => import('@/views/WorkflowsView.vue'),
+    props: { embedded: true },
+  },
+  {
     path: '/skills-list',
     name: 'skills-list',
     component: () => import('@/views/SkillsListView.vue'),
@@ -39,6 +50,17 @@ export const routes = [
     path: '/image-creation',
     name: 'image-creation',
     component: () => import('@/views/ImageCreationView.vue'),
+  },
+  {
+    path: '/image-prompts',
+    name: 'image-prompts',
+    component: () => import('@/views/ImagePromptLibraryView.vue'),
+  },
+  {
+    path: '/image-prompts/embed',
+    name: 'image-prompts-embed',
+    component: () => import('@/views/ImagePromptLibraryView.vue'),
+    props: { embedded: true },
   },
   {
     path: '/image-creation/cc-switch',
@@ -70,6 +92,12 @@ export const routes = [
     path: '/blog',
     name: 'blog',
     component: () => import('@/views/BlogView.vue'),
+  },
+  {
+    path: '/blog/embed',
+    name: 'blog-embed',
+    component: () => import('@/views/BlogView.vue'),
+    props: { embedded: true },
   },
   {
     path: '/blog/:slug',
