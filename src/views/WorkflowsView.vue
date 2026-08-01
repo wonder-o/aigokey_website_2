@@ -1,6 +1,6 @@
 <template>
   <div class="workflows-page">
-    <SiteHeader v-if="!embedded" @trial="$router.push('/free-trial')" />
+    <SiteHeader v-if="!embedded" @trial="$router.push('/free-trial/')" />
 
     <main>
       <section class="workflow-hero">

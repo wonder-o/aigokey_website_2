@@ -1,6 +1,6 @@
 import sharp from 'sharp'
 import { readdirSync, mkdirSync, renameSync, statSync, readFileSync, writeFileSync, unlinkSync } from 'fs'
-import { join, basename, resolve } from 'path'
+import { join, basename, relative, resolve } from 'path'
 
 const distDir = resolve('dist')
 const distAssets = join(distDir, 'assets')
@@ -40,14 +40,8 @@ async function convertToWebp() {
         // Replace all .png → .webp
         content = content.replace(/\.png/g, '.webp')
         // Step 2: Restore exact favicon/icon/logo references back to .png
-        content = content.replace(
-          /href="\/assets\/aigokey-logo\.webp"/g,
-          'href="/assets/aigokey-logo.png"'
-        )
-        content = content.replace(
-          /href="\/assets\/apple-touch-icon\.webp"/g,
-          'href="/assets/apple-touch-icon.png"'
-        )
+        content = content.replace(/\/assets\/aigokey-logo\.webp/g, '/assets/aigokey-logo.png')
+        content = content.replace(/\/assets\/apple-touch-icon\.webp/g, '/assets/apple-touch-icon.png')
         content = content.replace(
           /href="\/assets\/favicon[^"]*\.webp"/g,
           (match) => match.replace('.webp', '.png')
@@ -65,46 +59,81 @@ async function convertToWebp() {
   console.log(`\nRemoved ${converted.length} original PNG files`)
 }
 
-function moveHtmlToDirs() {
-  const files = readdirSync(distDir).filter(f => f.endsWith('.html') && statSync(join(distDir, f)).isFile())
-  for (const file of files) {
-    const name = basename(file, '.html')
-    if (name === 'index') continue
-    const dir = join(distDir, name)
-    mkdirSync(dir, { recursive: true })
-    renameSync(join(distDir, file), join(dir, 'index.html'))
-    console.log(`  ${file} → ${name}/index.html`)
+function moveHtmlToDirs(dir = distDir) {
+  const entries = readdirSync(dir, { withFileTypes: true })
+
+  for (const entry of entries) {
+    if (entry.isDirectory()) moveHtmlToDirs(join(dir, entry.name))
   }
 
-  for (const route of ['codex-help/embed', 'workflows/embed', 'image-prompts/embed', 'blog/embed']) {
-    const routeHtml = join(distDir, `${route}.html`)
-    if (statSync(routeHtml, { throwIfNoEntry: false })) {
-      const routeDir = join(distDir, route)
-      mkdirSync(routeDir, { recursive: true })
-      renameSync(routeHtml, join(routeDir, 'index.html'))
-      console.log(`  ${route}.html → ${route}/index.html`)
-    }
-  }
+  for (const entry of entries) {
+    if (!entry.isFile() || !entry.name.endsWith('.html')) continue
+    const name = basename(entry.name, '.html')
+    if (name === 'index' || name === '404') continue
 
-  const blogDir = join(distDir, 'blog')
-  if (statSync(blogDir, { throwIfNoEntry: false })) {
-    const articleFiles = readdirSync(blogDir).filter(f => f.endsWith('.html') && f !== 'index.html')
-    for (const file of articleFiles) {
-      const name = basename(file, '.html')
-      const dir = join(blogDir, name)
-      mkdirSync(dir, { recursive: true })
-      renameSync(join(blogDir, file), join(dir, 'index.html'))
-      console.log(`  blog/${file} → blog/${name}/index.html`)
-    }
+    const source = join(dir, entry.name)
+    const targetDir = join(dir, name)
+    const target = join(targetDir, 'index.html')
+    mkdirSync(targetDir, { recursive: true })
+    renameSync(source, target)
+    console.log(`  ${relative(distDir, source)} → ${relative(distDir, target)}`)
   }
 }
 
+function collectIndexFiles(dir = distDir) {
+  return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+    const full = join(dir, entry.name)
+    if (entry.isDirectory()) return collectIndexFiles(full)
+    return entry.name === 'index.html' ? [full] : []
+  })
+}
+
+function htmlAttribute(tag, name) {
+  return tag.match(new RegExp(`\\b${name}=["']([^"']+)["']`, 'i'))?.[1] || ''
+}
+
+function writeSeoFiles() {
+  const urls = []
+
+  for (const file of collectIndexFiles()) {
+    const html = readFileSync(file, 'utf-8')
+    const robotsTag = (html.match(/<meta\b[^>]*>/gi) || [])
+      .find((tag) => htmlAttribute(tag, 'name').toLowerCase() === 'robots')
+    if (robotsTag && htmlAttribute(robotsTag, 'content').toLowerCase().includes('noindex')) continue
+
+    const canonicalTag = (html.match(/<link\b[^>]*>/gi) || [])
+      .find((tag) => htmlAttribute(tag, 'rel').toLowerCase() === 'canonical')
+    const href = canonicalTag ? htmlAttribute(canonicalTag, 'href') : ''
+    if (href) urls.push(href)
+  }
+
+  const uniqueUrls = [...new Set(urls)].sort()
+  const sitemap = [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ...uniqueUrls.map((url) => `  <url><loc>${url.replace(/&/g, '&amp;')}</loc></url>`),
+    '</urlset>',
+    '',
+  ].join('\n')
+
+  writeFileSync(join(distDir, 'sitemap.xml'), sitemap)
+  writeFileSync(
+    join(distDir, 'robots.txt'),
+    'User-agent: *\nAllow: /\n\nSitemap: https://www.aigokey.com/sitemap.xml\n',
+  )
+  console.log(`  sitemap.xml (${uniqueUrls.length} canonical URLs)`)
+  console.log('  robots.txt')
+}
+
 async function main() {
-  console.log('[1/3] Converting images to WebP...')
+  console.log('[1/4] Converting images to WebP...')
   await convertToWebp()
 
-  console.log('\n[2/3] Moving HTML to subdirectories...')
+  console.log('\n[2/4] Moving HTML to subdirectories...')
   moveHtmlToDirs()
+
+  console.log('\n[3/4] Writing SEO discovery files...')
+  writeSeoFiles()
 
   // Summary
   const allFiles = readdirSync(distAssets)
@@ -113,7 +142,7 @@ async function main() {
   let webpSize = 0, pngSize = 0
   for (const f of webpFiles) webpSize += statSync(join(distAssets, f)).size
   for (const f of pngFiles) pngSize += statSync(join(distAssets, f)).size
-  console.log(`\n[3/3] Final: ${pngFiles.length} PNG (${(pngSize/1024).toFixed(0)}KB) + ${webpFiles.length} WebP (${(webpSize/1024).toFixed(0)}KB) = ${((pngSize+webpSize)/1024).toFixed(0)}KB`)
+  console.log(`\n[4/4] Final: ${pngFiles.length} PNG (${(pngSize/1024).toFixed(0)}KB) + ${webpFiles.length} WebP (${(webpSize/1024).toFixed(0)}KB) = ${((pngSize+webpSize)/1024).toFixed(0)}KB`)
 }
 
 main().catch(console.error)

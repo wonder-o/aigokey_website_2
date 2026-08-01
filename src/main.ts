@@ -14,7 +14,7 @@ export const createApp = ViteSSG(
 
 export function includedRoutes(_paths: string[], routeRecords: typeof routes) {
   return routeRecords.flatMap((route) => {
-    if (route.name === 'blog-article') return blogSlugs.map((slug) => `/blog/${slug}`)
+    if (route.name === 'blog-article') return blogSlugs.map((slug) => `/blog/${slug}/`)
     return route.path
   })
 }

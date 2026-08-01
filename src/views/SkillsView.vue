@@ -1,6 +1,6 @@
 <template>
   <div class="skills-page" :class="{ 'skills-page--embedded': embedded }">
-    <SiteHeader v-if="!embedded" @trial="$router.push('/free-trial')" />
+    <SiteHeader v-if="!embedded" @trial="$router.push('/free-trial/')" />
 
     <main>
       <section v-if="!embedded" class="intro-band">

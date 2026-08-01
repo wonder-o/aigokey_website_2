@@ -14,7 +14,7 @@
               <p class="hero-description">{{ activeBanner.copy }}</p>
               <div class="flex items-center gap-3 flex-wrap mt-8">
                 <a v-if="activeBanner.target === 'login'" class="btn btn-primary" :href="loginUrl" target="_top">{{ activeBanner.primary }} <ArrowRight :size="17" aria-hidden="true" /></a>
-                <router-link v-else class="btn btn-primary" :to="activeBanner.target === 'image' ? '/image-creation' : '/codex-help'">{{ activeBanner.primary }} <ArrowRight :size="17" aria-hidden="true" /></router-link>
+                <router-link v-else class="btn btn-primary" :to="activeBanner.target === 'image' ? '/image-creation/' : '/codex-help/'">{{ activeBanner.primary }} <ArrowRight :size="17" aria-hidden="true" /></router-link>
                 <button class="btn btn-green" type="button" @click="showModal = true">{{ activeBanner.secondary }}</button>
               </div>
               <p class="hero-note">{{ activeBanner.note }}</p>
@@ -197,7 +197,7 @@
           </div>
           <div class="flex items-center gap-3 flex-wrap justify-end max-[1020px]:justify-start">
             <a class="btn btn-primary" :href="loginUrl" target="_top">{{ t.contact.buttons.login }}</a>
-            <router-link class="btn border-white/20 bg-white/10 text-white" to="/codex-help">{{ t.contact.buttons.help }}</router-link>
+            <router-link class="btn border-white/20 bg-white/10 text-white" to="/codex-help/">{{ t.contact.buttons.help }}</router-link>
             <button class="btn btn-green" type="button" @click="showModal = true">{{ t.contact.buttons.trial }}</button>
           </div>
         </div>

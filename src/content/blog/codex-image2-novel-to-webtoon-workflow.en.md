@@ -17,7 +17,7 @@ tags:
 sources:
   - publisher: AigoKey Editorial
     title: The Tian Mo Shen Tan novel-to-webtoon project
-    url: https://www.aigokey.cn/blog/codex-image2-novel-to-webtoon-workflow
+    url: https://www.aigokey.com/blog/codex-image2-novel-to-webtoon-workflow/
     publishedAt: '2026-07-19'
 visual:
   type: steps

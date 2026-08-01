@@ -1,6 +1,6 @@
 <template>
   <div class="prompt-page">
-    <SiteHeader v-if="!embedded" @trial="$router.push('/free-trial')" />
+    <SiteHeader v-if="!embedded" @trial="$router.push('/free-trial/')" />
 
     <main>
       <section class="library-intro">
@@ -156,7 +156,7 @@
 
             <div class="drawer-actions">
               <button type="button" @click="copyPrompt(selectedPrompt)"><Copy :size="17" />{{ copiedId === selectedPrompt.id ? copy.copied : copy.copyPrompt }}</button>
-              <router-link to="/image-creation"><Sparkles :size="17" />{{ copy.create }}</router-link>
+              <router-link to="/image-creation/"><Sparkles :size="17" />{{ copy.create }}</router-link>
             </div>
 
             <div class="attribution">

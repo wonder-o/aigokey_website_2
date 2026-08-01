@@ -16,17 +16,17 @@
           </button>
           <Transition name="image-panel">
             <div v-show="imageMenuOpen" id="image-menu" class="image-popover" role="menu">
-              <router-link class="download-option image-option image-option--creation" to="/image-creation/cc-switch" role="menuitem" @click="imageMenuOpen = false">
+              <router-link class="download-option image-option image-option--creation" to="/image-creation/cc-switch/" role="menuitem" @click="imageMenuOpen = false">
                 <span class="download-option-icon"><Images :size="19" aria-hidden="true" /></span>
                 <span class="download-option-copy"><strong>{{ t.navButtons.imageCreation }}</strong></span>
                 <span class="download-option-arrow"><ArrowUpRight :size="15" aria-hidden="true" /></span>
               </router-link>
-              <router-link class="download-option image-option image-option--skill" to="/image-creation" role="menuitem" @click="imageMenuOpen = false">
+              <router-link class="download-option image-option image-option--skill" to="/image-creation/" role="menuitem" @click="imageMenuOpen = false">
                 <span class="download-option-icon"><WandSparkles :size="19" aria-hidden="true" /></span>
                 <span class="download-option-copy"><strong>{{ t.navButtons.imageSkill }}</strong></span>
                 <span class="download-option-arrow"><ArrowUpRight :size="15" aria-hidden="true" /></span>
               </router-link>
-              <router-link class="download-option image-option image-option--prompts" to="/image-prompts" role="menuitem" @click="imageMenuOpen = false">
+              <router-link class="download-option image-option image-option--prompts" to="/image-prompts/" role="menuitem" @click="imageMenuOpen = false">
                 <span class="download-option-icon"><BookOpen :size="19" aria-hidden="true" /></span>
                 <span class="download-option-copy"><strong>{{ t.navButtons.promptLibrary }}</strong></span>
                 <span class="download-option-arrow"><ArrowUpRight :size="15" aria-hidden="true" /></span>
@@ -34,9 +34,9 @@
             </div>
           </Transition>
         </div>
-        <router-link to="/skills">{{ t.navButtons.skills }}</router-link>
-        <router-link to="/workflows">{{ t.navButtons.workflows }}</router-link>
-        <router-link to="/blog">{{ t.navButtons.blog }}</router-link>
+        <router-link to="/skills/">{{ t.navButtons.skills }}</router-link>
+        <router-link to="/workflows/">{{ t.navButtons.workflows }}</router-link>
+        <router-link to="/blog/">{{ t.navButtons.blog }}</router-link>
         <div class="download-menu" @mouseenter="downloadMenuOpen = true" @mouseleave="downloadMenuOpen = false" @focusin="downloadMenuOpen = true" @focusout="closeDownloadMenu" @keydown.esc="downloadMenuOpen = false">
           <button class="nav-download-trigger" type="button" :aria-expanded="downloadMenuOpen" aria-controls="download-menu" @click="downloadMenuOpen = !downloadMenuOpen">
             {{ t.navButtons.download }}
@@ -67,8 +67,8 @@
             </div>
           </Transition>
         </div>
-        <router-link to="/codex-help">{{ t.navButtons.help }}</router-link>
-        <router-link to="/enterprise-service">{{ t.navButtons.enterprise }}</router-link>
+        <router-link to="/codex-help/">{{ t.navButtons.help }}</router-link>
+        <router-link to="/enterprise-service/">{{ t.navButtons.enterprise }}</router-link>
       </nav>
 
       <div class="header-actions">

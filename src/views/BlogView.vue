@@ -19,7 +19,7 @@
               <div class="flex items-center justify-between gap-3 text-[12px] font-black"><span class="inline-flex items-center gap-1.5 text-blue"><Tag :size="14" /> {{ article.category }}</span><span class="text-muted">{{ article.date }}</span></div>
               <h3 class="mt-5 text-[23px] leading-[1.25] font-black">{{ article.title }}</h3>
               <p class="mt-3 text-muted text-[14px] leading-[1.72]">{{ article.summary }}</p>
-              <div class="flex items-center justify-between gap-3 mt-6 pt-4 border-t border-line text-[12px] font-extrabold"><span class="text-muted">{{ article.readTime }} {{ copy.list.minutes }}</span><router-link class="inline-flex items-center gap-1.5 text-blue" :to="`/blog/${article.slug}`">{{ copy.list.read }} <ArrowRight :size="15" /></router-link></div>
+              <div class="flex items-center justify-between gap-3 mt-6 pt-4 border-t border-line text-[12px] font-extrabold"><span class="text-muted">{{ article.readTime }} {{ copy.list.minutes }}</span><router-link class="inline-flex items-center gap-1.5 text-blue" :to="`/blog/${article.slug}/`">{{ copy.list.read }} <ArrowRight :size="15" /></router-link></div>
             </article>
           </div>
           <div v-if="filteredArticles.length === 0" class="py-14 text-center text-muted">{{ copy.list.empty }}</div>
@@ -60,6 +60,6 @@ const displayArticles = computed(() => blogIndex.map((article) => getBlogArticle
 const filters = computed(() => [{ key: 'all', label: lang.value === 'en' ? 'All' : '全部' }, ...Array.from(new Set(displayArticles.value.map((article) => article.category))).map((key) => ({ key, label: key }))])
 const filteredArticles = computed(() => { const query = searchQuery.value.trim().toLowerCase(); return displayArticles.value.filter((article) => (activeFilter.value === 'all' || article.category === activeFilter.value) && (!query || `${article.title} ${article.summary} ${article.tags.join(' ')}`.toLowerCase().includes(query))) })
 watch(lang, () => { activeFilter.value = 'all' })
-function goTrial() { router.push('/free-trial') }
+function goTrial() { router.push('/free-trial/') }
 useHead(() => ({ title: lang.value === 'en' ? 'Agent Dispatch | AigoKey' : 'Agent 连载 | AigoKey', meta: [{ name: 'description', content: copy.value.list.summary }] }))
 </script>

@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="https://www.aigokey.cn/">🌐 在线预览</a> ·
-  <a href="https://www.aigokey.cn/codex-help">📖 帮助文档</a>
+  <a href="https://www.aigokey.com/">🌐 在线预览</a> ·
+  <a href="https://www.aigokey.com/codex-help/">📖 帮助文档</a>
 </p>
 
 ---
@@ -66,6 +66,13 @@ AigoKey 覆盖开发、产品、运营、设计、电商、自媒体、外贸、
 - 中英文文件使用同一个 slug，并保持结构和核心结论一致
 
 栏目会自动提供主题筛选、关键词搜索、独立文章 URL、目录、阅读进度、代码/提示词复制、来源说明和相关文章。内容发布前请运行 `npm run validate:blog`，核对原文，并保留“归纳与实践建议不代表原作者立场”的说明。
+
+## SEO 与域名
+
+- 唯一规范域名为 `https://www.aigokey.com/`，登录与注册使用 `https://llm.aigokey.com/`。
+- GitHub Pages 的 Custom domain 必须设置为 `www.aigokey.com`；`.cn`、`.cc` 和其他历史域名应在 DNS/CDN 层永久重定向到 `.com` 对应路径。
+- `npm run build` 会为正式页面输出自引用 canonical，并自动生成 `dist/sitemap.xml` 和 `dist/robots.txt`；embed 页面会输出 `noindex,follow` 且不会进入 sitemap。
+- 站内页面统一使用带尾斜杠的 URL。历史 `.html` 地址如有外链或索引记录，应在 CDN 层配置到对应目录 URL 的永久重定向。
 
 ## 📄 许可
 

@@ -1,6 +1,6 @@
 <template>
   <div class="cases-page">
-    <SiteHeader @trial="$router.push('/free-trial')" />
+    <SiteHeader @trial="$router.push('/free-trial/')" />
 
     <main>
       <section class="case-hero">

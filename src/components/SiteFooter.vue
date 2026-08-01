@@ -13,26 +13,26 @@
 
       <nav class="footer-column" :aria-label="t.footerNav.product">
         <h2><Sparkles :size="16" aria-hidden="true" />{{ t.footerNav.product }}</h2>
-        <router-link to="/subscription">{{ t.footerNav.plans }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
+        <router-link to="/subscription/">{{ t.footerNav.plans }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
         <a href="https://openai.com/zh-Hans-CN/codex/" target="_blank" rel="noopener">{{ t.footerNav.codex }}<ArrowUpRight :size="14" aria-hidden="true" /></a>
-        <router-link to="/image-creation/cc-switch">{{ t.footerNav.image }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
-        <router-link to="/image-creation">{{ t.footerNav.imageSkill }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
+        <router-link to="/image-creation/cc-switch/">{{ t.footerNav.image }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
+        <router-link to="/image-creation/">{{ t.footerNav.imageSkill }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
       </nav>
 
       <nav class="footer-column" :aria-label="t.footerNav.resources">
         <h2><Terminal :size="16" aria-hidden="true" />{{ t.footerNav.resources }}</h2>
-        <router-link to="/skills">{{ t.footerNav.skills }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
-        <router-link to="/workflows">{{ t.footerNav.workflows }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
-        <router-link to="/image-prompts">{{ t.footerNav.cases }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
-        <router-link to="/blog">{{ t.footerNav.blog }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
-        <router-link to="/codex-help">{{ t.footerNav.help }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
+        <router-link to="/skills/">{{ t.footerNav.skills }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
+        <router-link to="/workflows/">{{ t.footerNav.workflows }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
+        <router-link to="/image-prompts/">{{ t.footerNav.cases }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
+        <router-link to="/blog/">{{ t.footerNav.blog }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
+        <router-link to="/codex-help/">{{ t.footerNav.help }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
       </nav>
 
       <nav class="footer-column" :aria-label="t.footerNav.service">
         <h2><Building2 :size="16" aria-hidden="true" />{{ t.footerNav.service }}</h2>
-        <router-link to="/enterprise-service">{{ t.footerNav.enterprise }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
-        <router-link to="/free-trial">{{ t.footerNav.trial }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
-        <router-link to="/codex-help#support">{{ t.footerNav.support }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
+        <router-link to="/enterprise-service/">{{ t.footerNav.enterprise }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
+        <router-link to="/free-trial/">{{ t.footerNav.trial }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
+        <router-link to="/codex-help/#support">{{ t.footerNav.support }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
       </nav>
     </div>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen overflow-x-hidden bg-[#f8fbfd] text-[#111b24]">
-    <SiteHeader v-if="!embedded" @trial="$router.push('/free-trial')" />
+    <SiteHeader v-if="!embedded" @trial="$router.push('/free-trial/')" />
 
     <main>
       <section class="relative isolate min-h-[min(720px,calc(100vh-72px))] overflow-hidden bg-[#0c1017] text-white">
@@ -174,7 +174,7 @@ const imageCopy = {
       steps: [
         { number: '01', title: '打开 CC-Switch 密钥编辑', text: '在 CC-Switch 主界面找到正在使用的 AigoKey 配置，点击右侧的铅笔形编辑按钮。' },
         { number: '02', title: '进入 config.toml（TOML）编辑区', text: '在编辑面板中找到 config.toml（TOML），确认顶部 model_provider 已设为 "custom"。' },
-        { number: '03', title: '添加自定义提供商配置', text: '在 [model_providers.custom] 中添加或修改下方 TOML，将 Base URL 指向 https://llm.aigokey.cn。' },
+        { number: '03', title: '添加自定义提供商配置', text: '在 [model_providers.custom] 中添加或修改下方 TOML，将 Base URL 指向 https://llm.aigokey.com。' },
         { number: '04', title: '保存并重启 Codex', text: '保存编辑内容，返回 CC-Switch 主界面并启用该配置，然后重启 Codex 使新设置生效。' },
       ],
     },
@@ -199,7 +199,7 @@ const imageCopy = {
       steps: [
         { number: '01', title: '開啟 CC-Switch 金鑰編輯', text: '在 CC-Switch 主畫面找到正在使用的 AigoKey 設定，點擊右側的鉛筆形編輯按鈕。' },
         { number: '02', title: '進入 config.toml（TOML）編輯區', text: '在編輯面板中找到 config.toml（TOML），確認頂部 model_provider 已設為 "custom"。' },
-        { number: '03', title: '新增自訂提供商設定', text: '在 [model_providers.custom] 中新增或修改下方 TOML，將 Base URL 指向 https://llm.aigokey.cn。' },
+        { number: '03', title: '新增自訂提供商設定', text: '在 [model_providers.custom] 中新增或修改下方 TOML，將 Base URL 指向 https://llm.aigokey.com。' },
         { number: '04', title: '儲存並重新啟動 Codex', text: '儲存編輯內容，返回 CC-Switch 主畫面並啟用該設定，然後重新啟動 Codex 使新設定生效。' },
       ],
     },
@@ -224,7 +224,7 @@ const imageCopy = {
       steps: [
         { number: '01', title: 'Open the CC-Switch key editor', text: 'Find the AigoKey configuration currently in use and click the pencil-shaped edit button on the right.' },
         { number: '02', title: 'Open the config.toml (TOML) editor', text: 'Locate config.toml (TOML) and confirm that model_provider at the top is set to "custom".' },
-        { number: '03', title: 'Add the custom provider settings', text: 'Add or update the TOML under [model_providers.custom] and point the Base URL to https://llm.aigokey.cn.' },
+        { number: '03', title: 'Add the custom provider settings', text: 'Add or update the TOML under [model_providers.custom] and point the Base URL to https://llm.aigokey.com.' },
         { number: '04', title: 'Save and restart Codex', text: 'Save the changes, enable the configuration from the CC-Switch home screen, and restart Codex so the new settings take effect.' },
       ],
     },
@@ -242,9 +242,9 @@ const copied = ref(false)
 const configSnippet = `[model_providers.custom]
 name = "AigoKey"
 wire_api = "responses"
-base_url = "https://llm.aigokey.cn"
+base_url = "https://llm.aigokey.com"
 requires_openai_auth = false
-http_headers = { "x-openai-actor-authorization" = "llm.aigokey.cn" }`
+http_headers = { "x-openai-actor-authorization" = "llm.aigokey.com" }`
 
 const creationTypes = computed(() => page.value.creationTypes)
 const setupSteps = computed(() => page.value.setup.steps)
