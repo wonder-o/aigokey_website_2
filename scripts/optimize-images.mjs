@@ -6,12 +6,12 @@ const assetsDir = join('public', 'assets')
 
 /**
  * Optimization rules:
- * - Logo: 1254px → 248px (displayed at 42-124px, 2x enough)
+ * - Logo: keep its complete horizontal lockup at a retina-friendly width
  * - Screenshots: resize to 1600px wide, keep PNG
  * - Small/already-optimized images: skip
  */
 const rules = {
-  'aigokey-logo.png': { width: 248, height: 248, fit: 'cover' },
+  'aigokey-logo.png': { width: 900, height: 216, fit: 'inside' },
   'favicon-64x64.png': { skip: true },
   'favicon.ico': { skip: true },
   'apple-touch-icon.png': { skip: true },

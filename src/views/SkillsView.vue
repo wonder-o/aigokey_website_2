@@ -636,7 +636,7 @@ useHead({
 </script>
 
 <style scoped>
-.skills-page { min-height: 100vh; color: #17202a; background: #f6f8fa; }
+.skills-page { min-height: 100vh; color: #17202a; background: #ffffff; }
 .skills-page--embedded .catalog-shell { max-width: none; padding: 20px 24px 48px; }
 .skills-page--embedded .mode-row { margin-bottom: 18px; }
 .skills-page--embedded .filter-panel { top: 20px; max-height: calc(100vh - 40px); }

@@ -39,9 +39,7 @@ useHead({
   display: grid;
   place-items: center;
   padding: 40px 18px;
-  background:
-    radial-gradient(circle at 18% 14%, rgba(232, 111, 53, 0.14), transparent 32%),
-    linear-gradient(135deg, #eef7f5 0%, #f9fbfd 48%, #fff7f0 100%);
+  background: #ffffff;
   font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", Arial, sans-serif;
   color: #18222d;
 }

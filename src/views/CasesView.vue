@@ -379,7 +379,7 @@ useHead({
 </script>
 
 <style scoped>
-.cases-page { min-height: 100vh; color: #142231; background: #f7fafc; }
+.cases-page { min-height: 100vh; color: #142231; background: #ffffff; }
 .case-hero { position: relative; overflow: hidden; border-bottom: 1px solid #d9e4ec; color: #f7fbff; background: #13283a; }
 .hero-grid { position: absolute; inset: 0; opacity: .22; background-image: linear-gradient(rgba(119,190,242,.18) 1px, transparent 1px), linear-gradient(90deg, rgba(119,190,242,.18) 1px, transparent 1px); background-size: 44px 44px; mask-image: linear-gradient(90deg, #000, #000 70%, transparent); }
 .hero-shell { position: relative; width: min(1180px, calc(100% - 48px)); min-height: 410px; margin: 0 auto; padding: 68px 0 56px; display: grid; grid-template-columns: minmax(0, .92fr) minmax(520px, 1.08fr); align-items: center; gap: 62px; }

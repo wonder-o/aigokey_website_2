@@ -1,11 +1,8 @@
 <template>
   <header class="site-header">
-    <div class="header-grid" aria-hidden="true"></div>
     <div class="header-shell">
       <router-link to="/" class="brand" aria-label="AIGOKEY">
-        <img src="/assets/aigokey-logo.png" alt="AIGOKEY Logo" />
-        <span>AIGOKEY</span>
-        <i>AI</i>
+        <img src="/assets/aigokey-logo.png" alt="AIGOKEY" />
       </router-link>
 
       <nav class="primary-nav" :class="{ 'has-open-popover': imageMenuOpen || workflowMenuOpen || downloadMenuOpen }" aria-label="Primary navigation">
@@ -153,19 +150,8 @@ function closeDownloadMenu(event: FocusEvent) {
   overflow: visible;
   border-bottom: 1px solid rgba(74, 132, 191, 0.2);
   color: #1b3448;
-  background: rgba(249, 252, 255, 0.93);
+  background: #ffffff;
   box-shadow: 0 10px 32px rgba(38, 83, 122, 0.1);
-  backdrop-filter: blur(20px);
-}
-
-.header-grid {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.56;
-  background-image: linear-gradient(90deg, rgba(55, 120, 195, 0.08) 1px, transparent 1px);
-  background-size: 44px 100%;
-  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
 }
 
 .header-shell {
@@ -179,9 +165,8 @@ function closeDownloadMenu(event: FocusEvent) {
   gap: 30px;
 }
 
-.brand { display: inline-flex; align-items: center; gap: 9px; color: #142a3c; font-size: 20px; font-weight: 900; white-space: nowrap; }
-.brand img { width: 36px; height: 36px; border-radius: 8px; object-fit: cover; box-shadow: 0 8px 22px rgba(71, 133, 235, 0.24); }
-.brand i { margin-left: 2px; padding: 3px 5px; border: 1px solid rgba(48, 125, 217, 0.26); border-radius: 4px; color: #1769c2; background: rgba(65, 145, 238, 0.09); font-size: 9px; font-style: normal; font-weight: 850; }
+.brand { display: inline-flex; align-items: center; white-space: nowrap; }
+.brand img { display: block; width: 154px; height: auto; object-fit: contain; }
 
 .primary-nav { display: flex; justify-content: center; gap: clamp(15px, 2vw, 28px); height: 76px; }
 .primary-nav a, .nav-download-trigger, .nav-image-trigger { position: relative; display: inline-flex; align-items: center; color: #5d7385; font: inherit; font-size: 14px; font-weight: 760; transition: color 0.2s ease; }
@@ -205,6 +190,6 @@ function closeDownloadMenu(event: FocusEvent) {
 :deep(.language-popover) { top: calc(100% + 16px); z-index: 90; border-color: rgba(71,132,196,.25); color: #142231; box-shadow: 0 18px 40px rgba(32,77,119,.2); }
 
 @media (max-width: 1120px) { .header-shell { gap: 19px; }.primary-nav { gap: 15px; }.header-actions { gap: 12px; }.register-link { display: none; } }
-@media (max-width: 820px) { .site-header { min-height: 118px; }.header-shell { width: min(100% - 32px, 1240px); min-height: 118px; grid-template-columns: 1fr auto; grid-template-rows: 58px 44px; gap: 0; }.brand { font-size: 18px; }.brand img { width: 32px; height: 32px; }.primary-nav { grid-column: 1 / -1; grid-row: 2; justify-content: flex-start; gap: 20px; height: 44px; overflow-x: auto; scrollbar-width: none; }.primary-nav.has-open-popover { overflow: visible; }.primary-nav::-webkit-scrollbar { display: none; }.primary-nav a, .nav-download-trigger, .nav-image-trigger { flex: 0 0 auto; font-size: 13px; }.primary-nav a::after, .nav-download-trigger::after, .nav-image-trigger::after { bottom: 3px; }.download-popover { left: 0; width: min(304px, calc(100vw - 32px)); transform: none; }.download-popover::before { left: 18px; }.image-popover { left: 0; width: min(248px, calc(100vw - 32px)); transform: none; }.image-popover::before { left: 18px; }.header-actions { justify-content: flex-end; }.auth-link { display: none; }.trial-link::before { display: none; }.header-spacer { height: 118px; } }
-@media (max-width: 440px) { .header-shell { width: min(100% - 24px, 1240px); }.brand i { display: none; }.trial-link span { display: none; }.trial-link { width: 30px; height: 30px; justify-content: center; border: 1px solid rgba(69,125,177,.3); border-radius: 5px; }.primary-nav { gap: 17px; } }
+@media (max-width: 820px) { .site-header { min-height: 118px; }.header-shell { width: min(100% - 32px, 1240px); min-height: 118px; grid-template-columns: 1fr auto; grid-template-rows: 58px 44px; gap: 0; }.brand img { width: 132px; }.primary-nav { grid-column: 1 / -1; grid-row: 2; justify-content: flex-start; gap: 20px; height: 44px; overflow-x: auto; scrollbar-width: none; }.primary-nav.has-open-popover { overflow: visible; }.primary-nav::-webkit-scrollbar { display: none; }.primary-nav a, .nav-download-trigger, .nav-image-trigger { flex: 0 0 auto; font-size: 13px; }.primary-nav a::after, .nav-download-trigger::after, .nav-image-trigger::after { bottom: 3px; }.download-popover { left: 0; width: min(304px, calc(100vw - 32px)); transform: none; }.download-popover::before { left: 18px; }.image-popover { left: 0; width: min(248px, calc(100vw - 32px)); transform: none; }.image-popover::before { left: 18px; }.header-actions { justify-content: flex-end; }.auth-link { display: none; }.trial-link::before { display: none; }.header-spacer { height: 118px; } }
+@media (max-width: 440px) { .header-shell { width: min(100% - 24px, 1240px); }.brand img { width: 120px; }.trial-link span { display: none; }.trial-link { width: 30px; height: 30px; justify-content: center; border: 1px solid rgba(69,125,177,.3); border-radius: 5px; }.primary-nav { gap: 17px; } }
 </style>

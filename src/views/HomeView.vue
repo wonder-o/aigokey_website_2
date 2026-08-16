@@ -309,7 +309,7 @@ onBeforeUnmount(stopBanner)
 <style scoped>
 .page {
   color: #14293a;
-  background: #f7fafc;
+  background: #ffffff;
 }
 
 .home-band {
@@ -317,11 +317,11 @@ onBeforeUnmount(stopBanner)
   border-top: 1px solid rgba(207, 221, 230, .72);
 }
 
-.home-band--pain { background: #fbfdfe; }
-.home-band--value { background: #f2f8f6; }
-.home-band--audience { background: #fbfdfe; }
-.home-band--promise { background: #f2f7fa; }
-.home-band--faq { background: #f7fafc; }
+.home-band--pain,
+.home-band--value,
+.home-band--audience,
+.home-band--promise,
+.home-band--faq { background: #ffffff; }
 
 .home-card {
   border-color: #d8e4ea;

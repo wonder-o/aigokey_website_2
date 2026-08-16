@@ -358,7 +358,7 @@ useHead({
 </script>
 
 <style scoped>
-.workflows-page { min-height: 100vh; color: #142433; background: #f7fafc; }
+.workflows-page { min-height: 100vh; color: #142433; background: #ffffff; }
 .workflow-hero { position: relative; overflow: hidden; color: #f6fbff; background: #0d2130; }
 .hero-grid { position: absolute; inset: 0; opacity: .28; background-image: linear-gradient(rgba(135,189,220,.13) 1px, transparent 1px), linear-gradient(90deg, rgba(135,189,220,.13) 1px, transparent 1px); background-size: 42px 42px; mask-image: linear-gradient(90deg, #000 0%, #000 78%, transparent); }
 .hero-shell { position: relative; width: min(1180px, calc(100% - 48px)); min-height: 326px; margin: 0 auto; padding: 48px 0 38px; display: grid; grid-template-columns: 300px minmax(0, 1fr); align-items: center; gap: 74px; }
@@ -380,7 +380,7 @@ useHead({
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
 
 /* Keep the workflow library in the same visual system as the prompt library. */
-.workflows-page { color: #161a1a; background: #f4f7f6; }
+.workflows-page { color: #161a1a; background: #ffffff; }
 .workflow-hero { min-height: 430px; border-bottom: 1px solid #cfd6d3; color: #fff; background: #171b1b; }
 .hero-grid { opacity: .16; background-image: linear-gradient(rgba(255,255,255,.16) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.16) 1px, transparent 1px); background-size: 42px 42px; mask-image: linear-gradient(90deg, #000, transparent 70%); }
 .hero-shell { width: min(1280px, calc(100% - 48px)); min-height: 430px; padding: 48px 0 74px; grid-template-columns: minmax(420px,.92fr) minmax(460px,1.08fr); gap: 66px; }

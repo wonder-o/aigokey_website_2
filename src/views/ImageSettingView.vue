@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen overflow-x-hidden bg-[#f8fbfd] text-[#111b24]">
+  <div class="min-h-screen overflow-x-hidden bg-white text-[#111b24]">
     <main>
       <section class="bg-[#eef6ff] px-6 py-[92px] max-[760px]:px-4 max-[760px]:py-16" style="background-image: linear-gradient(rgba(36,104,242,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(36,104,242,0.07) 1px, transparent 1px); background-size: 56px 56px;">
         <div class="mx-auto max-w-[1280px]">

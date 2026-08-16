@@ -369,7 +369,7 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-.prompt-page { min-height: 100vh; color: #161a1a; background: #f4f7f6; }
+.prompt-page { min-height: 100vh; color: #161a1a; background: #ffffff; }
 .library-intro { min-height: 392px; position: relative; overflow: hidden; border-bottom: 1px solid #cfd6d3; color: #fff; background: #171b1b; }
 .intro-grid { position: absolute; inset: 0; opacity: .16; background-image: linear-gradient(rgba(255,255,255,.16) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.16) 1px, transparent 1px); background-size: 42px 42px; mask-image: linear-gradient(90deg, #000, transparent 66%); }
 .intro-shell { width: min(1280px, calc(100% - 48px)); min-height: 392px; margin: 0 auto; position: relative; display: grid; grid-template-columns: minmax(390px,.9fr) minmax(460px,1.1fr); align-items: center; gap: 58px; padding: 48px 0 74px; }

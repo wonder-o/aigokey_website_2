@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen overflow-x-hidden bg-[#f8fbfd] text-[#111b24]">
+  <div class="min-h-screen overflow-x-hidden bg-white text-[#111b24]">
     <SiteHeader v-if="!embedded" @trial="$router.push('/free-trial/')" />
 
     <main>

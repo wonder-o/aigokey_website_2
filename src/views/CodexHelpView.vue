@@ -285,7 +285,7 @@ async function copyText(text: string, event: Event) {
   color: #172027;
   font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", Arial, sans-serif;
   line-height: 1.72;
-  background: #f5f7fa;
+  background: #ffffff;
 }
 
 .codex-page--embedded .hero {
