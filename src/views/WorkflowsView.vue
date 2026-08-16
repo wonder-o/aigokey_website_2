@@ -348,7 +348,7 @@ onBeforeUnmount(() => {
 })
 
 useHead({
-  title: `Codex 工作流库｜${workflowTotal} 个跨岗位实战工作流 - AigoKey`,
+  title: `Codex 工作流库｜${workflowTotal} 个跨岗位实战工作流 - AIGOKEY`,
   meta: [
     { name: 'description', content: `浏览 ${workflowTotal} 个 Codex 工作流，按类别与职业筛选，查看工作流说明、适用场景、使用案例、证据等级和原始来源。` },
     { property: 'og:title', content: `Codex 工作流库｜${workflowTotal} 个跨岗位工作流` },

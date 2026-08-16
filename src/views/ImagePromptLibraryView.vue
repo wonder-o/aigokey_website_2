@@ -261,10 +261,10 @@ function localizedPrompt(prompt: PromptItem) {
 }
 
 useHead(computed(() => ({
-  title: `${copy.value.metaTitle} | AigoKey`,
+  title: `${copy.value.metaTitle} | AIGOKEY`,
   meta: [
     { name: 'description', content: copy.value.metaDescription },
-    { name: 'keywords', content: 'GPT Image 2, image prompts, AI image generation, prompt library, AigoKey' },
+    { name: 'keywords', content: 'GPT Image 2, image prompts, AI image generation, prompt library, AIGOKEY' },
   ],
 })))
 

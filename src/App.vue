@@ -15,7 +15,7 @@ const pageUrl = computed(() => canonicalUrl(route.path))
 const websiteSchema = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'AigoKey',
+  name: 'AIGOKEY',
   url: `${SITE_ORIGIN}/`,
   inLanguage: 'zh-CN',
 })
@@ -23,7 +23,7 @@ const websiteSchema = JSON.stringify({
 const organizationSchema = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'AigoKey',
+  name: 'AIGOKEY',
   url: `${SITE_ORIGIN}/`,
   logo: `${SITE_ORIGIN}/assets/aigokey-logo.png`,
 })
@@ -33,7 +33,7 @@ useHead(() => ({
   meta: [
     { name: 'robots', content: isNoIndex.value ? 'noindex,follow' : 'index,follow' },
     { property: 'og:url', content: pageUrl.value },
-    { property: 'og:site_name', content: 'AigoKey' },
+    { property: 'og:site_name', content: 'AIGOKEY' },
     { property: 'og:locale', content: 'zh_CN' },
   ],
   script: route.path === '/' ? [

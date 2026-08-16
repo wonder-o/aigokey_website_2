@@ -399,7 +399,7 @@ const zhCopy = {
   editorialTitle: '人工策展 + 客观信号', editorialCopy: '综合实用性、可靠性、易用性、维护度与社区活跃度。',
   search: '搜索名称、功能、标签或来源', sort: '排序', sortRating: 'Aigo 评分', sortUpdated: '最近活跃', sortSetup: '配置时间最短', results: '个结果', clear: '清除筛选',
   attributeFilters: '属性筛选', difficulty: '上手难度', allDifficulties: '全部难度', risk: '权限风险', allRisks: '全部风险', source: '来源', allSources: '全部来源', officialOnly: '仅官方',
-  verified: '官方', verifiedTitle: '来源仓库由工具官方维护', aigoRating: 'AigoKey 编辑评分', details: '查看详情', install: '安装',
+  verified: '官方', verifiedTitle: '来源仓库由工具官方维护', aigoRating: 'AIGOKEY 编辑评分', details: '查看详情', install: '安装',
   emptyTitle: '没有找到匹配的 Skill', emptyCopy: '试试更短的关键词，或清除当前分类。',
   disclaimer: '评分用于发现与比较，不代表 GitHub 或项目作者背书。安装前请检查权限与源码。', close: '关闭详情',
   editorReview: '编辑评价', bestFor: '适合', notice: '使用提示', installStep: '在 Codex 中使用', installTitle: '一条指令完成安装',
@@ -415,7 +415,7 @@ const enCopy = {
   editorialTitle: 'Editorial + objective signals', editorialCopy: 'Combines usefulness, reliability, ease, maintenance, and community activity.',
   search: 'Search names, functions, tags, or sources', sort: 'Sort', sortRating: 'Aigo rating', sortUpdated: 'Recently active', sortSetup: 'Shortest setup', results: 'results', clear: 'Clear filters',
   attributeFilters: 'Attribute filters', difficulty: 'Difficulty', allDifficulties: 'All levels', risk: 'Permission risk', allRisks: 'All risks', source: 'Source', allSources: 'All sources', officialOnly: 'Official only',
-  verified: 'Official', verifiedTitle: 'Maintained by the tool publisher', aigoRating: 'AigoKey editorial rating', details: 'Details', install: 'Install',
+  verified: 'Official', verifiedTitle: 'Maintained by the tool publisher', aigoRating: 'AIGOKEY editorial rating', details: 'Details', install: 'Install',
   emptyTitle: 'No matching skills', emptyCopy: 'Try a shorter query or clear the current filter.',
   disclaimer: 'Ratings support discovery and comparison; they are not GitHub or author endorsements. Review source and permissions before installing.', close: 'Close details',
   editorReview: 'Editorial review', bestFor: 'Best for', notice: 'Watch for', installStep: 'Use in Codex', installTitle: 'Install with one instruction',
@@ -627,10 +627,10 @@ onMounted(() => document.addEventListener('keydown', onKeydown))
 onBeforeUnmount(() => { document.removeEventListener('keydown', onKeydown); document.body.style.overflow = '' })
 
 useHead({
-  title: embedded ? 'Skills List - AigoKey' : 'AigoKey Skills - 找到值得安装的 Codex Skills',
+  title: embedded ? 'Skills List - AIGOKEY' : 'AIGOKEY Skills - 找到值得安装的 Codex Skills',
   meta: [
-    { name: 'description', content: 'AigoKey Skills 每日整理 GitHub 上高质量 Codex Skills，按类别和职业筛选，提供评分、评价与安装指令。' },
-    { name: 'keywords', content: 'Codex Skills, Skills 索引, AI 工作流, Codex 安装, AigoKey' },
+    { name: 'description', content: 'AIGOKEY Skills 每日整理 GitHub 上高质量 Codex Skills，按类别和职业筛选，提供评分、评价与安装指令。' },
+    { name: 'keywords', content: 'Codex Skills, Skills 索引, AI 工作流, Codex 安装, AIGOKEY' },
   ],
 })
 </script>

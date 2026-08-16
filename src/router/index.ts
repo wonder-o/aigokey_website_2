@@ -89,6 +89,11 @@ export const routes = [
     component: () => import('@/views/EnterpriseServiceView.vue'),
   },
   {
+    path: '/about/',
+    name: 'about',
+    component: () => import('@/views/AboutView.vue'),
+  },
+  {
     path: '/free-trial/',
     name: 'free-trial',
     component: () => import('@/views/FreeTrialView.vue'),

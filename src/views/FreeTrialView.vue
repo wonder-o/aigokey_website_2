@@ -22,9 +22,9 @@
 import { useHead } from '@unhead/vue'
 
 useHead({
-  title: '免费试用 - AigoKey',
+  title: '免费试用 - AIGOKEY',
   meta: [
-    { name: 'description', content: 'AigoKey 新用户免费试用体验，扫码添加微信客服即可开通。' },
+    { name: 'description', content: 'AIGOKEY 新用户免费试用体验，扫码添加微信客服即可开通。' },
   ],
 })
 </script>

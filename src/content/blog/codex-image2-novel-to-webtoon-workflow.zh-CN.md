@@ -15,7 +15,7 @@ tags:
   - AI 条漫
   - 工作流
 sources:
-  - publisher: AigoKey 编辑部
+  - publisher: AIGOKEY 编辑部
     title: 《天魔神谭》小说条漫项目实录
     url: https://www.aigokey.com/blog/codex-image2-novel-to-webtoon-workflow/
     publishedAt: '2026-07-19'

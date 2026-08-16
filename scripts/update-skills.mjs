@@ -7,7 +7,7 @@ const minimumCatalogSize = 100
 const token = process.env.GITHUB_TOKEN
 const headers = {
   Accept: 'application/vnd.github+json',
-  'User-Agent': 'AigoKey-Skills-Indexer',
+  'User-Agent': 'AIGOKEY-Skills-Indexer',
   'X-GitHub-Api-Version': '2022-11-28',
   ...(token ? { Authorization: `Bearer ${token}` } : {}),
 }

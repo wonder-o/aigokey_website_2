@@ -1,0 +1,143 @@
+export const aboutZh = {
+  meta: {
+    title: '关于 AIGOKEY - 从 AI 套餐到企业生产交付',
+    description: '了解 AIGOKEY 如何通过标准化 AI 套餐和企业 FDE 服务，帮助个人、团队与企业把 AI 从可用推进到可上线、可观测、可接管。',
+    keywords: 'AIGOKEY,关于我们,AI Token套餐,企业FDE服务,企业AI落地,AI生产交付',
+  },
+  hero: {
+    eyebrow: 'ABOUT AIGOKEY',
+    title: 'AIGOKEY，让 AI 从可用，走到生产交付',
+    summary: '我们为个人和团队提供清晰、稳定的 AI 套餐，也与企业一起进入真实业务现场，完成复杂工作流的诊断、集成、评测治理、生产上线与能力移交。',
+    primary: '查看模型与套餐',
+    secondary: '了解企业 FDE',
+    signal: 'STANDARD ACCESS + FORWARD DEPLOYED ENGINEERING',
+    stages: [
+      { code: '01', title: '标准化 AI 使用', text: '让个人与团队按周期、额度和使用强度直接选择。' },
+      { code: '02', title: '企业生产交付', text: '让复杂 AI 工作流真正进入系统、组织与日常业务。' },
+      { code: '03', title: '行业能力沉淀', text: '把高频交付经验持续转化为可复用的产品能力。' },
+    ],
+  },
+  position: {
+    eyebrow: 'OUR POSITION',
+    title: '连接标准化供给与复杂落地',
+    intro: 'AIGOKEY 不只提供模型额度。我们从低门槛、可预期的 AI 使用开始，在企业需要更深交付时继续向前，直到系统能在真实生产环境中稳定运行。',
+    audiences: [
+      { label: 'INDIVIDUAL', title: '个人使用者', text: '按真实工作周期选择日卡、周卡或月卡，把 Codex、GPT 与 Image 模型用于开发、内容和设计。' },
+      { label: 'TEAM', title: '团队与统一采购', text: '按人数、并发和业务用量规划额度，让团队获得清晰、稳定、可管理的 AI 使用方式。' },
+      { label: 'ENTERPRISE', title: '企业生产场景', text: '由 FDE 与业务和技术团队并肩交付，把高价值工作流推进到评测、治理、上线和接管。' },
+    ],
+  },
+  path: {
+    eyebrow: 'THE AIGOKEY PATH',
+    title: '从一次使用，走向长期企业能力',
+    intro: '不要求企业一开始就启动大型项目。先找到合适的入口，再用真实业务证据决定下一步。',
+    steps: [
+      { code: '01', title: '标准套餐', text: '快速开始使用' },
+      { code: '02', title: '企业采购', text: '统一额度与管理' },
+      { code: '03', title: 'FDE 诊断', text: '确定高价值场景' },
+      { code: '04', title: '工作流上线', text: '交付首个生产结果' },
+      { code: '05', title: '多部门扩展', text: '复制已验证能力' },
+      { code: '06', title: '持续运营', text: '长期额度与迭代' },
+    ],
+    outcomeLabel: '交付目标',
+    outcome: '可上线 · 可观测 · 可接管',
+  },
+  principles: {
+    eyebrow: 'HOW WE WORK',
+    title: '用生产结果，约束每一次交付',
+    intro: '我们关心的不是一个看起来聪明的演示，而是 AI 能否被真实用户使用、被企业有效治理、被内部团队持续运营。',
+    items: [
+      { title: '生产结果优先', text: '以真实用户、业务指标和运行证据判断价值，不把 PoC 当作终点。' },
+      { title: '先聚焦 1–3 个工作流', text: '从高价值、边界清楚的场景开始，用小范围上线降低复杂度与决策风险。' },
+      { title: '评测与治理同步建设', text: '把质量、安全、权限、日志、人工审批与回滚机制纳入系统设计。' },
+      { title: '交付必须可观测、可移交', text: '留下运行系统、评测链路、文档和运营机制，让企业团队最终能够接管。' },
+      { title: '把现场经验变成产品', text: '持续沉淀高频问题、组件和方法，让下一次交付更快、更稳定。' },
+    ],
+  },
+  direction: {
+    eyebrow: 'LONG-TERM DIRECTION',
+    title: '规模来自标准化，深度来自共同交付',
+    text: 'AIGOKEY 用标准化 AI 套餐服务更广泛的个人和团队，用 FDE 解决企业复杂落地，再把反复验证的交付经验沉淀为行业产品。',
+    formula: ['标准套餐获得规模', 'FDE 解决复杂落地', '交付经验沉淀产品'],
+  },
+  cta: {
+    eyebrow: 'CHOOSE YOUR STARTING POINT',
+    title: '从适合你的入口开始',
+    text: '个人和团队可以直接选择套餐；企业可以先了解 FDE 交付方式，或带着一个真实工作流联系我们。',
+    plans: '查看模型与套餐',
+    enterprise: '查看企业 FDE',
+    support: '联系客服',
+  },
+}
+
+export const aboutEn = {
+  meta: {
+    title: 'About AIGOKEY - From AI Access to Production Delivery',
+    description: 'Learn how AIGOKEY combines standardized AI plans with enterprise FDE services to move AI from accessible to deployable, observable, and owned.',
+    keywords: 'AIGOKEY, about AIGOKEY, AI plans, enterprise FDE, enterprise AI deployment, production AI',
+  },
+  hero: {
+    eyebrow: 'ABOUT AIGOKEY',
+    title: 'AIGOKEY moves AI from accessible to production-ready',
+    summary: 'We provide clear, reliable AI plans for individuals and teams. For enterprises, we work inside real business environments to diagnose, integrate, evaluate, govern, launch, and transfer ownership of complex workflows.',
+    primary: 'View models and plans',
+    secondary: 'Explore Enterprise FDE',
+    signal: 'STANDARD ACCESS + FORWARD DEPLOYED ENGINEERING',
+    stages: [
+      { code: '01', title: 'Standard AI access', text: 'Plans aligned to the cycle, quota, and intensity individuals and teams need.' },
+      { code: '02', title: 'Enterprise delivery', text: 'Complex AI workflows brought into real systems, organizations, and operations.' },
+      { code: '03', title: 'Industry capability', text: 'Recurring field lessons converted into reusable product capabilities.' },
+    ],
+  },
+  position: {
+    eyebrow: 'OUR POSITION',
+    title: 'Connecting standardized access with complex delivery',
+    intro: 'AIGOKEY is more than model quota. We begin with accessible and predictable AI usage, then keep moving when enterprises need deeper delivery, until the system runs reliably in production.',
+    audiences: [
+      { label: 'INDIVIDUAL', title: 'Individuals', text: 'Choose daily, weekly, or monthly plans and use Codex, GPT, and Image models across development, content, and design.' },
+      { label: 'TEAM', title: 'Teams and procurement', text: 'Plan quota around people, concurrency, and business usage for a clear, stable, and manageable way to use AI.' },
+      { label: 'ENTERPRISE', title: 'Enterprise production', text: 'FDEs work with business and technical teams to take high-value workflows through evaluation, governance, launch, and handover.' },
+    ],
+  },
+  path: {
+    eyebrow: 'THE AIGOKEY PATH',
+    title: 'From first use to lasting enterprise capability',
+    intro: 'An enterprise does not need to begin with a large program. Enter at the right point, then use real business evidence to decide what comes next.',
+    steps: [
+      { code: '01', title: 'Standard plans', text: 'Start using AI quickly' },
+      { code: '02', title: 'Enterprise purchase', text: 'Centralize quota and control' },
+      { code: '03', title: 'FDE discovery', text: 'Select valuable workflows' },
+      { code: '04', title: 'Production launch', text: 'Deliver the first live result' },
+      { code: '05', title: 'Cross-team scale', text: 'Replicate proven capability' },
+      { code: '06', title: 'Ongoing operations', text: 'Sustain quota and iteration' },
+    ],
+    outcomeLabel: 'DELIVERY TARGET',
+    outcome: 'Deployable · observable · owned',
+  },
+  principles: {
+    eyebrow: 'HOW WE WORK',
+    title: 'Production outcomes govern every engagement',
+    intro: 'We care less about a clever demo than whether AI is used by real people, governed by the business, and operated by the internal team over time.',
+    items: [
+      { title: 'Production outcomes first', text: 'Use real users, business measures, and operating evidence to judge value. A PoC is not the finish line.' },
+      { title: 'Focus on 1-3 workflows', text: 'Start with high-value, well-bounded use cases and reduce complexity through a narrow production launch.' },
+      { title: 'Build evaluation and governance together', text: 'Design for quality, safety, permissions, logs, human approval, and rollback from the start.' },
+      { title: 'Make delivery observable and transferable', text: 'Leave running systems, evaluation pipelines, documentation, and operating routines the enterprise can own.' },
+      { title: 'Turn field learning into product', text: 'Codify recurring problems, components, and methods so each future delivery becomes faster and more reliable.' },
+    ],
+  },
+  direction: {
+    eyebrow: 'LONG-TERM DIRECTION',
+    title: 'Standardization creates scale. Joint delivery creates depth.',
+    text: 'AIGOKEY uses standardized AI plans to serve individuals and teams at scale, FDE to solve complex enterprise deployment, and repeated field evidence to create industry products.',
+    formula: ['Scale through standard plans', 'Solve complexity through FDE', 'Turn field learning into products'],
+  },
+  cta: {
+    eyebrow: 'CHOOSE YOUR STARTING POINT',
+    title: 'Start where your needs are today',
+    text: 'Individuals and teams can choose a plan directly. Enterprises can explore FDE delivery or bring one real workflow to a first conversation.',
+    plans: 'View models and plans',
+    enterprise: 'Explore Enterprise FDE',
+    support: 'Contact support',
+  },
+}

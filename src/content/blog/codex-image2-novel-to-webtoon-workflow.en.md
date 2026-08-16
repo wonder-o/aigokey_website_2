@@ -15,7 +15,7 @@ tags:
   - AI webtoon
   - Workflow
 sources:
-  - publisher: AigoKey Editorial
+  - publisher: AIGOKEY Editorial
     title: The Tian Mo Shen Tan novel-to-webtoon project
     url: https://www.aigokey.com/blog/codex-image2-novel-to-webtoon-workflow/
     publishedAt: '2026-07-19'

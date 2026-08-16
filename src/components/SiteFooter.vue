@@ -3,9 +3,9 @@
     <div class="footer-grid" aria-hidden="true"></div>
     <div class="footer-shell">
       <section class="footer-brand">
-        <router-link to="/" class="brand-link" aria-label="AigoKey">
-          <img src="/assets/aigokey-logo.png" alt="AigoKey Logo" />
-          <span>AigoKey</span>
+        <router-link to="/" class="brand-link" aria-label="AIGOKEY">
+          <img src="/assets/aigokey-logo.png" alt="AIGOKEY Logo" />
+          <span>AIGOKEY</span>
         </router-link>
         <p>{{ t.footer.text }}</p>
         <div class="service-status"><i></i>{{ t.footerNav.status }}</div>
@@ -30,6 +30,7 @@
 
       <nav class="footer-column" :aria-label="t.footerNav.service">
         <h2><Building2 :size="16" aria-hidden="true" />{{ t.footerNav.service }}</h2>
+        <router-link to="/about/">{{ t.footerNav.about }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
         <router-link to="/enterprise-service/">{{ t.footerNav.enterprise }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
         <router-link to="/free-trial/">{{ t.footerNav.trial }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
         <router-link to="/codex-help/#support">{{ t.footerNav.support }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>

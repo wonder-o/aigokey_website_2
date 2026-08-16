@@ -127,9 +127,9 @@ import { useI18n } from '@/composables/useI18n'
 
 const imageCopy = {
   'zh-CN': {
-    meta: { title: '图像创作', description: '使用 AigoKey 套餐和 agk2img-skill，在 ChatGPT Codex App 中完成插画、漫画、广告图与电商图等图像创作。', keywords: 'AigoKey, 图像创作, AI 绘图, 插画, 漫画, 广告图, 电商图, ChatGPT Codex App, agk2img-skill' },
+    meta: { title: '图像创作', description: '使用 AIGOKEY 套餐和 agk2img-skill，在 ChatGPT Codex App 中完成插画、漫画、广告图与电商图等图像创作。', keywords: 'AIGOKEY, 图像创作, AI 绘图, 插画, 漫画, 广告图, 电商图, ChatGPT Codex App, agk2img-skill' },
     navLabel: '主导航',
-    hero: { imageAlt: '插画、漫画、广告和电商产品的图像创作拼贴', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: '把想象，变成', titleHighlight: '可以交付的画面', copy: '使用 AigoKey 套餐中的图像能力，在 ChatGPT Codex App 里完成插画、漫画、彩漫、广告图、电商图与更多视觉创作。', action: '配置图像能力' },
+    hero: { imageAlt: '插画、漫画、广告和电商产品的图像创作拼贴', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: '把想象，变成', titleHighlight: '可以交付的画面', copy: '使用 AIGOKEY 套餐中的图像能力，在 ChatGPT Codex App 里完成插画、漫画、彩漫、广告图、电商图与更多视觉创作。', action: '配置图像能力' },
     strip: { copy: '一个配置，让创作工作流留在你熟悉的 ChatGPT Codex App 内。', action: '查看配置步骤' },
     creation: { eyebrow: 'CREATIVE DIRECTIONS', title: '从一个灵感，展开不同的视觉表达', copy: '让模型承担画面探索和首稿生成，把你的时间留给选题、判断、修改与交付。' },
     creationTypes: [
@@ -140,21 +140,21 @@ const imageCopy = {
     ],
     prompt: { eyebrow: 'FROM PROMPT TO OUTPUT', title: '把图像任务说清楚，剩下的交给生成能力', copy: '适合从概念草图到成品视觉的连续尝试。可以描述主体、画面比例、材质、光线、构图和需要避免的内容。', cards: [{ label: '01 / 画面方向', text: '插画、漫画、彩漫、摄影感产品图' }, { label: '02 / 使用场景', text: '社媒封面、广告投放、电商详情页、提案与分镜' }, { label: '03 / 画面约束', text: '主体、构图、色彩、比例，以及不希望出现的元素' }] },
     setup: {
-      eyebrow: 'SETUP IN CODEX', title: '配置一次，就能在 Codex 中开始创作', copy: '按照 agk2img-skill 的流程，在 ChatGPT Codex App 中用自然语言完成 Base URL 与 API Key 配置。它们只用于图像生成，不会覆盖你的其他 OpenAI 配置。', modelLabel: '支持模型', githubBefore: '打开', githubAfter: '，复制下面这句话到 ChatGPT Codex 即可快速安装：', installPrompt: 'https://github.com/wonder-o/agk2img-skill，帮我安装这个 skill，进行快速安装。', note: 'API Key 可在 AigoKey 的密钥管理中创建。ChatGPT Codex App 会在需要时引导你安全输入密钥；不要把密钥写入截图、代码仓库或公开文档。',
+      eyebrow: 'SETUP IN CODEX', title: '配置一次，就能在 Codex 中开始创作', copy: '按照 agk2img-skill 的流程，在 ChatGPT Codex App 中用自然语言完成 Base URL 与 API Key 配置。它们只用于图像生成，不会覆盖你的其他 OpenAI 配置。', modelLabel: '支持模型', githubBefore: '打开', githubAfter: '，复制下面这句话到 ChatGPT Codex 即可快速安装：', installPrompt: 'https://github.com/wonder-o/agk2img-skill，帮我安装这个 skill，进行快速安装。', note: 'API Key 可在 AIGOKEY 的密钥管理中创建。ChatGPT Codex App 会在需要时引导你安全输入密钥；不要把密钥写入截图、代码仓库或公开文档。',
       steps: [
         { number: '01', title: '安装 agk2img-skill', text: '通过 GitHub 仓库在 ChatGPT Codex 中快速安装 agk2img-skill。' },
-        { number: '02', title: '创建 AigoKey API Key', text: '登录 AigoKey，可与现有的密钥共用，也可在密钥管理中创建专用于图像创作的 API Key。' },
+        { number: '02', title: '创建 AIGOKEY API Key', text: '登录 AIGOKEY，可与现有的密钥共用，也可在密钥管理中创建专用于图像创作的 API Key。' },
         { number: '03', title: '用自然语言配置端点与密钥', text: '在 ChatGPT Codex App 中依次说\n帮我配置 agk2img 的 base url 为 https://llm.aigokey.com\n帮我配置 agk2img 的 api key 为 sk-*******\napi key为 网站上的API密钥即可。' },
         { number: '04', title: '重启ChatGPT Codex App 后进行创作', text: '重启ChatGPT Codex App后，即可在ChatGPT Codex 中直接描述你要生成、修改或批量制作的画面。skill 会根据任务选择生成、编辑、参考图或批量工作流。' },
       ],
     },
     commands: { title: '支持指令', copy: '可以使用技能名明确调用，也可以不提技能名，直接用自然语言描述任务：', groups: [{ title: '安装：', prompts: ['把 agk2img-skill 安装到 Codex skills 目录', '把 agk2img-skill 放到当前项目里使用'] }, { title: '配置：', prompts: ['帮我配置 agk2img 的 base url', '帮我更新 agk2img 的 api key', '帮我清空 agk2img 的配置', '帮我检查 agk2img 是否配置好了'] }, { title: '使用（指定技能名）：', prompts: ['用 agk2img 生成一张 xxx 图', '用 agk2img 修改这张图片里的 xxx', '用 agk2img 把我上传的图片改成 xxx 风格', '用 agk2img 批量生成一组 xxx 素材'] }, { title: '使用（直接自然语言）：', prompts: ['生成一张 xxx 图', '修改这张图片里的 xxx', '把我上传的图片改成 xxx 风格', '批量生成一组 xxx 素材'] }] },
-    cta: { eyebrow: 'READY TO CREATE', title: '用 AigoKey 套餐，把图像创作纳入你的日常工作流。', action: '登录并创建 API Key' },
+    cta: { eyebrow: 'READY TO CREATE', title: '用 AIGOKEY 套餐，把图像创作纳入你的日常工作流。', action: '登录并创建 API Key' },
   },
   'zh-TW': {
-    meta: { title: '圖像創作', description: '使用 AigoKey 方案與 agk2img-skill，在 ChatGPT Codex App 中完成插畫、漫畫、廣告圖與電商圖等圖像創作。', keywords: 'AigoKey, 圖像創作, AI 繪圖, 插畫, 漫畫, 廣告圖, 電商圖, ChatGPT Codex App, agk2img-skill' },
+    meta: { title: '圖像創作', description: '使用 AIGOKEY 方案與 agk2img-skill，在 ChatGPT Codex App 中完成插畫、漫畫、廣告圖與電商圖等圖像創作。', keywords: 'AIGOKEY, 圖像創作, AI 繪圖, 插畫, 漫畫, 廣告圖, 電商圖, ChatGPT Codex App, agk2img-skill' },
     navLabel: '主導覽',
-    hero: { imageAlt: '插畫、漫畫、廣告和電商產品的圖像創作拼貼', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: '把想像，變成', titleHighlight: '可以交付的畫面', copy: '使用 AigoKey 方案中的圖像能力，在 ChatGPT Codex App 裡完成插畫、漫畫、彩漫、廣告圖、電商圖與更多視覺創作。', action: '設定圖像能力' },
+    hero: { imageAlt: '插畫、漫畫、廣告和電商產品的圖像創作拼貼', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: '把想像，變成', titleHighlight: '可以交付的畫面', copy: '使用 AIGOKEY 方案中的圖像能力，在 ChatGPT Codex App 裡完成插畫、漫畫、彩漫、廣告圖、電商圖與更多視覺創作。', action: '設定圖像能力' },
     strip: { copy: '一次設定，讓創作工作流程留在你熟悉的 ChatGPT Codex App 內。', action: '查看設定步驟' },
     creation: { eyebrow: 'CREATIVE DIRECTIONS', title: '從一個靈感，展開不同的視覺表達', copy: '讓模型承擔畫面探索和首稿生成，把你的時間留給選題、判斷、修改與交付。' },
     creationTypes: [
@@ -165,21 +165,21 @@ const imageCopy = {
     ],
     prompt: { eyebrow: 'FROM PROMPT TO OUTPUT', title: '把圖像任務說清楚，剩下的交給生成能力', copy: '適合從概念草圖到成品視覺的連續嘗試。可以描述主體、畫面比例、材質、光線、構圖和需要避免的內容。', cards: [{ label: '01 / 畫面方向', text: '插畫、漫畫、彩漫、攝影感產品圖' }, { label: '02 / 使用情境', text: '社群封面、廣告投放、電商詳情頁、提案與分鏡' }, { label: '03 / 畫面約束', text: '主體、構圖、色彩、比例，以及不希望出現的元素' }] },
     setup: {
-      eyebrow: 'SETUP IN CODEX', title: '設定一次，就能在 Codex 中開始創作', copy: '按照 agk2img-skill 的流程，在 ChatGPT Codex App 中用自然語言完成 Base URL 與 API Key 設定。它們只用於圖像生成，不會覆蓋你的其他 OpenAI 設定。', modelLabel: '支援模型', githubBefore: '開啟', githubAfter: '，複製下方這句話到 ChatGPT Codex 即可快速安裝：', installPrompt: 'https://github.com/wonder-o/agk2img-skill，幫我安裝這個 skill，進行快速安裝。', note: 'API Key 可在 AigoKey 的金鑰管理中建立。ChatGPT Codex App 會在需要時引導你安全輸入金鑰；不要把金鑰寫入截圖、程式碼儲存庫或公開文件。',
+      eyebrow: 'SETUP IN CODEX', title: '設定一次，就能在 Codex 中開始創作', copy: '按照 agk2img-skill 的流程，在 ChatGPT Codex App 中用自然語言完成 Base URL 與 API Key 設定。它們只用於圖像生成，不會覆蓋你的其他 OpenAI 設定。', modelLabel: '支援模型', githubBefore: '開啟', githubAfter: '，複製下方這句話到 ChatGPT Codex 即可快速安裝：', installPrompt: 'https://github.com/wonder-o/agk2img-skill，幫我安裝這個 skill，進行快速安裝。', note: 'API Key 可在 AIGOKEY 的金鑰管理中建立。ChatGPT Codex App 會在需要時引導你安全輸入金鑰；不要把金鑰寫入截圖、程式碼儲存庫或公開文件。',
       steps: [
         { number: '01', title: '安裝 agk2img-skill', text: '透過 GitHub 儲存庫在 ChatGPT Codex 中快速安裝 agk2img-skill。' },
-        { number: '02', title: '建立 AigoKey API Key', text: '登入 AigoKey，在金鑰管理中建立專用於圖像創作的 API Key，並妥善保管。' },
+        { number: '02', title: '建立 AIGOKEY API Key', text: '登入 AIGOKEY，在金鑰管理中建立專用於圖像創作的 API Key，並妥善保管。' },
         { number: '03', title: '用自然語言設定端點與金鑰', text: '在 ChatGPT Codex App 中依序說「幫我設定 agk2img 的 base url」和「幫我更新 agk2img 的 api key。」此 skill 不使用 OPENAI_API_KEY。' },
         { number: '04', title: '在 ChatGPT Codex App 中創作', text: '直接描述你要生成、修改或批量製作的畫面。skill 會根據任務選擇生成、編輯、參考圖或批量工作流程。' },
       ],
     },
     commands: { title: '支援指令', copy: '可以使用技能名明確呼叫，也可以不提技能名，直接用自然語言描述任務：', groups: [{ title: '安裝：', prompts: ['把 agk2img-skill 安裝到 Codex skills 目錄', '把 agk2img-skill 放到目前專案裡使用'] }, { title: '設定：', prompts: ['幫我設定 agk2img 的 base url', '幫我更新 agk2img 的 api key', '幫我清空 agk2img 的設定', '幫我檢查 agk2img 是否設定好了'] }, { title: '使用（指定技能名）：', prompts: ['用 agk2img 生成一張 xxx 圖', '用 agk2img 修改這張圖片裡的 xxx', '用 agk2img 把我上傳的圖片改成 xxx 風格', '用 agk2img 批量生成一組 xxx 素材'] }, { title: '使用（直接自然語言）：', prompts: ['生成一張 xxx 圖', '修改這張圖片裡的 xxx', '把我上傳的圖片改成 xxx 風格', '批量生成一組 xxx 素材'] }] },
-    cta: { eyebrow: 'READY TO CREATE', title: '用 AigoKey 方案，把圖像創作納入你的日常工作流程。', action: '登入並建立 API Key' },
+    cta: { eyebrow: 'READY TO CREATE', title: '用 AIGOKEY 方案，把圖像創作納入你的日常工作流程。', action: '登入並建立 API Key' },
   },
   en: {
-    meta: { title: 'Image Creation', description: 'Use AigoKey plans and agk2img-skill to create illustrations, comics, ads, ecommerce images, and more in the ChatGPT Codex App.', keywords: 'AigoKey, image creation, AI image generation, illustration, comics, advertising images, ecommerce images, ChatGPT Codex App, agk2img-skill' },
+    meta: { title: 'Image Creation', description: 'Use AIGOKEY plans and agk2img-skill to create illustrations, comics, ads, ecommerce images, and more in the ChatGPT Codex App.', keywords: 'AIGOKEY, image creation, AI image generation, illustration, comics, advertising images, ecommerce images, ChatGPT Codex App, agk2img-skill' },
     navLabel: 'Main navigation',
-    hero: { imageAlt: 'A creative collage of illustration, comics, advertising, and ecommerce products', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: 'Turn imagination into', titleHighlight: 'visual work you can deliver', copy: 'Use the image capabilities in your AigoKey plan to create illustrations, comics, color comics, ad creatives, ecommerce images, and more in the ChatGPT Codex App.', action: 'Set up image creation' },
+    hero: { imageAlt: 'A creative collage of illustration, comics, advertising, and ecommerce products', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: 'Turn imagination into', titleHighlight: 'visual work you can deliver', copy: 'Use the image capabilities in your AIGOKEY plan to create illustrations, comics, color comics, ad creatives, ecommerce images, and more in the ChatGPT Codex App.', action: 'Set up image creation' },
     strip: { copy: 'One setup keeps your creative workflow inside the ChatGPT Codex App you already know.', action: 'View setup steps' },
     creation: { eyebrow: 'CREATIVE DIRECTIONS', title: 'Expand one idea into many visual expressions', copy: 'Let the model explore visual directions and generate first drafts, while you focus on selection, judgment, refinement, and delivery.' },
     creationTypes: [
@@ -190,16 +190,16 @@ const imageCopy = {
     ],
     prompt: { eyebrow: 'FROM PROMPT TO OUTPUT', title: 'Describe the image task clearly, then let generation do the rest', copy: 'Designed for continuous exploration from concept sketches to finished visuals. Describe the subject, aspect ratio, materials, lighting, composition, and anything to avoid.', cards: [{ label: '01 / Visual direction', text: 'Illustration, comics, color comics, and photographic product imagery' }, { label: '02 / Use case', text: 'Social covers, ad campaigns, ecommerce pages, proposals, and storyboards' }, { label: '03 / Constraints', text: 'Subject, composition, palette, aspect ratio, and elements to exclude' }] },
     setup: {
-      eyebrow: 'SETUP IN CODEX', title: 'Set it up once, then create in Codex', copy: 'Follow the agk2img-skill workflow and use natural language in the ChatGPT Codex App to configure the Base URL and API Key. They are used only for image generation and do not override other OpenAI settings.', modelLabel: 'Supported model', githubBefore: 'Open', githubAfter: ', then copy the sentence below into ChatGPT Codex for a quick installation:', installPrompt: 'https://github.com/wonder-o/agk2img-skill, install this skill for me with a quick setup.', note: 'Create an API Key in AigoKey key management. ChatGPT Codex App will guide you to enter it securely when needed; never put keys in screenshots, repositories, or public documents.',
+      eyebrow: 'SETUP IN CODEX', title: 'Set it up once, then create in Codex', copy: 'Follow the agk2img-skill workflow and use natural language in the ChatGPT Codex App to configure the Base URL and API Key. They are used only for image generation and do not override other OpenAI settings.', modelLabel: 'Supported model', githubBefore: 'Open', githubAfter: ', then copy the sentence below into ChatGPT Codex for a quick installation:', installPrompt: 'https://github.com/wonder-o/agk2img-skill, install this skill for me with a quick setup.', note: 'Create an API Key in AIGOKEY key management. ChatGPT Codex App will guide you to enter it securely when needed; never put keys in screenshots, repositories, or public documents.',
       steps: [
         { number: '01', title: 'Install agk2img-skill', text: 'Install agk2img-skill quickly in ChatGPT Codex from the GitHub repository.' },
-        { number: '02', title: 'Create an AigoKey API Key', text: 'Sign in to AigoKey, create an API Key dedicated to image creation in key management, and store it safely.' },
+        { number: '02', title: 'Create an AIGOKEY API Key', text: 'Sign in to AIGOKEY, create an API Key dedicated to image creation in key management, and store it safely.' },
         { number: '03', title: 'Configure the endpoint and key naturally', text: 'In the ChatGPT Codex App, say “Configure the agk2img base URL for me” and “Update the agk2img API key for me.” This skill does not use OPENAI_API_KEY.' },
         { number: '04', title: 'Create in ChatGPT Codex App', text: 'Describe the image you want to generate, edit, or batch-produce. The skill selects the appropriate generation, editing, reference-image, or batch workflow.' },
       ],
     },
     commands: { title: 'Supported requests', copy: 'You can name the skill explicitly or describe the task naturally without mentioning it:', groups: [{ title: 'Install:', prompts: ['Install agk2img-skill in the Codex skills directory', 'Use agk2img-skill in this project'] }, { title: 'Configure:', prompts: ['Configure the agk2img base URL for me', 'Update the agk2img API key for me', 'Clear the agk2img configuration for me', 'Check whether agk2img is configured correctly'] }, { title: 'Create (name the skill):', prompts: ['Generate a xxx image with agk2img', 'Edit xxx in this image with agk2img', 'Restyle my uploaded image as xxx with agk2img', 'Batch-generate a set of xxx assets with agk2img'] }, { title: 'Create (natural language):', prompts: ['Generate a xxx image', 'Edit xxx in this image', 'Restyle my uploaded image as xxx', 'Batch-generate a set of xxx assets'] }] },
-    cta: { eyebrow: 'READY TO CREATE', title: 'Bring image creation into your everyday workflow with an AigoKey plan.', action: 'Sign in and create an API Key' },
+    cta: { eyebrow: 'READY TO CREATE', title: 'Bring image creation into your everyday workflow with an AIGOKEY plan.', action: 'Sign in and create an API Key' },
   },
 } as const
 
@@ -207,7 +207,7 @@ const { t, lang } = useI18n()
 const page = computed(() => imageCopy[lang.value])
 
 useHead({
-  title: computed(() => `${page.value.meta.title} - AigoKey`),
+  title: computed(() => `${page.value.meta.title} - AIGOKEY`),
   meta: [
     { name: 'description', content: computed(() => page.value.meta.description) },
     { name: 'keywords', content: computed(() => page.value.meta.keywords) },

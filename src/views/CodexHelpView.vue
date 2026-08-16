@@ -74,7 +74,7 @@
             </ol>
             <ul class="link-list">
               <li>{{ t.codexHelp.links.app }}<a href="https://apps.microsoft.com/detail/9plm9xgg6vks?hl=zh-cn&gl=GP" target="_blank" rel="noopener">Microsoft Store Codex</a></li>
-              <li>{{ t.codexHelp.links.ccSwitch }}<a href="https://github.com/farion1231/cc-switch/releases" target="_blank" rel="noopener">https://github.com/farion1231/cc-switch/releases</a></li>
+              <li>{{ t.codexHelp.links.ccSwitch }}<a href="https://ccswitch.io/" target="_blank" rel="noopener">https://ccswitch.io/</a></li>
             </ul>
             <div class="media-list">
               <figure v-for="shot in t.codexHelp.screenshots.windows" :key="shot.src" class="screenshot">
@@ -91,7 +91,7 @@
             </ol>
             <ul class="link-list">
               <li>{{ t.codexHelp.links.app }}<a href="https://openai.com/zh-Hans-CN/codex/" target="_blank" rel="noopener">OpenAI Codex</a></li>
-              <li>{{ t.codexHelp.links.ccSwitch }}<a href="https://github.com/farion1231/cc-switch/releases" target="_blank" rel="noopener">https://github.com/farion1231/cc-switch/releases</a></li>
+              <li>{{ t.codexHelp.links.ccSwitch }}<a href="https://ccswitch.io/" target="_blank" rel="noopener">https://ccswitch.io/</a></li>
             </ul>
             <div class="command">
               <span>{{ t.codexHelp.links.macCommand }}</span>
@@ -137,7 +137,7 @@
             <p>{{ t.codexHelp.developer.ccText }}</p>
             <ul class="link-list">
               <li>{{ t.codexHelp.links.project }}<a href="https://github.com/farion1231/cc-switch" target="_blank" rel="noopener">https://github.com/farion1231/cc-switch</a></li>
-              <li>{{ t.codexHelp.links.download }}<a href="https://github.com/farion1231/cc-switch/releases" target="_blank" rel="noopener">https://github.com/farion1231/cc-switch/releases</a></li>
+              <li>{{ t.codexHelp.links.download }}<a href="https://ccswitch.io/" target="_blank" rel="noopener">https://ccswitch.io/</a></li>
             </ul>
             <div class="command">
               <span>{{ t.codexHelp.links.macCliCommand }}</span>

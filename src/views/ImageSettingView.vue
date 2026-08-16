@@ -44,7 +44,7 @@
               </div>
             </div>
           </div>
-          <p class="mt-4 text-[14px] leading-[1.7] text-[#586068]">API Key 可在 AigoKey 的密钥管理中创建。ChatGPT Codex App 会在需要时引导你安全输入密钥；不要把密钥写入截图、代码仓库或公开文档。</p>
+          <p class="mt-4 text-[14px] leading-[1.7] text-[#586068]">API Key 可在 AIGOKEY 的密钥管理中创建。ChatGPT Codex App 会在需要时引导你安全输入密钥；不要把密钥写入截图、代码仓库或公开文档。</p>
         </div>
       </section>
     </main>
@@ -56,7 +56,7 @@ import { useHead } from '@unhead/vue'
 
 const steps = [
   { number: '01', title: '安装 agk2img-skill', text: '通过 GitHub 仓库在 ChatGPT Codex 中快速安装 agk2img-skill。' },
-  { number: '02', title: '创建 AigoKey API Key', text: '登录 AigoKey，可与现有的密钥共用，也可在密钥管理中创建专用于图像创作的 API Key。' },
+  { number: '02', title: '创建 AIGOKEY API Key', text: '登录 AIGOKEY，可与现有的密钥共用，也可在密钥管理中创建专用于图像创作的 API Key。' },
   { number: '03', title: '用自然语言配置端点与密钥', text: '在 ChatGPT Codex App 中依次说\n帮我配置 agk2img 的 base url 为 https://llm.aigokey.com\n帮我配置 agk2img 的 api key 为 sk-*******\napi key为 网站上的API密钥即可。' },
   { number: '04', title: '重启ChatGPT Codex App 后进行创作', text: '重启ChatGPT Codex App后，即可在ChatGPT Codex 中直接描述你要生成、修改或批量制作的画面。skill 会根据任务选择生成、编辑、参考图或批量工作流。' },
 ]
@@ -69,10 +69,10 @@ const commandGroups = [
 ]
 
 useHead({
-  title: '图像配置 - AigoKey',
+  title: '图像配置 - AIGOKEY',
   meta: [
     { name: 'description', content: '在 ChatGPT Codex App 中配置 agk2img 的 Base URL 与 API Key。' },
-    { name: 'keywords', content: 'AigoKey, 图像配置, agk2img, ChatGPT Codex App, API Key' },
+    { name: 'keywords', content: 'AIGOKEY, 图像配置, agk2img, ChatGPT Codex App, API Key' },
   ],
 })
 </script>

@@ -61,5 +61,5 @@ const filters = computed(() => [{ key: 'all', label: lang.value === 'en' ? 'All'
 const filteredArticles = computed(() => { const query = searchQuery.value.trim().toLowerCase(); return displayArticles.value.filter((article) => (activeFilter.value === 'all' || article.category === activeFilter.value) && (!query || `${article.title} ${article.summary} ${article.tags.join(' ')}`.toLowerCase().includes(query))) })
 watch(lang, () => { activeFilter.value = 'all' })
 function goTrial() { router.push('/free-trial/') }
-useHead(() => ({ title: lang.value === 'en' ? 'Agent Dispatch | AigoKey' : 'Agent 连载 | AigoKey', meta: [{ name: 'description', content: copy.value.list.summary }] }))
+useHead(() => ({ title: lang.value === 'en' ? 'Agent Dispatch | AIGOKEY' : 'Agent 连载 | AIGOKEY', meta: [{ name: 'description', content: copy.value.list.summary }] }))
 </script>

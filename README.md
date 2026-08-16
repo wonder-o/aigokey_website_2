@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="public/assets/aigokey-logo.png" alt="AigoKey" width="80" height="80" style="border-radius:12px">
+  <img src="public/assets/aigokey-logo.png" alt="AIGOKEY" width="80" height="80" style="border-radius:12px">
 </p>
 
-<h1 align="center">AigoKey</h1>
+<h1 align="center">AIGOKEY</h1>
 
 <p align="center">
   稳定可靠的 AI Token 套餐 — Codex Agent · GPT + Image 系列模型<br>
@@ -16,7 +16,7 @@
 
 ---
 
-## ✨ 为什么选择 AigoKey
+## ✨ 为什么选择 AIGOKEY
 
 不用研究 API、不用计算 token、不用频繁充值、不用担心余额忽高忽低。
 
@@ -34,7 +34,7 @@
 
 ## 👥 适用人群
 
-AigoKey 覆盖开发、产品、运营、设计、电商、自媒体、外贸、教育、销售、人力行政和数据分析等高频 AI 使用场景。
+AIGOKEY 覆盖开发、产品、运营、设计、电商、自媒体、外贸、教育、销售、人力行政和数据分析等高频 AI 使用场景。
 
 - **开发者** — 用 Codex Agent 读项目、改代码、跑验证
 - **自媒体** — 用 GPT 做选题脚本、用 Image 模型生成封面
@@ -58,7 +58,7 @@ AigoKey 覆盖开发、产品、运营、设计、电商、自媒体、外贸、
 
 ## Agent 连载更新
 
-`/blog` 是 AigoKey 官方 Agent 连载栏目。文章维护在 `src/content/blog/`，每篇文章需要分别提供 `.zh-CN.md` 和 `.en.md` 文件；新增一对文件后，构建会自动生成索引、详情页和相关推荐。
+`/blog` 是 AIGOKEY 官方 Agent 连载栏目。文章维护在 `src/content/blog/`，每篇文章需要分别提供 `.zh-CN.md` 和 `.en.md` 文件；新增一对文件后，构建会自动生成索引、详情页和相关推荐。
 
 - frontmatter 中的 slug、语言、日期、主题、阅读时长、标题和摘要
 - `tags`、`sources` 和至少一个 `visual` 实用视觉块
@@ -76,4 +76,4 @@ AigoKey 覆盖开发、产品、运营、设计、电商、自媒体、外贸、
 
 ## 📄 许可
 
-© 2026 AigoKey. 保留所有权利。
+© 2026 AIGOKEY. 保留所有权利。

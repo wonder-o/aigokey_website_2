@@ -158,8 +158,8 @@ withDefaults(defineProps<{
 
 const imageCopy = {
   'zh-CN': {
-    meta: { title: '图像创作', description: '使用 AigoKey 套餐和 CC-Switch，在 ChatGPT Codex App 中完成插画、漫画、广告图与电商图等图像创作。', keywords: 'AigoKey, 图像创作, AI 绘图, CC-Switch, Codex, config.toml' },
-    hero: { imageAlt: '插画、漫画、广告和电商产品的图像创作拼贴', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: '把想象，变成', titleHighlight: '可以交付的画面', copy: '使用 AigoKey 套餐中的图像能力，在 ChatGPT Codex App 里完成插画、漫画、彩漫、广告图、电商图与更多视觉创作。', action: '配置图像能力' },
+    meta: { title: '图像创作', description: '使用 AIGOKEY 套餐和 CC-Switch，在 ChatGPT Codex App 中完成插画、漫画、广告图与电商图等图像创作。', keywords: 'AIGOKEY, 图像创作, AI 绘图, CC-Switch, Codex, config.toml' },
+    hero: { imageAlt: '插画、漫画、广告和电商产品的图像创作拼贴', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: '把想象，变成', titleHighlight: '可以交付的画面', copy: '使用 AIGOKEY 套餐中的图像能力，在 ChatGPT Codex App 里完成插画、漫画、彩漫、广告图、电商图与更多视觉创作。', action: '配置图像能力' },
     strip: { copy: '一个配置，让创作工作流留在你熟悉的 ChatGPT Codex App 内。', action: '查看配置步骤' },
     creation: { eyebrow: 'CREATIVE DIRECTIONS', title: '从一个灵感，展开不同的视觉表达', copy: '让模型承担画面探索和首稿生成，把你的时间留给选题、判断、修改与交付。' },
     creationTypes: [
@@ -170,21 +170,21 @@ const imageCopy = {
     ],
     prompt: { eyebrow: 'FROM PROMPT TO OUTPUT', title: '把图像任务说清楚，剩下的交给生成能力', copy: '适合从概念草图到成品视觉的连续尝试。可以描述主体、画面比例、材质、光线、构图和需要避免的内容。', cards: [{ label: '01 / 画面方向', text: '插画、漫画、彩漫、摄影感产品图' }, { label: '02 / 使用场景', text: '社媒封面、广告投放、电商详情页、提案与分镜' }, { label: '03 / 画面约束', text: '主体、构图、色彩、比例，以及不希望出现的元素' }] },
     setup: {
-      eyebrow: 'SETUP IN CODEX', title: '配置一次，就能在 Codex 中开始创作', copy: '在 CC-Switch 的密钥编辑面板中修改 config.toml，将 AigoKey 设为 Codex 的自定义模型提供商。', modelLabel: '支持模型', note: '只修改 [model_providers.custom] 对应的配置，保留文件中其他已有设置。编辑前建议备份现有 TOML 内容。',
+      eyebrow: 'SETUP IN CODEX', title: '配置一次，就能在 Codex 中开始创作', copy: '在 CC-Switch 的密钥编辑面板中修改 config.toml，将 AIGOKEY 设为 Codex 的自定义模型提供商。', modelLabel: '支持模型', note: '只修改 [model_providers.custom] 对应的配置，保留文件中其他已有设置。编辑前建议备份现有 TOML 内容。',
       steps: [
-        { number: '01', title: '打开 CC-Switch 密钥编辑', text: '在 CC-Switch 主界面找到正在使用的 AigoKey 配置，点击右侧的铅笔形编辑按钮。' },
+        { number: '01', title: '打开 CC-Switch 密钥编辑', text: '在 CC-Switch 主界面找到正在使用的 AIGOKEY 配置，点击右侧的铅笔形编辑按钮。' },
         { number: '02', title: '进入 config.toml（TOML）编辑区', text: '在编辑面板中找到 config.toml（TOML），确认顶部 model_provider 已设为 "custom"。' },
-        { number: '03', title: '添加自定义提供商配置', text: '在 [model_providers.custom] 中添加或修改下方 TOML，将 Base URL 指向 https://llm.aigokey.com。' },
+        { number: '03', title: '修改配置参数', text: '把 [model_providers.custom] 下的参数替换为需要更新的配置参数，配置参数可以下面步骤一键复制配置。' },
         { number: '04', title: '保存并重启 Codex', text: '保存编辑内容，返回 CC-Switch 主界面并启用该配置，然后重启 Codex 使新设置生效。' },
       ],
     },
     config: { title: '按照截图写入 config.toml', copy: '红框标出了需要操作的入口和配置区。复制 TOML 后粘贴到对应位置。', copyAction: '复制配置', copied: '已复制', editImageAlt: 'CC-Switch 密钥列表，编辑按钮已用红色方框标出', editCaption: '在 CC-Switch 密钥列表中点击红框标出的编辑按钮。', tomlImageAlt: 'CC-Switch config.toml 编辑区，自定义模型提供商配置已用红框标出', tomlCaption: '红框内是需要添加或修改的 [model_providers.custom] 配置。' },
     commands: { title: '支持指令', copy: '直接使用自然语言：', prompts: ['生成一张 xxx 图', '修改这张图片里的 xxx', '把我上传的图片改成 xxx 风格', '批量生成一组 xxx 素材'] },
-    cta: { eyebrow: 'READY TO CREATE', title: '用 AigoKey 套餐，把图像创作纳入你的日常工作流。', action: '登录并创建 API Key' },
+    cta: { eyebrow: 'READY TO CREATE', title: '用 AIGOKEY 套餐，把图像创作纳入你的日常工作流。', action: '登录并创建 API Key' },
   },
   'zh-TW': {
-    meta: { title: '圖像創作', description: '使用 AigoKey 方案與 CC-Switch，在 ChatGPT Codex App 中完成插畫、漫畫、廣告圖與電商圖等圖像創作。', keywords: 'AigoKey, 圖像創作, AI 繪圖, CC-Switch, Codex, config.toml' },
-    hero: { imageAlt: '插畫、漫畫、廣告和電商產品的圖像創作拼貼', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: '把想像，變成', titleHighlight: '可以交付的畫面', copy: '使用 AigoKey 方案中的圖像能力，在 ChatGPT Codex App 裡完成插畫、漫畫、彩漫、廣告圖、電商圖與更多視覺創作。', action: '設定圖像能力' },
+    meta: { title: '圖像創作', description: '使用 AIGOKEY 方案與 CC-Switch，在 ChatGPT Codex App 中完成插畫、漫畫、廣告圖與電商圖等圖像創作。', keywords: 'AIGOKEY, 圖像創作, AI 繪圖, CC-Switch, Codex, config.toml' },
+    hero: { imageAlt: '插畫、漫畫、廣告和電商產品的圖像創作拼貼', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: '把想像，變成', titleHighlight: '可以交付的畫面', copy: '使用 AIGOKEY 方案中的圖像能力，在 ChatGPT Codex App 裡完成插畫、漫畫、彩漫、廣告圖、電商圖與更多視覺創作。', action: '設定圖像能力' },
     strip: { copy: '一次設定，讓創作工作流程留在你熟悉的 ChatGPT Codex App 內。', action: '查看設定步驟' },
     creation: { eyebrow: 'CREATIVE DIRECTIONS', title: '從一個靈感，展開不同的視覺表達', copy: '讓模型承擔畫面探索和首稿生成，把你的時間留給選題、判斷、修改與交付。' },
     creationTypes: [
@@ -195,21 +195,21 @@ const imageCopy = {
     ],
     prompt: { eyebrow: 'FROM PROMPT TO OUTPUT', title: '把圖像任務說清楚，剩下的交給生成能力', copy: '適合從概念草圖到成品視覺的連續嘗試。可以描述主體、畫面比例、材質、光線、構圖和需要避免的內容。', cards: [{ label: '01 / 畫面方向', text: '插畫、漫畫、彩漫、攝影感產品圖' }, { label: '02 / 使用情境', text: '社群封面、廣告投放、電商詳情頁、提案與分鏡' }, { label: '03 / 畫面約束', text: '主體、構圖、色彩、比例，以及不希望出現的元素' }] },
     setup: {
-      eyebrow: 'SETUP IN CODEX', title: '設定一次，就能在 Codex 中開始創作', copy: '在 CC-Switch 的金鑰編輯面板中修改 config.toml，將 AigoKey 設為 Codex 的自訂模型提供商。', modelLabel: '支援模型', note: '只修改 [model_providers.custom] 對應的設定，保留檔案中其他已有設定。編輯前建議備份現有 TOML 內容。',
+      eyebrow: 'SETUP IN CODEX', title: '設定一次，就能在 Codex 中開始創作', copy: '在 CC-Switch 的金鑰編輯面板中修改 config.toml，將 AIGOKEY 設為 Codex 的自訂模型提供商。', modelLabel: '支援模型', note: '只修改 [model_providers.custom] 對應的設定，保留檔案中其他已有設定。編輯前建議備份現有 TOML 內容。',
       steps: [
-        { number: '01', title: '開啟 CC-Switch 金鑰編輯', text: '在 CC-Switch 主畫面找到正在使用的 AigoKey 設定，點擊右側的鉛筆形編輯按鈕。' },
+        { number: '01', title: '開啟 CC-Switch 金鑰編輯', text: '在 CC-Switch 主畫面找到正在使用的 AIGOKEY 設定，點擊右側的鉛筆形編輯按鈕。' },
         { number: '02', title: '進入 config.toml（TOML）編輯區', text: '在編輯面板中找到 config.toml（TOML），確認頂部 model_provider 已設為 "custom"。' },
-        { number: '03', title: '新增自訂提供商設定', text: '在 [model_providers.custom] 中新增或修改下方 TOML，將 Base URL 指向 https://llm.aigokey.com。' },
+        { number: '03', title: '修改設定參數', text: '把 [model_providers.custom] 下的參數替換為需要更新的設定參數，設定參數可以在下面步驟一鍵複製。' },
         { number: '04', title: '儲存並重新啟動 Codex', text: '儲存編輯內容，返回 CC-Switch 主畫面並啟用該設定，然後重新啟動 Codex 使新設定生效。' },
       ],
     },
     config: { title: '按照截圖寫入 config.toml', copy: '紅框標出了需要操作的入口和設定區。複製 TOML 後貼到對應位置。', copyAction: '複製設定', copied: '已複製', editImageAlt: 'CC-Switch 金鑰清單，編輯按鈕已用紅色方框標出', editCaption: '在 CC-Switch 金鑰清單中點擊紅框標出的編輯按鈕。', tomlImageAlt: 'CC-Switch config.toml 編輯區，自訂模型提供商設定已用紅框標出', tomlCaption: '紅框內是需要新增或修改的 [model_providers.custom] 設定。' },
     commands: { title: '支援指令', copy: '直接使用自然語言：', prompts: ['生成一張 xxx 圖', '修改這張圖片裡的 xxx', '把我上傳的圖片改成 xxx 風格', '批量生成一組 xxx 素材'] },
-    cta: { eyebrow: 'READY TO CREATE', title: '用 AigoKey 方案，把圖像創作納入你的日常工作流程。', action: '登入並建立 API Key' },
+    cta: { eyebrow: 'READY TO CREATE', title: '用 AIGOKEY 方案，把圖像創作納入你的日常工作流程。', action: '登入並建立 API Key' },
   },
   en: {
-    meta: { title: 'Image Creation', description: 'Use AigoKey plans and CC-Switch to create illustrations, comics, ads, ecommerce images, and more in the ChatGPT Codex App.', keywords: 'AigoKey, image creation, AI image generation, CC-Switch, Codex, config.toml' },
-    hero: { imageAlt: 'A creative collage of illustration, comics, advertising, and ecommerce products', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: 'Turn imagination into', titleHighlight: 'visual work you can deliver', copy: 'Use the image capabilities in your AigoKey plan to create illustrations, comics, color comics, ad creatives, ecommerce images, and more in the ChatGPT Codex App.', action: 'Set up image creation' },
+    meta: { title: 'Image Creation', description: 'Use AIGOKEY plans and CC-Switch to create illustrations, comics, ads, ecommerce images, and more in the ChatGPT Codex App.', keywords: 'AIGOKEY, image creation, AI image generation, CC-Switch, Codex, config.toml' },
+    hero: { imageAlt: 'A creative collage of illustration, comics, advertising, and ecommerce products', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: 'Turn imagination into', titleHighlight: 'visual work you can deliver', copy: 'Use the image capabilities in your AIGOKEY plan to create illustrations, comics, color comics, ad creatives, ecommerce images, and more in the ChatGPT Codex App.', action: 'Set up image creation' },
     strip: { copy: 'One setup keeps your creative workflow inside the ChatGPT Codex App you already know.', action: 'View setup steps' },
     creation: { eyebrow: 'CREATIVE DIRECTIONS', title: 'Expand one idea into many visual expressions', copy: 'Let the model explore visual directions and generate first drafts, while you focus on selection, judgment, refinement, and delivery.' },
     creationTypes: [
@@ -220,17 +220,17 @@ const imageCopy = {
     ],
     prompt: { eyebrow: 'FROM PROMPT TO OUTPUT', title: 'Describe the image task clearly, then let generation do the rest', copy: 'Designed for continuous exploration from concept sketches to finished visuals. Describe the subject, aspect ratio, materials, lighting, composition, and anything to avoid.', cards: [{ label: '01 / Visual direction', text: 'Illustration, comics, color comics, and photographic product imagery' }, { label: '02 / Use case', text: 'Social covers, ad campaigns, ecommerce pages, proposals, and storyboards' }, { label: '03 / Constraints', text: 'Subject, composition, palette, aspect ratio, and elements to exclude' }] },
     setup: {
-      eyebrow: 'SETUP IN CODEX', title: 'Set it up once, then create in Codex', copy: 'Edit config.toml in the CC-Switch key editor and configure AigoKey as a custom model provider for Codex.', modelLabel: 'Supported model', note: 'Only change the settings under [model_providers.custom] and preserve the rest of the file. Back up the existing TOML before editing.',
+      eyebrow: 'SETUP IN CODEX', title: 'Set it up once, then create in Codex', copy: 'Edit config.toml in the CC-Switch key editor and configure AIGOKEY as a custom model provider for Codex.', modelLabel: 'Supported model', note: 'Only change the settings under [model_providers.custom] and preserve the rest of the file. Back up the existing TOML before editing.',
       steps: [
-        { number: '01', title: 'Open the CC-Switch key editor', text: 'Find the AigoKey configuration currently in use and click the pencil-shaped edit button on the right.' },
+        { number: '01', title: 'Open the CC-Switch key editor', text: 'Find the AIGOKEY configuration currently in use and click the pencil-shaped edit button on the right.' },
         { number: '02', title: 'Open the config.toml (TOML) editor', text: 'Locate config.toml (TOML) and confirm that model_provider at the top is set to "custom".' },
-        { number: '03', title: 'Add the custom provider settings', text: 'Add or update the TOML under [model_providers.custom] and point the Base URL to https://llm.aigokey.com.' },
+        { number: '03', title: 'Update configuration parameters', text: 'Replace the parameters under [model_providers.custom] with the required configuration. You can copy the complete configuration in one click in the next section.' },
         { number: '04', title: 'Save and restart Codex', text: 'Save the changes, enable the configuration from the CC-Switch home screen, and restart Codex so the new settings take effect.' },
       ],
     },
     config: { title: 'Add the settings shown below to config.toml', copy: 'The red outlines mark the edit control and the relevant configuration block. Copy the TOML and paste it into the matching section.', copyAction: 'Copy config', copied: 'Copied', editImageAlt: 'CC-Switch key list with the edit button outlined in red', editCaption: 'Click the edit button outlined in red in the CC-Switch key list.', tomlImageAlt: 'CC-Switch config.toml editor with the custom model provider settings outlined in red', tomlCaption: 'The red outline marks the [model_providers.custom] settings to add or update.' },
     commands: { title: 'Supported requests', copy: 'Use natural language directly:', prompts: ['Generate a xxx image', 'Edit xxx in this image', 'Restyle my uploaded image as xxx', 'Batch-generate a set of xxx assets'] },
-    cta: { eyebrow: 'READY TO CREATE', title: 'Bring image creation into your everyday workflow with an AigoKey plan.', action: 'Sign in and create an API Key' },
+    cta: { eyebrow: 'READY TO CREATE', title: 'Bring image creation into your everyday workflow with an AIGOKEY plan.', action: 'Sign in and create an API Key' },
   },
 } as const
 
@@ -240,7 +240,7 @@ const { loginUrl } = useHostUrl()
 const copied = ref(false)
 
 const configSnippet = `[model_providers.custom]
-name = "AigoKey"
+name = "AIGOKEY"
 wire_api = "responses"
 base_url = "https://llm.aigokey.com"
 requires_openai_auth = false
@@ -268,7 +268,7 @@ async function copyConfig() {
 }
 
 useHead({
-  title: computed(() => `${page.value.meta.title} - AigoKey`),
+  title: computed(() => `${page.value.meta.title} - AIGOKEY`),
   meta: [
     { name: 'description', content: computed(() => page.value.meta.description) },
     { name: 'keywords', content: computed(() => page.value.meta.keywords) },

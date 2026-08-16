@@ -369,7 +369,7 @@ onBeforeUnmount(() => {
 })
 
 useHead({
-  title: 'Codex 案例库｜100 个跨行业实战案例 - AigoKey',
+  title: 'Codex 案例库｜100 个跨行业实战案例 - AIGOKEY',
   meta: [
     { name: 'description', content: '浏览 100 个 Codex 跨行业、跨岗位使用案例，按类别和职业筛选，查看问题、工作流、结果边界、证据等级与原始来源。' },
     { property: 'og:title', content: 'Codex 案例库｜100 个跨行业实战案例' },

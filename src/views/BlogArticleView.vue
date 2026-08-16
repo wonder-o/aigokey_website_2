@@ -73,7 +73,7 @@ function refreshArticle() { nextTick(() => { decorateCodeBlocks(); updateProgres
 watch(article, refreshArticle)
 onMounted(() => { window.addEventListener('scroll', updateProgress, { passive: true }); refreshArticle() })
 onUnmounted(() => window.removeEventListener('scroll', updateProgress))
-useHead(() => ({ title: article.value ? `${article.value.title} | AigoKey` : 'Agent 连载 | AigoKey', meta: [{ name: 'description', content: article.value?.summary || 'AigoKey Agent 连载' }, { property: 'og:title', content: article.value?.title || 'Agent 连载 | AigoKey' }, { property: 'og:description', content: article.value?.summary || '' }, { property: 'og:type', content: 'article' }] }))
+useHead(() => ({ title: article.value ? `${article.value.title} | AIGOKEY` : 'Agent 连载 | AIGOKEY', meta: [{ name: 'description', content: article.value?.summary || 'AIGOKEY Agent 连载' }, { property: 'og:title', content: article.value?.title || 'Agent 连载 | AIGOKEY' }, { property: 'og:description', content: article.value?.summary || '' }, { property: 'og:type', content: 'article' }] }))
 </script>
 
 <style scoped>
@@ -117,5 +117,5 @@ useHead(() => ({ title: article.value ? `${article.value.title} | AigoKey` : 'Ag
 .article-nav-card--next { text-align: right; }
 .article-nav-card span { color: var(--blue); font-size: 12px; font-weight: 900; }
 .article-nav-card strong { color: var(--ink); font-size: 16px; line-height: 1.4; }
-@media (max-width: 720px) { .article-lead { grid-template-columns: 1fr; gap: 5px; } .visual-grid { grid-template-columns: 1fr; } .article-content { font-size: 15px; } .article-content :deep(h2) { font-size: 27px; } .article-sidebar { position: static; } .article-nav-card { width: 100%; } .article-nav-card--next { text-align: left; } }
+@media (max-width: 720px) { .article-lead { grid-template-columns: 1fr; gap: 5px; } .visual-grid { grid-template-columns: 1fr; } .article-content { font-size: 15px; } .article-content :deep(h2) { font-size: 27px; } .article-content :deep(table) { display: block; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; } .article-sidebar { position: static; } .article-nav-card { width: 100%; } .article-nav-card--next { text-align: left; } }
 </style>
