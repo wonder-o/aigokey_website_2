@@ -239,12 +239,20 @@ const page = computed(() => imageCopy[lang.value])
 const { loginUrl } = useHostUrl()
 const copied = ref(false)
 
-const configSnippet = `[model_providers.custom]
+const configSnippet = `approval_policy = "on-request"
+approvals_reviewer = "user"
+model_provider = "custom"
+model = "gpt-5.6-sol"
+review_model = "gpt-5.6-sol"
+model_reasoning_effort = "high"
+
+[model_providers.custom]
 name = "AIGOKEY"
 wire_api = "responses"
-base_url = "https://llm.aigokey.com"
+base_url = "https://llm.aigokey.cn"
 requires_openai_auth = false
-http_headers = { "x-openai-actor-authorization" = "llm.aigokey.com" }`
+experimental_bearer_token = "sk-你的API密钥"
+http_headers = { "x-openai-actor-authorization" = "llm.aigokey.cn" }`
 
 const creationTypes = computed(() => page.value.creationTypes)
 const setupSteps = computed(() => page.value.setup.steps)
