@@ -12,11 +12,21 @@ const keepPng = new Set(['favicon-64x64.png', 'apple-touch-icon.png', 'aigokey-l
 async function convertToWebp() {
   if (!statSync(distAssets, { throwIfNoEntry: false })) return
 
-  const pngFiles = readdirSync(distAssets).filter(f => f.endsWith('.png') && !keepPng.has(f) && !f.startsWith('favicon'))
+  // Recursively collect .png files (brand-logos/ etc. live in subdirectories),
+  // then HTML/JS/CSS rewrite turns .png → .webp globally, so every converted
+  // asset must have a .webp twin or it will 404.
+  const pngFiles = []
+  function walk(dir) {
+    for (const entry of readdirSync(dir, { withFileTypes: true })) {
+      const full = join(dir, entry.name)
+      if (entry.isDirectory()) walk(full)
+      else if (entry.name.endsWith('.png') && !keepPng.has(entry.name) && !entry.name.startsWith('favicon')) pngFiles.push(full)
+    }
+  }
+  walk(distAssets)
   const converted = []
 
-  for (const file of pngFiles) {
-    const pngPath = join(distAssets, file)
+  for (const pngPath of pngFiles) {
     const webpPath = pngPath.replace(/\.png$/, '.webp')
     const originalSize = readFileSync(pngPath).length
 
@@ -25,9 +35,9 @@ async function convertToWebp() {
       writeFileSync(webpPath, buf)
       converted.push(pngPath)
       const savings = ((1 - buf.length / originalSize) * 100).toFixed(0)
-      console.log(`  ${basename(file).padEnd(40)} ${(originalSize / 1024).toFixed(0).padEnd(5)}KB → ${(buf.length / 1024).toFixed(0).padStart(5)}KB  (-${savings}%)`)
+      console.log(`  ${relative(distAssets, pngPath).padEnd(40)} ${(originalSize / 1024).toFixed(0).padEnd(5)}KB → ${(buf.length / 1024).toFixed(0).padStart(5)}KB  (-${savings}%)`)
     } catch (e) {
-      console.log(`  ${basename(file)} error: ${e.message}`)
+      console.log(`  ${relative(distAssets, pngPath)} error: ${e.message}`)
     }
   }
 
