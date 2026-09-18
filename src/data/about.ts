@@ -22,7 +22,7 @@ export const aboutZh = {
     title: '连接标准化供给与复杂落地',
     intro: 'AIGOKEY 不只提供模型额度。我们从低门槛、可预期的 AI 使用开始，在企业需要更深交付时继续向前，直到系统能在真实生产环境中稳定运行。',
     audiences: [
-      { label: 'INDIVIDUAL', title: '个人使用者', text: '按真实工作周期选择日卡、周卡或月卡，把 Codex、GPT 与 Image 模型用于开发、内容和设计。' },
+      { label: 'INDIVIDUAL', title: '个人使用者', text: '按真实工作周期选择日卡或月卡，把 Codex、GPT 与 Image 模型用于开发、内容和设计。' },
       { label: 'TEAM', title: '团队与统一采购', text: '按人数、并发和业务用量规划额度，让团队获得清晰、稳定、可管理的 AI 使用方式。' },
       { label: 'ENTERPRISE', title: '企业生产场景', text: '由 FDE 与业务和技术团队并肩交付，把高价值工作流推进到评测、治理、上线和接管。' },
     ],
@@ -94,7 +94,7 @@ export const aboutEn = {
     title: 'Connecting standardized access with complex delivery',
     intro: 'AIGOKEY is more than model quota. We begin with accessible and predictable AI usage, then keep moving when enterprises need deeper delivery, until the system runs reliably in production.',
     audiences: [
-      { label: 'INDIVIDUAL', title: 'Individuals', text: 'Choose daily, weekly, or monthly plans and use Codex, GPT, and Image models across development, content, and design.' },
+      { label: 'INDIVIDUAL', title: 'Individuals', text: 'Choose daily or monthly plans and use Codex, GPT, and Image models across development, content, and design.' },
       { label: 'TEAM', title: 'Teams and procurement', text: 'Plan quota around people, concurrency, and business usage for a clear, stable, and manageable way to use AI.' },
       { label: 'ENTERPRISE', title: 'Enterprise production', text: 'FDEs work with business and technical teams to take high-value workflows through evaluation, governance, launch, and handover.' },
     ],

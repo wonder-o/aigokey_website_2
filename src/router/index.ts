@@ -1,4 +1,5 @@
 import type { RouterScrollBehavior } from 'vue-router'
+import { incentivePlans } from '@/data/incentive-plans'
 
 export const routes = [
   {
@@ -112,6 +113,24 @@ export const routes = [
     name: 'codex-cases',
     component: () => import('@/views/CasesView.vue'),
   },
+  {
+    path: '/incentive-plans/',
+    name: 'incentive-plans',
+    component: () => import('@/views/IncentivePlansView.vue'),
+  },
+  {
+    path: '/incentive-plans/embed/',
+    name: 'incentive-plans-embed',
+    component: () => import('@/views/IncentivePlansView.vue'),
+    props: { embedded: true },
+    meta: { noindex: true },
+  },
+  ...incentivePlans.map((plan) => ({
+    path: `/incentive-plans/${plan.slug}/`,
+    name: `incentive-plan-${plan.slug}`,
+    component: () => import('@/views/IncentivePlanDetailView.vue'),
+    props: { slug: plan.slug },
+  })),
   {
     path: '/workflows/',
     name: 'workflows',

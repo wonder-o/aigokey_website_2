@@ -185,14 +185,9 @@
           </button>
           <Transition name="image-panel">
             <div v-show="aboutMenuOpen" id="about-menu" class="image-popover about-popover" role="menu">
-              <router-link class="download-option image-option about-option--about" to="/about/" role="menuitem" @click="aboutMenuOpen = false">
-                <span class="download-option-icon"><Info :size="19" aria-hidden="true" /></span>
-                <span class="download-option-copy"><strong>{{ t.navButtons.about }}</strong></span>
-                <span class="download-option-arrow"><ArrowUpRight :size="15" aria-hidden="true" /></span>
-              </router-link>
-              <router-link class="download-option image-option about-option--blog" to="/blog/" role="menuitem" @click="aboutMenuOpen = false">
+              <router-link class="download-option image-option about-option--blog" to="/incentive-plans/" role="menuitem" @click="aboutMenuOpen = false">
                 <span class="download-option-icon"><BookOpen :size="19" aria-hidden="true" /></span>
-                <span class="download-option-copy"><strong>{{ t.navButtons.blog }}</strong></span>
+                <span class="download-option-copy"><strong>{{ t.navButtons.studentSupport }}</strong></span>
                 <span class="download-option-arrow"><ArrowUpRight :size="15" aria-hidden="true" /></span>
               </router-link>
             </div>
@@ -246,7 +241,7 @@ const modelItems = [
 const isImageSectionActive = computed(() => route.path === '/image-prompts' || route.path.startsWith('/image-creation'))
 const isDocsSectionActive = computed(() => route.path.startsWith('/codex-help') || route.path.startsWith('/deepseek-harness') || route.path.startsWith('/pi-config') || route.path.startsWith('/workbuddy-config') || route.path.startsWith('/claude-code-config') || route.path.startsWith('/trae-config') || route.path.startsWith('/workflows') || route.path.startsWith('/skills'))
 const isEnterpriseSectionActive = computed(() => route.path.startsWith('/enterprise-service') || route.path.startsWith('/volcengine-partner'))
-const isAboutSectionActive = computed(() => route.path.startsWith('/about') || route.path.startsWith('/blog'))
+const isAboutSectionActive = computed(() => route.path.startsWith('/incentive-plans'))
 const isModelSectionActive = computed(() => route.path.startsWith('/models/'))
 
 function closeImageMenu(event: FocusEvent) {
