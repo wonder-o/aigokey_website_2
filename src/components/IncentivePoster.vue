@@ -1,7 +1,7 @@
 <template>
   <div class="incentive-poster" :class="`poster--${plan.theme}`" aria-hidden="true">
     <span class="poster-texture"></span>
-    <span class="poster-brand">AIGOKEY <span>激励扶持计划</span></span>
+    <span class="poster-brand">AIGOKEY <span>{{ t.incentivePlans.posterBrand }}</span></span>
     <span class="poster-index">NO.{{ plan.index }}</span>
     <div class="poster-copy">
       <span class="poster-category">{{ plan.category }}</span>
@@ -54,8 +54,12 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from '@/composables/useI18n'
 import type { IncentivePlan } from '@/data/incentive-plans'
+
 defineProps<{ plan: IncentivePlan }>()
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

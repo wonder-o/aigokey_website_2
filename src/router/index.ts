@@ -155,6 +155,18 @@ export const routes = [
     component: () => import('@/views/ImageCreationView.vue'),
   },
   {
+    path: '/agk-video/',
+    name: 'agk-video',
+    component: () => import('@/views/AgkVideoView.vue'),
+  },
+  {
+    path: '/agk-video/embed/',
+    name: 'agk-video-embed',
+    component: () => import('@/views/AgkVideoView.vue'),
+    props: { embedded: true },
+    meta: { noindex: true },
+  },
+  {
     path: '/image-creation/embed/',
     name: 'image-creation-embed',
     component: () => import('@/views/ImageCreationView.vue'),
@@ -174,13 +186,13 @@ export const routes = [
     meta: { noindex: true },
   },
   {
-    path: '/image-creation/cc-switch/',
-    name: 'image-creation-cc-switch',
+    path: '/image-generation-config/',
+    name: 'image-generation-config',
     component: () => import('@/views/ImageCreationCcSwitchView.vue'),
   },
   {
-    path: '/image-creation/cc-switch/embed/',
-    name: 'image-creation-cc-switch-embed',
+    path: '/image-generation-config/embed/',
+    name: 'image-generation-config-embed',
     component: () => import('@/views/ImageCreationCcSwitchView.vue'),
     props: { embedded: true },
     meta: { noindex: true },

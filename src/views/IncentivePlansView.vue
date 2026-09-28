@@ -6,28 +6,28 @@
         <div class="shell">
           <div class="hero-top">
             <div class="hero-copy">
-              <p class="eyebrow">AIGOKEY · CREATOR PROGRAMS</p>
-              <h1>激励扶持计划</h1>
-              <p class="hero-sub">三个活动，三张免费的 AI token 卡。挑一个，动手。</p>
-              <p class="intro">有想法就动手，喜欢就画出来，想玩就自己做一个。唯一的共同要求是：真的把它做出来。</p>
+              <p class="eyebrow">{{ page.hero.eyebrow }}</p>
+              <h1>{{ page.hero.title }}</h1>
+              <p class="hero-sub">{{ page.hero.sub }}</p>
+              <p class="intro">{{ page.hero.intro }}</p>
               <div class="hero-actions">
-                <a class="action action-primary" href="#activities">浏览三个活动<ArrowDown :size="16" aria-hidden="true" /></a>
-                <a class="action action-ghost" :href="`mailto:${applicationEmails[0]}`">发送申请邮件<Mail :size="16" aria-hidden="true" /></a>
+                <a class="action action-primary" href="#activities">{{ page.hero.primary }}<ArrowDown :size="16" aria-hidden="true" /></a>
+                <a class="action action-ghost" :href="`mailto:${applicationEmails[0]}`">{{ page.hero.secondary }}<Mail :size="16" aria-hidden="true" /></a>
               </div>
             </div>
-            <aside class="hero-facts" aria-label="计划要点">
-              <p class="hero-facts-title">计划要点</p>
+            <aside class="hero-facts" :aria-label="page.hero.factsTitle">
+              <p class="hero-facts-title">{{ page.hero.factsTitle }}</p>
               <dl class="hero-facts-list">
-                <div v-for="fact in heroFacts" :key="fact.label">
+                <div v-for="fact in page.hero.facts" :key="fact.label">
                   <dt>{{ fact.label }}</dt>
                   <dd>{{ fact.value }}</dd>
                 </div>
               </dl>
-              <p class="hero-facts-note">申请不收费 · 版权归创作者 · 三个活动任选其一</p>
+              <p class="hero-facts-note">{{ page.hero.note }}</p>
             </aside>
           </div>
           <ul class="hero-tags">
-            <li v-for="tag in heroTags" :key="tag"><CircleCheckBig :size="14" aria-hidden="true" />{{ tag }}</li>
+            <li v-for="tag in page.hero.tags" :key="tag"><CircleCheckBig :size="14" aria-hidden="true" />{{ tag }}</li>
           </ul>
         </div>
       </section>
@@ -35,11 +35,11 @@
       <section id="activities" class="section section-activities">
         <div class="shell">
           <div class="section-heading">
-            <div><p class="eyebrow">01 · ACTIVITIES</p><h2>全部活动 <span>{{ incentivePlans.length }}</span></h2></div>
-            <p>三个活动，三件小事。点开看条件、要交什么，以及怎么开始。</p>
+            <div><p class="eyebrow">{{ page.activities.eyebrow }}</p><h2>{{ page.activities.head }} <span>{{ plans.length }}</span></h2></div>
+            <p>{{ page.activities.desc }}</p>
           </div>
           <div class="activity-grid">
-            <router-link v-for="plan in incentivePlans" :key="plan.slug" class="activity-card" :style="accentStyle(plan)" :to="`/incentive-plans/${plan.slug}/`">
+            <router-link v-for="plan in plans" :key="plan.slug" class="activity-card" :style="accentStyle(plan)" :to="`/incentive-plans/${plan.slug}/`">
               <IncentivePoster :plan="plan" />
               <div class="card-copy">
                 <div class="card-head">
@@ -54,10 +54,10 @@
                 <ul class="card-points">
                   <li v-for="point in plan.highlights" :key="point.title"><CircleCheckBig :size="15" aria-hidden="true" />{{ point.title }}</li>
                 </ul>
-                <p class="card-deliverable"><Package :size="14" aria-hidden="true" />交付：{{ plan.deliverable }}</p>
+                <p class="card-deliverable"><Package :size="14" aria-hidden="true" />{{ page.activities.deliverableLabel }}{{ plan.deliverable }}</p>
                 <div class="card-bottom">
                   <span class="benefit"><Gift :size="13" aria-hidden="true" />{{ plan.benefit }}</span>
-                  <span class="details-link">查看活动<ArrowRight :size="14" aria-hidden="true" /></span>
+                  <span class="details-link">{{ page.activities.details }}<ArrowRight :size="14" aria-hidden="true" /></span>
                 </div>
               </div>
             </router-link>
@@ -68,8 +68,8 @@
       <section class="section section-soft">
         <div class="shell">
           <div class="section-heading">
-            <div><p class="eyebrow">02 · WHAT YOU GET</p><h2>我们提供什么</h2></div>
-            <p>不只是发额度，还顺手把「不知道怎么开始」这件事一起解决。</p>
+            <div><p class="eyebrow">{{ page.support.eyebrow }}</p><h2>{{ page.support.head }}</h2></div>
+            <p>{{ page.support.desc }}</p>
           </div>
           <div class="support-grid">
             <article v-for="item in supportItems" :key="item.title" class="support-card">
@@ -84,11 +84,11 @@
       <section class="section">
         <div class="shell">
           <div class="section-heading">
-            <div><p class="eyebrow">03 · HOW IT WORKS</p><h2>参与流程</h2></div>
-            <p>五步：挑一个、发邮件、领额度、动手做、被看见。</p>
+            <div><p class="eyebrow">{{ page.flow.eyebrow }}</p><h2>{{ page.flow.head }}</h2></div>
+            <p>{{ page.flow.desc }}</p>
           </div>
           <ol class="flow-grid">
-            <li v-for="(step, index) in flowSteps" :key="step.title">
+            <li v-for="(step, index) in page.flow.steps" :key="step.title">
               <span class="flow-index">{{ String(index + 1).padStart(2, '0') }}</span>
               <h3>{{ step.title }}</h3>
               <p>{{ step.text }}</p>
@@ -100,16 +100,16 @@
       <section class="section section-soft">
         <div class="shell materials-grid">
           <div class="materials-copy">
-            <p class="eyebrow">04 · APPLICATION</p>
-            <h2>申请邮件写什么</h2>
-            <p class="materials-lead">不用作品集，也不用写得漂亮。把下面五件事说清楚，我们就能判断这件事能不能在一个周期里做完。</p>
+            <p class="eyebrow">{{ page.materials.eyebrow }}</p>
+            <h2>{{ page.materials.head }}</h2>
+            <p class="materials-lead">{{ page.materials.lead }}</p>
             <div class="materials-mails">
-              <span>申请邮箱</span>
+              <span>{{ page.materials.mailLabel }}</span>
               <a v-for="email in applicationEmails" :key="email" :href="`mailto:${email}`">{{ email }}<ArrowUpRight :size="14" aria-hidden="true" /></a>
             </div>
           </div>
           <ol class="materials-list">
-            <li v-for="(item, index) in applicationMaterials" :key="item.label">
+            <li v-for="(item, index) in materials" :key="item.label">
               <span class="materials-index">{{ String(index + 1).padStart(2, '0') }}</span>
               <strong>{{ item.label }}</strong>
               <p>{{ item.text }}</p>
@@ -121,12 +121,12 @@
       <section class="section">
         <div class="shell faq-grid">
           <div class="faq-heading">
-            <p class="eyebrow">05 · FAQ</p>
-            <h2>常见问题</h2>
-            <p>申请、额度、周期、版权，先看这里；还有问题就直接发邮件问我们。</p>
+            <p class="eyebrow">{{ page.faq.eyebrow }}</p>
+            <h2>{{ page.faq.head }}</h2>
+            <p>{{ page.faq.desc }}</p>
           </div>
           <div class="faq-list">
-            <details v-for="(item, index) in listFaqs" :key="item.q" :open="index === 0">
+            <details v-for="(item, index) in page.faq.items" :key="item.q" :open="index === 0">
               <summary><span>{{ String(index + 1).padStart(2, '0') }}</span>{{ item.q }}</summary>
               <p>{{ item.a }}</p>
             </details>
@@ -137,12 +137,12 @@
       <section class="closing">
         <div class="shell closing-grid">
           <div>
-            <p class="eyebrow">READY WHEN YOU ARE</p>
-            <h2>挑一个最想做的，这周就开始。</h2>
-            <p class="closing-note">申请不收费，作品版权归你。我们只在意一件事：你有没有真的把它做出来。</p>
+            <p class="eyebrow">{{ page.closing.eyebrow }}</p>
+            <h2>{{ page.closing.head }}</h2>
+            <p class="closing-note">{{ page.closing.note }}</p>
           </div>
           <div class="closing-actions">
-            <a class="action action-primary" :href="applicationMailto(incentivePlans[0])">发送申请邮件<ArrowUpRight :size="17" aria-hidden="true" /></a>
+            <a class="action action-primary" :href="mailto(plans[0])">{{ page.closing.primary }}<ArrowUpRight :size="17" aria-hidden="true" /></a>
             <div class="closing-mails">
               <a v-for="email in applicationEmails" :key="email" :href="`mailto:${email}`">{{ email }}</a>
             </div>
@@ -156,12 +156,14 @@
 
 <script setup lang="ts">
 import type { CSSProperties } from 'vue'
+import { computed } from 'vue'
 import { useHead } from '@unhead/vue'
 import { ArrowDown, ArrowRight, ArrowUpRight, CircleCheckBig, Clock, Gift, Mail, Megaphone, MessagesSquare, Package, Route, ShieldCheck, Trophy, Users } from '@lucide/vue'
 import SiteHeader from '@/components/SiteHeader.vue'
 import SiteFooter from '@/components/SiteFooter.vue'
 import IncentivePoster from '@/components/IncentivePoster.vue'
-import { applicationEmails, applicationMailto, applicationMaterials, incentivePlans, themeAccent, type IncentivePlan } from '@/data/incentive-plans'
+import { useIncentivePlans } from '@/composables/useIncentivePlans'
+import { themeAccent, type IncentivePlan } from '@/data/incentive-plans'
 
 withDefaults(defineProps<{
   embedded?: boolean
@@ -169,40 +171,10 @@ withDefaults(defineProps<{
   embedded: false,
 })
 
-const heroTags = ['免费 AI token 周卡 / 月卡', '邮件申请，1–3 个工作日回复', '作品版权 100% 归创作者', '邮件答疑与作品展示位']
+const { plans, materials, page, mailto, applicationEmails } = useIncentivePlans()
 
-const heroFacts = [
-  { label: '扶持额度', value: '两张周卡 + 一张月卡' },
-  { label: '申请方式', value: '一封邮件，说清五件事' },
-  { label: '回复时间', value: '1–3 个工作日' },
-  { label: '作品版权', value: '100% 归创作者' },
-]
-
-const supportItems = [
-  { icon: Gift, title: 'AI token 额度', text: '两张周卡加一张月卡，从想法到交付刚好够用，申请通过就发。' },
-  { icon: Route, title: '接入指引', text: 'Codex、DeepSeek Harness、Claude Code 和图像工作流都有现成配置说明，照着做就能开始。' },
-  { icon: MessagesSquare, title: '邮件答疑', text: '遇到报错、卡在思路或者不知道下一步做什么，把上下文写清楚发邮件，我们会告诉你往哪走。' },
-  { icon: Megaphone, title: '展示与署名', text: '完成的作品进 AIGOKEY 展示位并署你的名字，成为简历和作品集里能点开的一项。' },
-  { icon: Trophy, title: '进阶扶持', text: '好作品还能拿到额外额度、案例访谈和长期合作机会，从一次活动变成持续创作。' },
-  { icon: ShieldCheck, title: '版权归你', text: '作品版权完全归创作者本人，我们只在你同意后用于展示和宣传。' },
-]
-
-const flowSteps = [
-  { title: '挑一个', text: '三个活动看一眼，选和你现在最想做的事最接近的那个。' },
-  { title: '发邮件', text: '按材料清单写一封邮件：你是谁、想做什么、做到什么程度。' },
-  { title: '领额度', text: '1–3 个工作日内回复，通过后拿到 token 周卡或月卡和接入指引。' },
-  { title: '动手做', text: '在周期内把作品做出来，按各活动要求的形式交。' },
-  { title: '被看见', text: '作品进展示位，我们给反馈，好的还能拿到进阶扶持。' },
-]
-
-const listFaqs = [
-  { q: '三个活动可以同时申请吗？', a: '建议先专注一个。把一件作品做完，比同时开三个更容易被看见，也更容易拿到进阶扶持。' },
-  { q: '申请后多久有结果？', a: '一般 1–3 个工作日邮件回复，节假日会稍慢。没收到的话先翻翻垃圾邮件，再换另一个邮箱重发一次。' },
-  { q: '申请需要付费吗？', a: '不用。申请、额度、接入指引和邮件答疑都由 AIGOKEY 免费提供，不会以任何理由收费。' },
-  { q: '没有通过怎么办？', a: '邮件里会说明原因。按建议把想法写具体、把目标缩小到一个周期能做完的程度，再交一次就行。' },
-  { q: '作品版权归谁？', a: '全部归创作者本人。我们只在你同意后用于展示和宣传，你随时可以要求下架。' },
-  { q: '已经在用 AIGOKEY 套餐，还能申请吗？', a: '可以。这份额度独立发放，不影响你已有的套餐，两边不冲突。' },
-]
+const supportIcons = [Gift, Route, MessagesSquare, Megaphone, Trophy, ShieldCheck]
+const supportItems = computed(() => page.value.support.items.map((item, index) => ({ ...item, icon: supportIcons[index] || Gift })))
 
 function accentStyle(plan: IncentivePlan) {
   const accent = themeAccent[plan.theme]
@@ -214,7 +186,10 @@ function accentStyle(plan: IncentivePlan) {
   } as CSSProperties
 }
 
-useHead({ title: '激励扶持计划｜AIGOKEY', meta: [{ name: 'description', content: 'AIGOKEY 创作者激励扶持计划：大学生有想法、我眼中的家乡、我爱独立游戏。三个活动，三张免费的 AI token 周卡或月卡，把想法真的做出来。' }] })
+useHead(() => ({
+  title: page.value.meta.title,
+  meta: [{ name: 'description', content: page.value.meta.description }],
+}))
 </script>
 
 <style scoped>

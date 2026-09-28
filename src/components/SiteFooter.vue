@@ -13,7 +13,7 @@
         <h2><Sparkles :size="16" aria-hidden="true" />{{ t.footerNav.product }}</h2>
         <router-link to="/subscription/">{{ t.footerNav.plans }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
         <a href="https://openai.com/zh-Hans-CN/codex/" target="_blank" rel="noopener">{{ t.footerNav.codex }}<ArrowUpRight :size="14" aria-hidden="true" /></a>
-        <router-link to="/image-creation/cc-switch/">{{ t.footerNav.image }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
+        <router-link to="/image-generation-config/">{{ t.footerNav.image }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
         <router-link to="/image-creation/">{{ t.footerNav.imageSkill }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
       </nav>
 

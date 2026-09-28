@@ -26,42 +26,6 @@
         </div>
       </section>
 
-      <section class="px-6 py-[92px] max-[760px]:px-4 max-[760px]:py-16" style="background-image: linear-gradient(rgba(36,104,242,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(36,104,242,0.06) 1px, transparent 1px); background-size: 56px 56px;">
-        <div class="mx-auto max-w-[1280px]">
-          <div class="grid grid-cols-[minmax(0,0.85fr)_minmax(420px,1.15fr)] gap-12 max-[1020px]:grid-cols-1">
-            <div>
-              <p class="text-[13px] font-black tracking-[0.16em] text-[#db4b32]">{{ page.creation.eyebrow }}</p>
-              <h2 class="mt-4 max-w-[500px] text-[clamp(34px,4.3vw,58px)] font-black leading-[1.08]">{{ page.creation.title }}</h2>
-              <p class="mt-5 max-w-[470px] text-[17px] leading-[1.8] text-[#586068]">{{ page.creation.copy }}</p>
-            </div>
-            <div class="grid grid-cols-2 gap-x-8 gap-y-10 max-[560px]:grid-cols-1">
-              <article v-for="item in creationTypes" :key="item.number" class="border-t-2 border-[#151719] pt-4">
-                <div class="flex items-baseline justify-between gap-3"><h3 class="text-[22px] font-black">{{ item.title }}</h3><span class="text-[13px] font-black text-[#db4b32]">{{ item.number }}</span></div>
-                <p class="mt-3 text-[15px] leading-[1.75] text-[#586068]">{{ item.text }}</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="bg-[#151719] px-6 py-[92px] text-white max-[760px]:px-4 max-[760px]:py-16">
-        <div class="mx-auto max-w-[1280px]">
-          <div class="grid grid-cols-[minmax(0,1fr)_minmax(360px,0.78fr)] gap-12 max-[1020px]:grid-cols-1">
-            <div>
-              <p class="text-[13px] font-black tracking-[0.16em] text-[#f6a68d]">{{ page.prompt.eyebrow }}</p>
-              <h2 class="mt-4 max-w-[720px] text-[clamp(34px,4.2vw,56px)] font-black leading-[1.1]">{{ page.prompt.title }}</h2>
-            </div>
-            <p class="self-end text-[17px] leading-[1.8] text-white/65">{{ page.prompt.copy }}</p>
-          </div>
-          <div class="mt-12 grid grid-cols-3 gap-4 max-[1020px]:grid-cols-1">
-            <div v-for="card in page.prompt.cards" :key="card.label" class="min-h-[230px] border border-white/15 p-6">
-              <div class="text-[13px] font-black text-[#f6a68d]">{{ card.label }}</div>
-              <p class="mt-6 text-[22px] font-black leading-[1.35]">{{ card.text }}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="setup" class="scroll-mt-24 bg-[#eef6ff] px-6 py-[92px] max-[760px]:px-4 max-[760px]:py-16" style="background-image: linear-gradient(rgba(36,104,242,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(36,104,242,0.07) 1px, transparent 1px); background-size: 56px 56px;">
         <div class="mx-auto max-w-[1280px]">
           <div class="grid grid-cols-[minmax(0,0.92fr)_minmax(420px,1.08fr)] gap-12 max-[1020px]:grid-cols-1">
@@ -129,6 +93,42 @@
         </div>
       </section>
 
+      <section class="px-6 py-[92px] max-[760px]:px-4 max-[760px]:py-16" style="background-image: linear-gradient(rgba(36,104,242,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(36,104,242,0.06) 1px, transparent 1px); background-size: 56px 56px;">
+        <div class="mx-auto max-w-[1280px]">
+          <div class="grid grid-cols-[minmax(0,0.85fr)_minmax(420px,1.15fr)] gap-12 max-[1020px]:grid-cols-1">
+            <div>
+              <p class="text-[13px] font-black tracking-[0.16em] text-[#db4b32]">{{ page.creation.eyebrow }}</p>
+              <h2 class="mt-4 max-w-[500px] text-[clamp(34px,4.3vw,58px)] font-black leading-[1.08]">{{ page.creation.title }}</h2>
+              <p class="mt-5 max-w-[470px] text-[17px] leading-[1.8] text-[#586068]">{{ page.creation.copy }}</p>
+            </div>
+            <div class="grid grid-cols-2 gap-x-8 gap-y-10 max-[560px]:grid-cols-1">
+              <article v-for="item in creationTypes" :key="item.number" class="border-t-2 border-[#151719] pt-4">
+                <div class="flex items-baseline justify-between gap-3"><h3 class="text-[22px] font-black">{{ item.title }}</h3><span class="text-[13px] font-black text-[#db4b32]">{{ item.number }}</span></div>
+                <p class="mt-3 text-[15px] leading-[1.75] text-[#586068]">{{ item.text }}</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#151719] px-6 py-[92px] text-white max-[760px]:px-4 max-[760px]:py-16">
+        <div class="mx-auto max-w-[1280px]">
+          <div class="grid grid-cols-[minmax(0,1fr)_minmax(360px,0.78fr)] gap-12 max-[1020px]:grid-cols-1">
+            <div>
+              <p class="text-[13px] font-black tracking-[0.16em] text-[#f6a68d]">{{ page.prompt.eyebrow }}</p>
+              <h2 class="mt-4 max-w-[720px] text-[clamp(34px,4.2vw,56px)] font-black leading-[1.1]">{{ page.prompt.title }}</h2>
+            </div>
+            <p class="self-end text-[17px] leading-[1.8] text-white/65">{{ page.prompt.copy }}</p>
+          </div>
+          <div class="mt-12 grid grid-cols-3 gap-4 max-[1020px]:grid-cols-1">
+            <div v-for="card in page.prompt.cards" :key="card.label" class="min-h-[230px] border border-white/15 p-6">
+              <div class="text-[13px] font-black text-[#f6a68d]">{{ card.label }}</div>
+              <p class="mt-6 text-[22px] font-black leading-[1.35]">{{ card.text }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="bg-[#132231] px-6 py-[78px] text-white max-[760px]:px-4 max-[760px]:py-14">
         <div class="mx-auto grid max-w-[1280px] grid-cols-[minmax(0,1fr)_auto] items-end gap-8 max-[900px]:grid-cols-1">
           <div><p class="text-[13px] font-black tracking-[0.16em] text-[#9feb8b]">{{ page.cta.eyebrow }}</p><h2 class="mt-4 max-w-[780px] text-[clamp(34px,4.4vw,60px)] font-black leading-[1.08]">{{ page.cta.title }}</h2></div>
@@ -158,7 +158,7 @@ withDefaults(defineProps<{
 
 const imageCopy = {
   'zh-CN': {
-    meta: { title: 'CC-Switch 图像创作配置', description: '使用 AIGOKEY 套餐和 CC-Switch，在 ChatGPT Codex App 中完成插画、漫画、广告图与电商图等图像创作。', keywords: 'AIGOKEY, 图像创作, AI 绘图, CC-Switch, Codex, config.toml' },
+    meta: { title: '图像生成配置', description: '使用 AIGOKEY 套餐和 CC-Switch，在 ChatGPT Codex App 中完成插画、漫画、广告图与电商图等图像创作。', keywords: 'AIGOKEY, 图像创作, AI 绘图, CC-Switch, Codex, config.toml' },
     hero: { imageAlt: '插画、漫画、广告和电商产品的图像创作拼贴', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: '把想象，变成', titleHighlight: '可以交付的画面', copy: '使用 AIGOKEY 套餐中的图像能力，在 ChatGPT Codex App 里完成插画、漫画、彩漫、广告图、电商图与更多视觉创作。', action: '配置图像能力' },
     strip: { copy: '一个配置，让创作工作流留在你熟悉的 ChatGPT Codex App 内。', action: '查看配置步骤' },
     creation: { eyebrow: 'CREATIVE DIRECTIONS', title: '从一个灵感，展开不同的视觉表达', copy: '让模型承担画面探索和首稿生成，把你的时间留给选题、判断、修改与交付。' },
@@ -183,7 +183,7 @@ const imageCopy = {
     cta: { eyebrow: 'READY TO CREATE', title: '用 AIGOKEY 套餐，把图像创作纳入你的日常工作流。', action: '登录并创建 API Key' },
   },
   'zh-TW': {
-    meta: { title: 'CC-Switch 圖像創作配置', description: '使用 AIGOKEY 方案與 CC-Switch，在 ChatGPT Codex App 中完成插畫、漫畫、廣告圖與電商圖等圖像創作。', keywords: 'AIGOKEY, 圖像創作, AI 繪圖, CC-Switch, Codex, config.toml' },
+    meta: { title: '圖像生成配置', description: '使用 AIGOKEY 方案與 CC-Switch，在 ChatGPT Codex App 中完成插畫、漫畫、廣告圖與電商圖等圖像創作。', keywords: 'AIGOKEY, 圖像創作, AI 繪圖, CC-Switch, Codex, config.toml' },
     hero: { imageAlt: '插畫、漫畫、廣告和電商產品的圖像創作拼貼', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: '把想像，變成', titleHighlight: '可以交付的畫面', copy: '使用 AIGOKEY 方案中的圖像能力，在 ChatGPT Codex App 裡完成插畫、漫畫、彩漫、廣告圖、電商圖與更多視覺創作。', action: '設定圖像能力' },
     strip: { copy: '一次設定，讓創作工作流程留在你熟悉的 ChatGPT Codex App 內。', action: '查看設定步驟' },
     creation: { eyebrow: 'CREATIVE DIRECTIONS', title: '從一個靈感，展開不同的視覺表達', copy: '讓模型承擔畫面探索和首稿生成，把你的時間留給選題、判斷、修改與交付。' },
@@ -208,7 +208,7 @@ const imageCopy = {
     cta: { eyebrow: 'READY TO CREATE', title: '用 AIGOKEY 方案，把圖像創作納入你的日常工作流程。', action: '登入並建立 API Key' },
   },
   en: {
-    meta: { title: 'CC-Switch Image Creation Setup', description: 'Use AIGOKEY plans and CC-Switch to create illustrations, comics, ads, ecommerce images, and more in the ChatGPT Codex App.', keywords: 'AIGOKEY, image creation, AI image generation, CC-Switch, Codex, config.toml' },
+    meta: { title: 'Image Generation Setup', description: 'Use AIGOKEY plans and CC-Switch to create illustrations, comics, ads, ecommerce images, and more in the ChatGPT Codex App.', keywords: 'AIGOKEY, image creation, AI image generation, CC-Switch, Codex, config.toml' },
     hero: { imageAlt: 'A creative collage of illustration, comics, advertising, and ecommerce products', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: 'Turn imagination into', titleHighlight: 'visual work you can deliver', copy: 'Use the image capabilities in your AIGOKEY plan to create illustrations, comics, color comics, ad creatives, ecommerce images, and more in the ChatGPT Codex App.', action: 'Set up image creation' },
     strip: { copy: 'One setup keeps your creative workflow inside the ChatGPT Codex App you already know.', action: 'View setup steps' },
     creation: { eyebrow: 'CREATIVE DIRECTIONS', title: 'Expand one idea into many visual expressions', copy: 'Let the model explore visual directions and generate first drafts, while you focus on selection, judgment, refinement, and delivery.' },

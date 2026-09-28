@@ -300,15 +300,3 @@ export const incentivePlans: IncentivePlan[] = [
     ],
   },
 ]
-
-export function applicationMailto(plan: IncentivePlan, email: string = applicationEmails.join(',')) {
-  const body = [
-    `活动名称：${plan.title}`,
-    '姓名 / 昵称：',
-    '学校 / 专业 / 年级（组队请注明分工）：',
-    '我的想法（给谁用、解决什么问题）：',
-    `计划周期内想做到什么程度（${plan.duration}）：`,
-    '联系方式（邮箱 / 微信）：',
-  ].join('\n')
-  return `mailto:${email}?subject=${encodeURIComponent(`${plan.title}申请`)}&body=${encodeURIComponent(body)}`
-}

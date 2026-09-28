@@ -3,7 +3,7 @@
     <SiteHeader @trial="$router.push('/free-trial/')" />
     <main>
       <div class="shell topbar">
-        <router-link class="back-link" to="/incentive-plans/"><ArrowLeft :size="16" aria-hidden="true" />全部激励计划</router-link>
+        <router-link class="back-link" to="/incentive-plans/"><ArrowLeft :size="16" aria-hidden="true" />{{ detail.back }}</router-link>
         <span v-if="plan" class="plan-code">NO.{{ plan.index }} · {{ plan.category }}</span>
       </div>
 
@@ -18,15 +18,15 @@
                 <li v-for="keyword in plan.keywords" :key="keyword">{{ keyword }}</li>
               </ul>
               <div class="hero-actions">
-                <a class="action action-primary" :href="applicationMailto(plan)">申请这个活动<ArrowUpRight :size="17" aria-hidden="true" /></a>
-                <a class="action action-ghost" href="#plan-faq">常见问题<ChevronDown :size="16" aria-hidden="true" /></a>
+                <a class="action action-primary" :href="mailto(plan)">{{ detail.apply }}<ArrowUpRight :size="17" aria-hidden="true" /></a>
+                <a class="action action-ghost" href="#plan-faq">{{ detail.faqCta }}<ChevronDown :size="16" aria-hidden="true" /></a>
               </div>
             </div>
             <IncentivePoster :plan="plan" />
           </div>
         </section>
 
-        <section class="facts" aria-label="活动关键信息">
+        <section class="facts" :aria-label="detail.factsAria">
           <div class="shell fact-grid">
             <div v-for="fact in facts" :key="fact.label">
               <span>{{ fact.label }}</span>
@@ -38,8 +38,8 @@
         <section class="section highlights-section">
           <div class="shell">
             <div class="section-heading">
-              <div><p class="eyebrow">HIGHLIGHTS</p><h2>活动亮点</h2></div>
-              <p>三个理由，说明这件事为什么值得占掉你一个周期。</p>
+              <div><p class="eyebrow">{{ detail.highlights.eyebrow }}</p><h2>{{ detail.highlights.head }}</h2></div>
+              <p>{{ detail.highlights.desc }}</p>
             </div>
             <div class="highlight-grid">
               <article v-for="(point, index) in plan.highlights" :key="point.title" class="highlight-card">
@@ -54,34 +54,34 @@
         <div class="shell detail-layout">
           <article class="plan-content">
             <section id="about" class="content-section">
-              <p class="eyebrow">01 · ABOUT</p>
-              <h2>关于这个活动</h2>
+              <p class="eyebrow">{{ detail.about.eyebrow }}</p>
+              <h2>{{ detail.about.head }}</h2>
               <p class="lead">{{ plan.description }}</p>
               <p>{{ plan.longIntro }}</p>
               <div class="goal-card">
                 <span class="goal-icon"><Target :size="20" aria-hidden="true" /></span>
-                <div><strong>创作目标</strong><p>{{ plan.goal }}</p></div>
+                <div><strong>{{ detail.about.goalLabel }}</strong><p>{{ plan.goal }}</p></div>
               </div>
             </section>
 
             <section id="who" class="content-section">
-              <p class="eyebrow">02 · WHO CAN JOIN</p>
-              <h2>谁可以参加</h2>
-              <p class="lead">{{ plan.audience }}。条件就下面几条，不用作品集，也不用先做出成品。</p>
+              <p class="eyebrow">{{ detail.who.eyebrow }}</p>
+              <h2>{{ detail.who.head }}</h2>
+              <p class="lead">{{ plan.audience }}{{ detail.who.leadSuffix }}</p>
               <ul class="check-list">
                 <li v-for="item in plan.requirements" :key="item"><CircleCheckBig :size="17" aria-hidden="true" /><span>{{ item }}</span></li>
               </ul>
             </section>
 
             <section id="deliverables" class="content-section">
-              <p class="eyebrow">03 · DELIVERABLES</p>
-              <h2>交付什么</h2>
-              <p class="lead">一个周期结束时，你手里会多出这些东西：<strong>{{ plan.deliverable }}</strong>。</p>
+              <p class="eyebrow">{{ detail.deliverables.eyebrow }}</p>
+              <h2>{{ detail.deliverables.head }}</h2>
+              <p class="lead">{{ detail.deliverables.leadBefore }}<strong>{{ plan.deliverable }}</strong>{{ detail.deliverables.leadAfter }}</p>
               <ul class="deliverable-list">
                 <li v-for="(item, index) in plan.deliverables" :key="item"><span>{{ String(index + 1).padStart(2, '0') }}</span><p>{{ item }}</p></li>
               </ul>
               <div v-if="plan.blueprint" class="blueprint">
-                <p class="blueprint-label">8 页怎么排</p>
+                <p class="blueprint-label">{{ detail.deliverables.blueprintLabel }}</p>
                 <div class="blueprint-grid">
                   <article v-for="page in plan.blueprint" :key="page.page">
                     <span>{{ page.page }}</span>
@@ -93,9 +93,9 @@
             </section>
 
             <section id="inspirations" class="content-section">
-              <p class="eyebrow">04 · IDEAS</p>
-              <h2>创作方向</h2>
-              <p class="lead">不知道从哪下手？下面这些方向都是往期最容易做完的题目，挑一个改成你自己的版本。</p>
+              <p class="eyebrow">{{ detail.inspirations.eyebrow }}</p>
+              <h2>{{ detail.inspirations.head }}</h2>
+              <p class="lead">{{ detail.inspirations.desc }}</p>
               <div class="idea-grid">
                 <article v-for="idea in plan.inspirations" :key="idea.title" class="idea-card">
                   <h3>{{ idea.title }}</h3>
@@ -105,9 +105,9 @@
             </section>
 
             <section id="toolkit" class="content-section">
-              <p class="eyebrow">05 · TOOLKIT</p>
-              <h2>推荐工具链</h2>
-              <p class="lead">额度可以用在 AIGOKEY 支持的模型和工具上，这条链路是往期创作者跑得最顺的。</p>
+              <p class="eyebrow">{{ detail.toolkit.eyebrow }}</p>
+              <h2>{{ detail.toolkit.head }}</h2>
+              <p class="lead">{{ detail.toolkit.desc }}</p>
               <ul class="tool-list">
                 <li v-for="tool in plan.toolkit" :key="tool.name">
                   <strong>{{ tool.name }}</strong>
@@ -117,8 +117,8 @@
             </section>
 
             <section id="flow" class="content-section">
-              <p class="eyebrow">06 · PROCESS</p>
-              <h2>参与流程</h2>
+              <p class="eyebrow">{{ detail.process.eyebrow }}</p>
+              <h2>{{ detail.process.head }}</h2>
               <ol class="step-list">
                 <li v-for="(step, index) in plan.steps" :key="step.title">
                   <span class="step-index">{{ String(index + 1).padStart(2, '0') }}</span>
@@ -128,17 +128,17 @@
             </section>
 
             <section id="criteria" class="content-section">
-              <p class="eyebrow">07 · REVIEW</p>
-              <h2>我们看什么</h2>
-              <p class="lead">不比较技术难度，也不看设备和预算。四条标准，其实都指向同一件事：你有没有真的把它做出来。</p>
+              <p class="eyebrow">{{ detail.criteria.eyebrow }}</p>
+              <h2>{{ detail.criteria.head }}</h2>
+              <p class="lead">{{ detail.criteria.desc }}</p>
               <ul class="criteria-list">
                 <li v-for="item in plan.criteria" :key="item"><span>{{ item }}</span></li>
               </ul>
             </section>
 
             <section id="plan-faq" class="content-section">
-              <p class="eyebrow">08 · FAQ</p>
-              <h2>常见问题</h2>
+              <p class="eyebrow">{{ detail.faq.eyebrow }}</p>
+              <h2>{{ detail.faq.head }}</h2>
               <div class="faq-list">
                 <details v-for="(item, index) in plan.faq" :key="item.q" :open="index === 0">
                   <summary><span>{{ String(index + 1).padStart(2, '0') }}</span>{{ item.q }}</summary>
@@ -151,22 +151,22 @@
           <aside class="side-column">
             <div class="application-panel">
               <span class="mail-icon"><Mail :size="22" aria-hidden="true" /></span>
-              <h2 id="apply-title">申请这个活动</h2>
-              <p>发一封邮件就行，标题写上活动名称「{{ plan.title }}」。申请和额度都不收费。</p>
+              <h2 id="apply-title">{{ detail.panel.title }}</h2>
+              <p>{{ detail.panel.textBefore }}{{ plan.title }}{{ detail.panel.textAfter }}</p>
               <div class="panel-facts">
-                <div><span>申请方式</span><strong>{{ plan.mode }}</strong></div>
-                <div><span>扶持额度</span><strong>{{ plan.benefit }}</strong></div>
-                <div><span>建议周期</span><strong>{{ plan.duration }}</strong></div>
+                <div><span>{{ detail.panel.mode }}</span><strong>{{ plan.mode }}</strong></div>
+                <div><span>{{ detail.panel.benefit }}</span><strong>{{ plan.benefit }}</strong></div>
+                <div><span>{{ detail.panel.duration }}</span><strong>{{ plan.duration }}</strong></div>
               </div>
-              <p class="panel-label">邮件里写清这五件事</p>
+              <p class="panel-label">{{ detail.panel.label }}</p>
               <ol class="panel-materials">
-                <li v-for="item in applicationMaterials" :key="item.label"><strong>{{ item.label }}</strong>{{ item.text }}</li>
+                <li v-for="item in materials" :key="item.label"><strong>{{ item.label }}</strong>{{ item.text }}</li>
               </ol>
               <div class="email-list">
-                <a v-for="email in applicationEmails" :key="email" class="email-address" :href="applicationMailto(plan, email)">{{ email }}</a>
+                <a v-for="email in applicationEmails" :key="email" class="email-address" :href="mailto(plan, email)">{{ email }}</a>
               </div>
-              <a class="apply-button" :href="applicationMailto(plan)">发送申请邮件<ArrowUpRight :size="17" aria-hidden="true" /></a>
-              <p class="mail-hint">点击会打开邮件应用，主题和正文已经帮你填好；也可以复制上面的邮箱自己发。</p>
+              <a class="apply-button" :href="mailto(plan)">{{ detail.panel.button }}<ArrowUpRight :size="17" aria-hidden="true" /></a>
+              <p class="mail-hint">{{ detail.panel.hint }}</p>
               <p class="panel-note"><Lightbulb :size="14" aria-hidden="true" />{{ applyHint }}</p>
             </div>
           </aside>
@@ -175,8 +175,8 @@
         <section class="other-plans">
           <div class="shell">
             <div class="section-heading">
-              <div><p class="eyebrow">KEEP EXPLORING</p><h2>探索其他活动</h2></div>
-              <p>额度和周期各不相同，挑一个和你现在最想做的事最接近的。</p>
+              <div><p class="eyebrow">{{ detail.other.eyebrow }}</p><h2>{{ detail.other.head }}</h2></div>
+              <p>{{ detail.other.desc }}</p>
             </div>
             <div class="other-grid">
               <router-link v-for="other in otherPlans" :key="other.slug" :style="styleFor(other)" :to="`/incentive-plans/${other.slug}/`">
@@ -194,9 +194,9 @@
       </template>
 
       <div v-else class="shell missing-plan">
-        <h1>未找到该活动</h1>
-        <p>请返回全部激励计划，查看当前活动。</p>
-        <router-link class="action action-primary" to="/incentive-plans/">返回激励计划<ArrowRight :size="16" aria-hidden="true" /></router-link>
+        <h1>{{ detail.missing.title }}</h1>
+        <p>{{ detail.missing.text }}</p>
+        <router-link class="action action-primary" to="/incentive-plans/">{{ detail.missing.back }}<ArrowRight :size="16" aria-hidden="true" /></router-link>
       </div>
     </main>
     <SiteFooter />
@@ -211,29 +211,27 @@ import { ArrowLeft, ArrowRight, ArrowUpRight, ChevronDown, CircleCheckBig, Light
 import SiteHeader from '@/components/SiteHeader.vue'
 import SiteFooter from '@/components/SiteFooter.vue'
 import IncentivePoster from '@/components/IncentivePoster.vue'
-import { applicationEmails, applicationMailto, applicationMaterials, incentivePlans, themeAccent, type IncentivePlan, type IncentiveTheme } from '@/data/incentive-plans'
+import { useIncentivePlans } from '@/composables/useIncentivePlans'
+import { themeAccent, type IncentivePlan } from '@/data/incentive-plans'
 
 const props = defineProps<{ slug: string }>()
-const plan = computed(() => incentivePlans.find((item) => item.slug === props.slug))
-const otherPlans = computed(() => incentivePlans.filter((item) => item.slug !== props.slug))
+const { plans, materials, detail, findPlan, mailto, applicationEmails } = useIncentivePlans()
+
+const plan = computed(() => findPlan(props.slug))
+const otherPlans = computed(() => plans.value.filter((item) => item.slug !== props.slug))
 
 const facts = computed(() => {
   const current = plan.value
   if (!current) return []
   return [
-    { label: '参与对象', value: current.audience },
-    { label: '扶持额度', value: current.benefit },
-    { label: '建议周期', value: current.duration },
-    { label: '交付形式', value: current.deliverable },
+    { label: detail.value.facts.audience, value: current.audience },
+    { label: detail.value.facts.benefit, value: current.benefit },
+    { label: detail.value.facts.duration, value: current.duration },
+    { label: detail.value.facts.deliverable, value: current.deliverable },
   ]
 })
 
-const applyHints: Record<IncentiveTheme, string> = {
-  coding: '顺手在邮件里写一句你的技术栈和用过的工具，我们能给你一条更省时间的接入路线。',
-  hometown: '邮件里说清选题（一个人 / 一条街 / 一种味道）和想用的主色，越具体越容易通过，我们也更好准备参考方向。',
-  game: '「我爱独立游戏」周期比较长，邮件里写清一个月内的几个里程碑，我们会按阶段跟进并给反馈。',
-}
-const applyHint = computed(() => (plan.value ? applyHints[plan.value.theme] : ''))
+const applyHint = computed(() => (plan.value ? detail.value.panel.hints[plan.value.theme] : ''))
 
 function styleFor(target: IncentivePlan) {
   const accent = themeAccent[target.theme]
@@ -248,8 +246,8 @@ function styleFor(target: IncentivePlan) {
 const accentStyle = computed(() => (plan.value ? styleFor(plan.value) : {}))
 
 useHead(() => ({
-  title: `${plan.value?.title || '未找到该活动'}｜激励扶持计划｜AIGOKEY`,
-  meta: [{ name: 'description', content: plan.value?.description || '查看 AIGOKEY 创作者激励扶持计划。' }],
+  title: `${plan.value?.title || detail.value.missing.title}｜${detail.value.meta.titleSuffix}`,
+  meta: [{ name: 'description', content: plan.value?.description || detail.value.meta.description }],
 }))
 </script>
 
