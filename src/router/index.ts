@@ -3,6 +3,12 @@ import { incentivePlans } from '@/data/incentive-plans'
 
 export const routes = [
   {
+    path: '/studio/',
+    name: 'studio',
+    component: () => import('@/views/StudioView.vue'),
+    meta: { noindex: true },
+  },
+  {
     path: '/',
     name: 'home',
     component: () => import('@/views/HomeView.vue'),
@@ -158,6 +164,11 @@ export const routes = [
     path: '/agk-video/',
     name: 'agk-video',
     component: () => import('@/views/AgkVideoView.vue'),
+  },
+  {
+    path: '/api-docs/',
+    name: 'api-docs',
+    component: () => import('@/views/ApiDocsView.vue'),
   },
   {
     path: '/agk-video/embed/',
